@@ -1,4 +1,4 @@
-ul {
+#menu1 {
     float: left;
     width: 100%;
     padding: 0;
@@ -6,28 +6,49 @@ ul {
     list-style: none;
 }
 
-li a {
+.przyciski {
     display: block;
     float: left;
     text-align: center;
     font-size: 1.2em;
-    width: 200px;
+    width: 25%;
     text-decoration: none;
-    color: aqua;
-    background-color: royalblue;
-    padding: 10px 15px;
-    margin: 0 1px 1px 0px;
-    border: 10px solid navy;
-    border-radius: 10px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    box-shadow: 0px 2px 3px gray;
-    -moz-box-shadow: 0px 2px 3px gray;
-    -webkit-box-shadow: 0px 2px 3px gray;
+    color: floralwhite;
+    padding: 20px 0;
+    /*border: 5px solid transparent;*/
 }
 
-li a:hover {
-    color: blue;
-    background: aqua;
-    border: 10px solid blue;
+.przyciski:hover {
+    /*border: 5px solid black;*/
+
+}
+#przycisk1 {
+    background-color: navy;
+}
+#przycisk2 {
+    background-color: red;
+
+}
+#przycisk3 {
+    background-color: darkorange;
+
+}
+#przycisk4 {
+    background-color: indigo;
+
+}
+#przycisk1:hover {
+    background-color: Background;
+}
+#przycisk2:hover {
+    background-color: Background;
+
+}
+#przycisk3:hover {
+    background-color: Background;
+
+}
+#przycisk4:hover {
+    background-color: Background;
+
 }
