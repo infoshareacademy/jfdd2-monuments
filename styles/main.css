@@ -1,8 +1,13 @@
 .formularz {
     background-color: azure;
+    margin-top:40px;
+    min-width: 600px;
   }
 #tresc {
-    max-width: 1200px; min-width: 530px; margin: auto; background-color: transparent;
+    max-width: 1200px;
+    min-width: 530px;
+    margin: auto;
+    background-color: transparent;
 
 }
 #tresc_glowna{
