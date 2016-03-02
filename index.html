@@ -24,7 +24,20 @@
 
     </header>
 
-    <main></main>
+    <main>
+        <section>
+            <fieldset class="formularz">
+                <form action="mailto:" method="post" enctype="text/plain">
+                    <label>Adres e-Mail:<br/>
+                        <input type="email" name="email"/></label><br/>
+                    <label>Telefon komórkowy<br/>
+                        <input type="tel" name="telefon" placeholder="xxx-xxx-xxx"
+                               pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"/></label><br/>
+                    <input type="submit" value="Prześlij dane"/>
+                </form>
+            </fieldset>
+        </section>
+    </main>
 
     <footer>
         <div id="sm_icons">
