@@ -1,0 +1,29 @@
+#sm_icons {
+    display: flex;
+    float: right;
+    margin-bottom: 5px;
+}
+
+.facebook {
+    margin: 2px;
+}
+
+.google{
+    margin: 2px;
+}
+
+.twitter {
+    margin: 2px;
+}
+
+#copyright {
+    font-family: Verdana, Tahoma, Helvetica, sans-serif ;
+    font-size: 12px;
+    text-align: left;
+    clear: both;
+}
+
+#by {
+    font-family: Verdana, Tahoma, Helvetica, sans-serif ;
+    float: right;
+}
