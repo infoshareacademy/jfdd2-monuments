@@ -2,8 +2,32 @@
     background-color: azure;
   }
 #tresc {
-    max-width: 1200px; margin-left: auto; margin-right: auto; position: center;
+    max-width: 1200px; min-width: 530px; margin: auto; background-color: transparent;
+
 }
 #tresc_glowna{
     margin-top: 100px;
+}
+
+.funkcjonalnosci{
+    height: 300px; width: 538px;
+    float:left;
+    display: block;
+    margin: 30px;
+    background: rgba(255, 255, 255, 0.5);
+    filter: alpha(opacity=20);
+    border: 1px solid black;
+
+}
+
+.opisfunk{
+    text-align: right;
+    margin-right: 30px;
+    font-size: 140%;
+    margin-top: 40px;
+    font-style: italic;
+
+}
+.funk{
+    float: left; margin-top: -30px;
 }
