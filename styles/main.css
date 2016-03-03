@@ -1,8 +1,9 @@
 .formularz {
     background: rgba(255, 255, 255, 0.4);
     margin-top:40px;
-    min-width: 600px;
-  }
+    min-width: 500px;
+
+      }
 #tresc {
     max-width: 1200px;
     min-width: 530px;
@@ -21,6 +22,8 @@
     margin: 30px;
     background: rgba(255, 255, 255, 0.4);
     border: solid 1px darkgrey;
+    box-shadow: 0 0 15px 5px darkgray;
+
 }
 
 .opisfunk{
@@ -32,5 +35,46 @@
 
 }
 .funk{
-    float: left; margin-top: -30px;
+    float: left;
+    margin-top: 0px;
+    margin-left: 15px;
+    display:inline;
+
+}
+.produkt{
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin-top: -5px;
+    list-style: none;
+    background: rgba(255, 255, 255, 0.4);
+    border: solid 1px darkgrey;
+    box-shadow: 0 0 15px 5px darkgray;
+    min-height: 400px;;
+
+}
+.inne-funk{
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin-top: -5px;
+    list-style: none;
+    background: rgba(255, 255, 255, 0.4);
+    border: solid 1px darkgrey;
+    box-shadow: 0 0 15px 5px darkgray;
+    min-height: 100px;;
+    margin-bottom: 30px;
+}
+
+.onas{
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin-top: -5px;
+    list-style: none;
+    background: rgba(255, 255, 255, 0.4);
+    border: solid 1px darkgrey;
+    box-shadow: 0 0 15px 5px darkgray;
+    min-height: 400px;;
+    margin-bottom: 30px;
 }
