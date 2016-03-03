@@ -12,11 +12,14 @@
     display: block;
     float: left;
     text-align: center;
-    font-size: 1.2em;
-    width: 25%;
+    font-size: 1.4em;
+    position:relative;
+    left:500px;
+    width: 15%;
     text-decoration: none;
-    color: floralwhite;
+    color: Black;
     padding: 20px 0;
+    font-weight: Bold;
     /*border-bottom: 4px solid transparent;*/
     /*box-shadow: 0 0 10px 1px black inset;*/
        /*border: 5px solid transparent;*/
@@ -31,16 +34,16 @@
     transition: box-shadow 0.1s linear;
 }
 #przycisk1 {
-    background-color: navy;
+
 }
 #przycisk2 {
-    background-color: red;
+
 }
 #przycisk3 {
-    background-color: darkorange;
+
 }
 #przycisk4 {
-    background-color: indigo;
+
 }
 
 
