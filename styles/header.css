@@ -1,8 +1,13 @@
+BODY {
+    background: url('../images/tlo_v1.jpg') no-repeat fixed bottom;
+}
+
 
 #menu1 {
+    float: left;
     width: 100%;
     padding: 0;
-    margin-top: -4px;
+    margin-top: -5px;
     list-style: none;
 }
 
@@ -17,18 +22,13 @@
     text-decoration: none;
     color: floralwhite;
     padding: 20px 0;
-    /*border-bottom: 4px solid transparent;*/
-    /*box-shadow: 0 0 10px 1px black inset;*/
+    border-bottom: 4px solid transparent;
        /*border: 5px solid transparent;*/
-
-
 }
 
 .przyciski:hover {
-    /*padding: 25px 0;*/
-    /*transition: padding 0.1s linear, box-shadow 0.2s linear;*/
-    box-shadow: 0 0 10px 1px black inset;
-    transition: box-shadow 0.1s linear;
+  /*background: background;*/
+
 }
 #przycisk1 {
     background-color: navy;
@@ -42,27 +42,19 @@
 #przycisk4 {
     background-color: indigo;
 }
-
-.clear {
-    clear: both;
+#przycisk1:hover {
+    background-color: Background;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.7);
 }
-/*#przycisk1:hover {*/
-    /*!*background-color: Background;*!*/
-    /*!*border-bottom: 4px solid rgba(0, 0, 0, 0.7);*!*/
-    /*box-shadow: 0 0 10px 1px black inset;*/
-/*}*/
-/*#przycisk2:hover {*/
-    /*!*background-color: Background;*!*/
-    /*!*border-bottom: 4px solid rgba(0, 0, 0, 0.7);*!*/
-    /*box-shadow: 0 0 10px 1px black inset;*/
-/*}*/
-/*#przycisk3:hover {*/
-    /*!*background-color: Background;*!*/
-    /*!*border-bottom: 4px solid rgba(0, 0, 0, 0.7);*!*/
-    /*box-shadow: 0 0 10px 1px black inset;*/
-/*}*/
-/*#przycisk4:hover {*/
-    /*!*background-color: Background;*!*/
-    /*!*border-bottom: 4px solid rgba(0, 0, 0, 0.7);*!*/
-    /*box-shadow: 0 0 10px 1px black inset;*/
-/*}*/
+#przycisk2:hover {
+    background-color: Background;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.7);
+}
+#przycisk3:hover {
+    background-color: Background;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.7);
+}
+#przycisk4:hover {
+    background-color: Background;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.7);
+}
