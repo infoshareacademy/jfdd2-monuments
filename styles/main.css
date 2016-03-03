@@ -3,19 +3,18 @@
     margin-top:40px;
     min-width: 500px;
     box-shadow: 0 0 15px 5px darkgray;
-
-
-      }
+}
 
 body {
     max-width: 1200px;
     min-width: 530px;
     margin: auto;
     background: url('../images/tlo_v1.jpg') no-repeat fixed bottom;
-
 }
+
 #tresc_glowna{
     margin-top: 100px;
+    text-align: center;
 }
 
 .funkcjonalnosci{
@@ -26,40 +25,36 @@ body {
     background: rgba(255, 255, 255, 0.4);
     border: solid 1px darkgrey;
     box-shadow: 0 0 15px 5px darkgray;
-
 }
 
-.opisfunk2{
-    text-align: center;
+.opisfunk{
+    text-align: right;
     margin-right: 30px;
-    font-size: 150%;
+    font-size: 140%;
     margin-top: 40px;
     font-style: italic;
-    font-weight:bold;
-    text-shadow:30px 30px 2px black;
-
-
 }
+
 .funk{
     float: left;
     margin-top: 0px;
     position: relative;
     right: -5px;
     display:inline;
-
 }
+
 .produkt{
     float: left;
     width: 100%;
     padding: 0;
-    margin-top: -40px;
+    margin-top: -10px;
     list-style: none;
     background: rgba(255, 255, 255, 0.4);
     border: solid 1px darkgrey;
     box-shadow: 0 0 15px 5px darkgray;
     min-height: 400px;;
-
 }
+
 .inne-funk{
     float: left;
     width: 100%;
@@ -72,7 +67,7 @@ body {
     margin-bottom: 30px;
 }
 
-.onas{
+.onas {
     float: left;
     width: 100%;
     padding: 0;
@@ -84,9 +79,9 @@ body {
     min-height: 400px;;
     margin-bottom: 30px;
 }
+
 .look {
     text-shadow: 10px 10px 10px black;
     font-size: 14px;
     font-weight: bold
-
 }
