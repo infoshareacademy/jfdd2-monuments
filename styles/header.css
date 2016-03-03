@@ -12,14 +12,13 @@
     display: block;
     float: left;
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.3em;
+    width: 15%;
     position:relative;
     left:500px;
-    width: 15%;
     text-decoration: none;
     color: Black;
     padding: 20px 0;
-    font-weight: Bold;
     /*border-bottom: 4px solid transparent;*/
     /*box-shadow: 0 0 10px 1px black inset;*/
        /*border: 5px solid transparent;*/

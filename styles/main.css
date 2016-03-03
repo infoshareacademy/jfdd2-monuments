@@ -48,10 +48,6 @@ body {
 }
 
 .produkt{
-    font-size: 40px;
-    text-align: center;
-    font-family: verdana, tahoma, helvetica, sans-serif;
-    text-color: grey;
     float: left;
     width: 100%;
     padding: 0;
@@ -71,7 +67,7 @@ body {
     background: rgba(255, 255, 255, 0.4);
     border: solid 1px darkgrey;
     box-shadow: 0 0 15px 5px darkgray;
-    min-height: 100px;
+    min-height: 100px;;
     margin-bottom: 30px;
 }
 
