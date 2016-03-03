@@ -3,6 +3,7 @@
     margin-top:40px;
     min-width: 500px;
     box-shadow: 0 0 15px 5px darkgray;
+    margin-bottom: 15px;
 }
 
 body {
@@ -12,12 +13,15 @@ body {
     background: url('../images/tlo_v1.jpg') no-repeat fixed bottom;
 }
 
-#tresc_glowna{
+#tresc_glowna {
     margin-top: 100px;
+}
+
+#produkt {
     text-align: center;
 }
 
-.funkcjonalnosci{
+.funkcjonalnosci {
     height: 300px; width: 538px;
     float:left;
     display: block;
