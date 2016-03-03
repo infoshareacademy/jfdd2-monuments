@@ -1,5 +1,5 @@
 .formularz {
-    background-color: azure;
+    background: rgba(255, 255, 255, 0.4);
     margin-top:40px;
     min-width: 600px;
   }
@@ -19,10 +19,8 @@
     float:left;
     display: block;
     margin: 30px;
-    background: rgba(255, 255, 255, 0.5);
-    filter: alpha(opacity=20);
-    border: 1px solid black;
-
+    background: rgba(255, 255, 255, 0.4);
+    border: solid 1px darkgrey;
 }
 
 .opisfunk{
