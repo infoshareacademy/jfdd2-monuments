@@ -4,6 +4,7 @@
     min-width: 500px;
     box-shadow: 0 0 15px 5px darkgray;
 
+
       }
 
 body {
@@ -28,12 +29,15 @@ body {
 
 }
 
-.opisfunk{
-    text-align: right;
+.opisfunk2{
+    text-align: center;
     margin-right: 30px;
-    font-size: 140%;
+    font-size: 150%;
     margin-top: 40px;
     font-style: italic;
+    font-weight:bold;
+    text-shadow:30px 30px 2px black;
+
 
 }
 .funk{
