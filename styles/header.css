@@ -4,10 +4,10 @@ BODY {
 
 
 #menu1 {
-    /*float: left;*/
+    float: left;
     width: 100%;
     padding: 0;
-    margin-top: -20px;
+    margin-top: -5px;
     list-style: none;
 }
 
@@ -33,7 +33,7 @@ BODY {
     /*padding: 25px 0;*/
     /*transition: padding 0.1s linear, box-shadow 0.2s linear;*/
     box-shadow: 0 0 10px 1px black inset;
-    transition: box-shadow 0.1s linear;
+    transition: box-shadow 0.2s linear;
 }
 #przycisk1 {
     background-color: navy;
