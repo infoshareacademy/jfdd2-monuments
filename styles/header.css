@@ -1,13 +1,8 @@
-BODY {
-    background: url('../images/tlo_v1.jpg') no-repeat fixed bottom;
-}
-
 
 #menu1 {
-    float: left;
     width: 100%;
     padding: 0;
-    margin-top: -5px;
+    margin-top: -4px;
     list-style: none;
 }
 
@@ -22,13 +17,18 @@ BODY {
     text-decoration: none;
     color: floralwhite;
     padding: 20px 0;
-    border-bottom: 4px solid transparent;
+    /*border-bottom: 4px solid transparent;*/
+    /*box-shadow: 0 0 10px 1px black inset;*/
        /*border: 5px solid transparent;*/
+
+
 }
 
 .przyciski:hover {
-  /*background: background;*/
-
+    /*padding: 25px 0;*/
+    /*transition: padding 0.1s linear, box-shadow 0.2s linear;*/
+    box-shadow: 0 0 10px 1px black inset;
+    transition: box-shadow 0.1s linear;
 }
 #przycisk1 {
     background-color: navy;
@@ -42,19 +42,27 @@ BODY {
 #przycisk4 {
     background-color: indigo;
 }
-#przycisk1:hover {
-    background-color: Background;
-    border-bottom: 4px solid rgba(0, 0, 0, 0.7);
+
+.clear {
+    clear: both;
 }
-#przycisk2:hover {
-    background-color: Background;
-    border-bottom: 4px solid rgba(0, 0, 0, 0.7);
-}
-#przycisk3:hover {
-    background-color: Background;
-    border-bottom: 4px solid rgba(0, 0, 0, 0.7);
-}
-#przycisk4:hover {
-    background-color: Background;
-    border-bottom: 4px solid rgba(0, 0, 0, 0.7);
-}
+/*#przycisk1:hover {*/
+    /*!*background-color: Background;*!*/
+    /*!*border-bottom: 4px solid rgba(0, 0, 0, 0.7);*!*/
+    /*box-shadow: 0 0 10px 1px black inset;*/
+/*}*/
+/*#przycisk2:hover {*/
+    /*!*background-color: Background;*!*/
+    /*!*border-bottom: 4px solid rgba(0, 0, 0, 0.7);*!*/
+    /*box-shadow: 0 0 10px 1px black inset;*/
+/*}*/
+/*#przycisk3:hover {*/
+    /*!*background-color: Background;*!*/
+    /*!*border-bottom: 4px solid rgba(0, 0, 0, 0.7);*!*/
+    /*box-shadow: 0 0 10px 1px black inset;*/
+/*}*/
+/*#przycisk4:hover {*/
+    /*!*background-color: Background;*!*/
+    /*!*border-bottom: 4px solid rgba(0, 0, 0, 0.7);*!*/
+    /*box-shadow: 0 0 10px 1px black inset;*/
+/*}*/
