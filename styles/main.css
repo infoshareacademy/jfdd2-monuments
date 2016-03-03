@@ -5,11 +5,12 @@
     box-shadow: 0 0 15px 5px darkgray;
 
       }
-#tresc {
+
+body {
     max-width: 1200px;
     min-width: 530px;
     margin: auto;
-    background-color: transparent;
+    background: url('../images/tlo_v1.jpg') no-repeat fixed bottom;
 
 }
 #tresc_glowna{
@@ -38,7 +39,8 @@
 .funk{
     float: left;
     margin-top: 0px;
-    margin-left: 15px;
+    position: relative;
+    right: -5px;
     display:inline;
 
 }
@@ -46,7 +48,7 @@
     float: left;
     width: 100%;
     padding: 0;
-    margin-top: -5px;
+    margin-top: -40px;
     list-style: none;
     background: rgba(255, 255, 255, 0.4);
     border: solid 1px darkgrey;
@@ -58,7 +60,6 @@
     float: left;
     width: 100%;
     padding: 0;
-    margin-top: -5px;
     list-style: none;
     background: rgba(255, 255, 255, 0.4);
     border: solid 1px darkgrey;
