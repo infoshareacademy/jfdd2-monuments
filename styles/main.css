@@ -39,6 +39,15 @@ body {
     font-style: italic;
 }
 
+.h1{
+    text-align: right;
+    margin-right: 30px;
+    font-size: 120%;
+    margin-top: 40px;
+    font-style: italic;
+
+
+}
 .funk{
     float: left;
     margin-top: 0px;
