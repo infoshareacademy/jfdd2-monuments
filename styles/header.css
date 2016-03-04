@@ -57,7 +57,6 @@
     text-decoration: none;
     color: Black;
     padding: 20px 0;
-    font-weight: Bold;
     /*border-bottom: 4px solid transparent;*/
     /*box-shadow: 0 0 10px 1px black inset;*/
        /*border: 5px solid transparent;*/
@@ -68,8 +67,8 @@
 .przyciski:hover {
     /*padding: 25px 0;*/
     /*transition: padding 0.1s linear, box-shadow 0.2s linear;*/
-    box-shadow: 0 0 10px 1px black inset;
-    transition: box-shadow 0.1s linear;
+    text-shadow:10px 10px 5px black;
+    transition: text-shadow 0.7s linear;
 }
 #przycisk1 {
 
