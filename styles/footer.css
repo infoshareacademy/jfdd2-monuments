@@ -1,22 +1,14 @@
-#sm_icons {
-    display: flex;
-    float: right;
-}
-
-.facebook {
-    margin: 5px;
-}
-
-.google {
-    margin: 5px;
-}
-
-.twitter {
+img {
     margin: 5px;
 }
 
 .clear {
     clear: both;
+}
+
+#sm_icons {
+    display: flex;
+    float: right;
 }
 
 #copyright {
@@ -26,6 +18,5 @@
 }
 
 #by {
-    font-family: Verdana, Tahoma, Helvetica, sans-serif;
     float: right;
 }
