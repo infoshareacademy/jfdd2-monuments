@@ -1,14 +1,40 @@
-img {
+body {
+    max-width: 1300px;
+    min-width: 530px;
+    margin: auto;
+    background: url('../Images/tlo_v1.jpg') no-repeat fixed bottom;
+}
+.formularz {
+    background: rgba(255, 255, 255, 0.4);
+    margin-top: 40px;
+    min-width: 500px;
+    box-shadow: 0 0 15px 5px darkgray;
+    margin-bottom: 15px;
+}
+.look {
+    text-shadow: 10px 10px 10px black;
+    font-size: 14px;
+    font-weight: bold
+}
+#sm_icons {
+    display: flex;
+    float: right;
+}
+
+.facebook {
+    margin: 5px;
+}
+
+.google {
+    margin: 5px;
+}
+
+.twitter {
     margin: 5px;
 }
 
 .clear {
     clear: both;
-}
-
-#sm_icons {
-    display: flex;
-    float: right;
 }
 
 #copyright {
@@ -18,5 +44,6 @@ img {
 }
 
 #by {
+    font-family: Verdana, Tahoma, Helvetica, sans-serif;
     float: right;
 }

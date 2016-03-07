@@ -1,100 +1,109 @@
-.formularz {
+.clear {
+    clear:both;
+}
+
+#sekcja1 {
+    margin-bottom:30px;
+    width:100%;
+    margin-top:10px;
+}
+#sekcja2 {
+    margin-bottom: 40px;
+    width: 100%;
+    height: 400px;
     background: rgba(255, 255, 255, 0.4);
-    margin-top:40px;
-    min-width: 500px;
     box-shadow: 0 0 15px 5px darkgray;
-    margin-bottom: 15px;
 }
-
-body {
-    max-width: 1200px;
-    min-width: 530px;
-    margin: auto;
-    background: url('../images/tlo_v1.jpg') no-repeat fixed bottom;
-}
-
-#tresc_glowna {
-    margin-top: 0px;
-}
-
-#produkt {
-    text-align: center;
-}
-
-.funkcjonalnosci {
-    height: 300px; width: 538px;
+#sekcja3 {
+    margin-bottom: 40px;
+    width: 49%;
+    height: 420px;
     float:left;
-    display: block;
-    margin: 30px;
     background: rgba(255, 255, 255, 0.4);
-    border: solid 1px darkgrey;
+    box-shadow: 0 0 15px 5px darkgray;
+}
+#sekcja4 {
+    margin-bottom: 40px;
+    width: 49%;
+    height: 420px;
+    float: right;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 15px 5px darkgray;
+}
+#sekcja5 {
+    margin-bottom: 40px;
+    width: 49%;
+    height: 420px;
+    float:left;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 15px 5px darkgray;
+}
+#sekcja6 {
+    margin-bottom: 40px;
+    width: 49%;
+    height: 420px;
+    float: right;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 15px 5px darkgray;
+}
+#sekcja7 {
+    width: 15%;
+    height: 170px;
+    float:left;
+    margin-right:20px;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 15px 5px darkgray;
+}
+#sekcja8{
+    width: 15%;
+    height: 170px;
+    float:left;
+    margin-right: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 15px 5px darkgray;
+}
+#sekcja9 {
+    width: 15%;
+    height: 170px;
+    float:right;
+    margin-left:20px;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 15px 5px darkgray;
+}
+#sekcja10 {
+    width: 15%;
+    height: 170px;
+    float:right;
+    margin-left:20px;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 15px 5px darkgray;
+}
+#sekcja11 {
+    width: 15%;
+    height: 170px;
+    float:right;
+    margin-left:20px;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 15px 5px darkgray;
+}
+#sekcja12 {
+    width: 15%;
+    height: 170px;
+    float:left;
+    margin-right: 20px;
+    background: rgba(255, 255, 255, 0.4);
     box-shadow: 0 0 15px 5px darkgray;
 }
 
-.opisfunk{
-    text-align: right;
-    margin-right: 30px;
-    font-size: 200%;
-    margin-top: 40px;
-    font-style: italic;
-}
-
-.h1{
-    text-align: right;
-    margin-right: 30px;
-    font-size: 120%;
-    margin-top: 40px;
-    font-style: italic;
-
-
-}
-.funk{
-    float: left;
-    margin-top: 0px;
-    position: relative;
-    right: -5px;
-    display:inline;
-}
-
-.produkt{
-    float: left;
+#sekcja13 {
+    margin-bottom: 40px;
     width: 100%;
-    padding: 0;
-    margin-top: 20px;
-    list-style: none;
     background: rgba(255, 255, 255, 0.4);
-    border: solid 1px darkgrey;
     box-shadow: 0 0 15px 5px darkgray;
-    min-height: 400px;;
+    position:relative;
+    top:40px;
 }
-
-.inne-funk{
-    float: left;
+#sekcja14 {
+    margin-bottom: 10px;
     width: 100%;
-    padding: 0;
-    list-style: none;
-    background: rgba(255, 255, 255, 0.4);
-    border: solid 1px darkgrey;
-    box-shadow: 0 0 15px 5px darkgray;
-    min-height: 100px;;
-    margin-bottom: 30px;
-}
-
-.onas {
-    float: left;
-    width: 100%;
-    padding: 0;
-    margin-top: -5px;
-    list-style: none;
-    background: rgba(255, 255, 255, 0.4);
-    border: solid 1px darkgrey;
-    box-shadow: 0 0 15px 5px darkgray;
-    min-height: 400px;;
-    margin-bottom: 30px;
-}
-
-.look {
-    text-shadow: 10px 10px 10px black;
-    font-size: 14px;
-    font-weight: bold
 }
