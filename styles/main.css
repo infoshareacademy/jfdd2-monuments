@@ -1,19 +1,16 @@
+body {
+    max-width: 1300px;
+    min-width: 530px;
+    margin: auto;
+    background: url('../images/icons/tlo_v1.jpg') no-repeat fixed bottom;
+}
+
 .clear {
     clear:both;
 }
 
-#menu {
-    margin-bottom:30px;
-    width:100%;
-    margin-top:10px;
-}
-#powitanie {
-    margin-bottom: 40px;
-    width: 100%;
-    height: 400px;
-    background: rgba(255, 255, 255, 0.4);
-    box-shadow: 0 0 15px 5px darkgray;
-}
+
+
 #funkcjonalnosc1 {
     margin-bottom: 40px;
     width: 49%;
@@ -45,6 +42,20 @@
     float: right;
     background: rgba(255, 255, 255, 0.4);
     box-shadow: 0 0 15px 5px darkgray;
+}
+
+#funkcjonalnosc1:hover {
+    transform: scale(1.05);
+}
+#funkcjonalnosc2:hover {
+    transform: scale(1.05);
+}
+#funkcjonalnosc3:hover {
+    transform: scale(1.05);
+}
+#funkcjonalnosc4:hover {
+    transform: scale(1.05);
+
 }
 #pozostaleFunkcjonalnosci1 {
     width: 15%;
@@ -95,15 +106,27 @@
     box-shadow: 0 0 15px 5px darkgray;
 }
 
-#formularz {
-    margin-bottom: 40px;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.4);
-    box-shadow: 0 0 15px 5px darkgray;
-    position:relative;
-    top:40px;
+
+
+
+#pozostaleFunkcjonalnosci1:hover {
+transform: scale(1.1);
 }
-#socialMedia {
-    margin-bottom: 10px;
-    width: 100%;
+#pozostaleFunkcjonalnosci2:hover {
+transform: scale(1.1);
 }
+#pozostaleFunkcjonalnosci3:hover {
+transform: scale(1.1);
+}
+#pozostaleFunkcjonalnosci4:hover {
+transform: scale(1.1);
+}
+#pozostaleFunkcjonalnosci5:hover {
+transform: scale(1.1);
+}
+#pozostaleFunkcjonalnosci6:hover {
+transform: scale(1.1);
+}
+
+
+
