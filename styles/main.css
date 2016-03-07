@@ -2,19 +2,19 @@
     clear:both;
 }
 
-#sekcja1 {
+#menu {
     margin-bottom:30px;
     width:100%;
     margin-top:10px;
 }
-#sekcja2 {
+#powitanie {
     margin-bottom: 40px;
     width: 100%;
     height: 400px;
     background: rgba(255, 255, 255, 0.4);
     box-shadow: 0 0 15px 5px darkgray;
 }
-#sekcja3 {
+#funkcjonalnosc1 {
     margin-bottom: 40px;
     width: 49%;
     height: 420px;
@@ -22,7 +22,7 @@
     background: rgba(255, 255, 255, 0.4);
     box-shadow: 0 0 15px 5px darkgray;
 }
-#sekcja4 {
+#funkcjonalnosc2 {
     margin-bottom: 40px;
     width: 49%;
     height: 420px;
@@ -30,7 +30,7 @@
     background: rgba(255, 255, 255, 0.4);
     box-shadow: 0 0 15px 5px darkgray;
 }
-#sekcja5 {
+#funkcjonalnosc3 {
     margin-bottom: 40px;
     width: 49%;
     height: 420px;
@@ -38,7 +38,7 @@
     background: rgba(255, 255, 255, 0.4);
     box-shadow: 0 0 15px 5px darkgray;
 }
-#sekcja6 {
+#funkcjonalnosc4 {
     margin-bottom: 40px;
     width: 49%;
     height: 420px;
@@ -46,7 +46,7 @@
     background: rgba(255, 255, 255, 0.4);
     box-shadow: 0 0 15px 5px darkgray;
 }
-#sekcja7 {
+#pozostaleFunkcjonalnosci1 {
     width: 15%;
     height: 170px;
     float:left;
@@ -54,7 +54,7 @@
     background: rgba(255, 255, 255, 0.4);
     box-shadow: 0 0 15px 5px darkgray;
 }
-#sekcja8{
+#pozostaleFunkcjonalnosci2 {
     width: 15%;
     height: 170px;
     float:left;
@@ -62,7 +62,7 @@
     background: rgba(255, 255, 255, 0.4);
     box-shadow: 0 0 15px 5px darkgray;
 }
-#sekcja9 {
+#pozostaleFunkcjonalnosci3 {
     width: 15%;
     height: 170px;
     float:right;
@@ -70,7 +70,7 @@
     background: rgba(255, 255, 255, 0.4);
     box-shadow: 0 0 15px 5px darkgray;
 }
-#sekcja10 {
+#pozostaleFunkcjonalnosci4 {
     width: 15%;
     height: 170px;
     float:right;
@@ -78,7 +78,7 @@
     background: rgba(255, 255, 255, 0.4);
     box-shadow: 0 0 15px 5px darkgray;
 }
-#sekcja11 {
+#pozostaleFunkcjonalnosci5 {
     width: 15%;
     height: 170px;
     float:right;
@@ -86,7 +86,7 @@
     background: rgba(255, 255, 255, 0.4);
     box-shadow: 0 0 15px 5px darkgray;
 }
-#sekcja12 {
+#pozostaleFunkcjonalnosci6 {
     width: 15%;
     height: 170px;
     float:left;
@@ -95,7 +95,7 @@
     box-shadow: 0 0 15px 5px darkgray;
 }
 
-#sekcja13 {
+#formularz {
     margin-bottom: 40px;
     width: 100%;
     background: rgba(255, 255, 255, 0.4);
@@ -103,7 +103,7 @@
     position:relative;
     top:40px;
 }
-#sekcja14 {
+#socialMedia {
     margin-bottom: 10px;
     width: 100%;
 }

@@ -1,4 +1,4 @@
-#sekcja1 a {
+#menu a {
     text-decoration:none;
     font-size:25px;
     color:black;
@@ -6,54 +6,56 @@
     font-family: "Bodoni MT Poster Compressed";
 
 }
-#sekcja1 a:hover {
+#menu a:hover {
     text-shadow: 10px 10px 10px black;
     transition: text-shadow 0.5s;
     font-weight: bold;
 }
-#sekcja1 li {
+#menu li {
     display:inline;
     position: relative;
     left:650px;
 }
 
-#sekcja3:hover {
+#funkcjonalnosc1:hover {
     border:solid 5px black;
     margin: -10px;
     transition: border 0.5s;
 }
-#sekcja4:hover {
+#funkcjonalnosc2:hover {
     border:solid 10px black;
     margin: -10px;
     transition: border 0.5s;
 }
-#sekcja5:hover {
+#funkcjonalnosc3:hover {
     border:solid 10px black;
     margin: -10px;
     transition: border 0.5s;
 }
-#sekcja6:hover {
+#funkcjonalnosc4:hover {
     transform: scale(1.05);
 
-}#sekcja7:hover {
+}
+
+#pozostaleFunkcjonalnosci1:hover {
      border: solid 10px black;
      transition: border 0.5s;
  }
-#sekcja8:hover {
+#pozostaleFunkcjonalnosci2:hover {
     border:solid 10px black;
     transition: border 0.5s;
 }
-#sekcja9:hover {
+#pozostaleFunkcjonalnosci3:hover {
     transform: scale(1.1);
 }
-#sekcja10:hover {
+#pozostaleFunkcjonalnosci4:hover {
     transform: scale(1.1);
 }
-#sekcja11:hover {
+#pozostaleFunkcjonalnosci5:hover {
     border:solid 10px black;
     transition: border 0.5s;
 }
-#sekcja12:hover {
+#pozostaleFunkcjonalnosci6:hover {
     border:solid 10px black;
     transition: border 0.5s;
 }
