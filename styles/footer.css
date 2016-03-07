@@ -1,4 +1,4 @@
-img {
+#copyright img {
     margin: 5px;
 }
 
@@ -6,7 +6,7 @@ img {
     clear: both;
 }
 
-#sm_icons {
+#copyRight {
     display: flex;
     float: right;
 }

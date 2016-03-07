@@ -1,33 +1,17 @@
-
-#menu1 {
-    width: 100%;
-    padding: 0;
-    position: relative;
-    top:-20px;
-    list-style: none;
+nav{
+    margin-top: -30px;
 }
+
+
 .zajawka {
-    color: white;
-    background-color: transparent;
-    float: left;
-    margin-top: -20px;
     height: 400px;
-    width: 100%;
-    /*padding-top: 20px;*/
-    /*padding-right:10px;*/
-    /*padding-bottom: 20px;*/
-    /*padding-left: 10px;*/
-
-
-
-
+    width: 1200px;
     background-image: url('../images/zajawka_v2.jpg');
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center;
-
 }
-.hasło_1{
+
+.tytulNaZdjeciuGlownym{
     margin-right: 20px;
     margin-top: 30px;
     font-size:70px;
@@ -36,71 +20,54 @@
     text-align: right;
 }
 
-.hasło_2{
+.podtytulNaZdjeciuGlownym{
     margin-right: 20px;
-    margin-top: -60px;
+    margin-top: 0;
     font-size: 30px;
     color: brown;
     font-family: helvetica, sans-serif ;
     text-align: right;
 }
 
+.menu {
+    padding: 10px;
+    list-style: none;
+}
 
 .przyciski {
     display: block;
     float: left;
     text-align: center;
-    font-size: 1.4em;
-    position:relative;
-    left:500px;
-    width: 15%;
+    font-size: 1.2em;
+    width: 25%;
     text-decoration: none;
-    color: Black;
+    color: floralwhite;
     padding: 20px 0;
     /*border-bottom: 4px solid transparent;*/
     /*box-shadow: 0 0 10px 1px black inset;*/
-       /*border: 5px solid transparent;*/
-
-
+    /*border: 5px solid transparent;*/
 }
 
 .przyciski:hover {
     /*padding: 25px 0;*/
     /*transition: padding 0.1s linear, box-shadow 0.2s linear;*/
-    text-shadow:10px 10px 5px black;
-    transition: text-shadow 0.7s linear;
+    box-shadow: 0 0 10px 1px black inset;
+    transition: box-shadow 0.1s linear;
 }
 #przycisk1 {
-
+    background-color: navy;
 }
 #przycisk2 {
-
+    background-color: red;
 }
 #przycisk3 {
-
+    background-color: darkorange;
 }
 #przycisk4 {
-
+    background-color: indigo;
 }
 
 
-/*#przycisk1:hover {*/
-    /*!*background-color: Background;*!*/
-    /*!*border-bottom: 4px solid rgba(0, 0, 0, 0.7);*!*/
-    /*box-shadow: 0 0 10px 1px black inset;*/
-/*}*/
-/*#przycisk2:hover {*/
-    /*!*background-color: Background;*!*/
-    /*!*border-bottom: 4px solid rgba(0, 0, 0, 0.7);*!*/
-    /*box-shadow: 0 0 10px 1px black inset;*/
-/*}*/
-/*#przycisk3:hover {*/
-    /*!*background-color: Background;*!*/
-    /*!*border-bottom: 4px solid rgba(0, 0, 0, 0.7);*!*/
-    /*box-shadow: 0 0 10px 1px black inset;*/
-/*}*/
-/*#przycisk4:hover {*/
-    /*!*background-color: Background;*!*/
-    /*!*border-bottom: 4px solid rgba(0, 0, 0, 0.7);*!*/
-    /*box-shadow: 0 0 10px 1px black inset;*/
-/*}*/
+
+
+

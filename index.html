@@ -4,97 +4,86 @@
     <meta charset="UTF-8">
     <title>Zabytki Gdańska</title>
     <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/footer.css">
     <link rel="shortcut icon" href="images/icons/favicon.gif">
+
 </head>
 
-<body id="tresc">
+<body>
 
 <header>
-    <div>
-        <ul id="menu1">
-            <li> <a class="przyciski" id="przycisk1" href="#produkt">Nasz produkt</a></li>
-            <li> <a class="przyciski" id="przycisk2" href="#funk1">Funkcjonalności</a></li>
-            <li> <a class="przyciski" id="przycisk3" href="#kontakt">Kontakt</a></li>
-            <li> <a class="przyciski" id="przycisk4" href="#onas">O nas</a></li>
-        </ul>
-    </div>
+
     <div class="zajawka">
 
-        <p class="hasło_1">Zabytki Gdańska</p>
-        <p class="hasło_2">poznaj historię miasta</p>
+        <p class="tytulNaZdjeciuGlownym">Zabytki Gdańska</p>
+
+        <p class="podtytulNaZdjeciuGlownym">poznaj historię miasta</p>
 
     </div>
+    <nav>
+        <ul id="menu1">
+            <li><a class="przyciski" id="przycisk1" href="#produkt">Nasz produkt</a></li>
+            <li><a class="przyciski" id="przycisk2" href="#funk1">Funkcjonalności</a></li>
+            <li><a class="przyciski" id="przycisk3" href="#kontakt">Kontakt</a></li>
+            <li><a class="przyciski" id="przycisk4" href="#onas">O nas</a></li>
+            <li class="clear"></li>
+        </ul>
+    </nav>
 
 </header>
 
-<main id="tresc_glowna">
+<main>
 
-    <section id="produkt" class="produkt">
-        Wybierz się w wirtualną wycieczkę po Gdańsku.<br>
-        Dzięki naszej interaktywnej mapie odwiedzisz najwspanialsze zabytki i poznaszich historię.<br>
-        Będziesz miał także możliwość zaplanowania optymalnej
-        trasy pomiędzy wybranymi atrakcjami.<br>
-        Zapraszamy!
+    <section id="funkcjonalnosci" class="funkcjonalnosci">
+
+        <div  class="funkcjonalnosc">
+            <p>Jakiś opis</p>
+            <img src="images/icons/funkcja1.png" alt="logo pierwszej funkcji">
+        </div>
+
+        <div  class="funkcjonalnosc">
+            <p>Jakiś opis</p>
+            <img src="images/icons/funkcja2.png" alt="logo pierwszej funkcji">
+        </div>
+        <div  class="funkcjonalnosc">
+            <p>Jakiś opis</p>
+            <img src="images/icons/funkcja3.png" alt="logo pierwszej funkcji">
+        </div>
+        <div  class="funkcjonalnosc">
+            <p>Jakiś opis</p>
+            <img src="images/icons/funkcja4.png" alt="logo pierwszej funkcji">
+        </div>
+        <div class="clear"></div>
     </section>
 
-    <div id="sekcja_funkcji">
-        <section id="funk1" class="funkcjonalnosci">
-            <p class="opisfunk">
-                <img class="funk"  src="images/icons/funk_1.png">
-                Znajdź zabytek na mapie.
-            </p>
-
-        </section>
-        <section id="funk2" class="funkcjonalnosci">
-            <p class="opisfunk">
-                <img class="funk"  src="images/icons/funk_2.png">
-                Wyznacz swoją trasę zwiedzania.
-            </p>
-
-        </section>
-
-        <section id="funk3" class="funkcjonalnosci">
-            <p class="opisfunk">
-                <img class="funk"  src="images/icons/funk_3.png">
-                Powiedź nam gdzie jesteś, a wskażemy Ci najciekawsze obiekty
-                w Twojej okolicy. Zapoznaj się z ich historią i sprawdź
-                w jakich godzinach są otwarte.
-            </p>
-        </section>
-        <section id="funk4" class="funkcjonalnosci">
-            <p class="opisfunk">
-                <img class="funk"  src="images/icons/funk_4.png">
-                Potrzebny Ci bilet do muzeum, ale masz dość stania w kolejkach?
-                Kup go on-line i nie trać czasu w ogonku przy kasie.
-            </p>
-        </section>
-    </div>
-
-    <section class="inne-funk">
+    <section class="inneFunkcjonalnosci">
     </section>
 
-    <section id="onas" class="onas">
+    <section id="oNasFormularz" class="oNasFormularz">
+        <div class="oNas">
+
+        </div>
+        <div class="formularz">
+            <fieldset id="kontakt">
+                <form action="mailto:" method="post" enctype="text/plain">
+                    <label class="formularzEfekty">Adres e-Mail:<br/>
+                        <input type="email" name="email"/></label><br/>
+                    <label class="formularzEfekty">Telefon komórkowy<br/>
+                        <input type="tel" name="telefon" placeholder="xxx-xxx-xxx"
+                               pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"/></label><br/>
+                    <input type="submit" value="Prześlij dane"/>
+                </form>
+            </fieldset>
+        </div>>
+
     </section>
 
-    <section>
-        <fieldset id="kontakt" class="formularz">
-            <form action="mailto:" method="post" enctype="text/plain">
-                <label class="look">Adres e-Mail:<br/>
-                    <input type="email" name="email"/></label><br/>
-                <label class="look">Telefon komórkowy<br/>
-                    <input type="tel" name="telefon" placeholder="xxx-xxx-xxx"
-                           pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"/></label><br/>
-                <input type="submit" value="Prześlij dane"/>
-            </form>
-        </fieldset>
-    </section>
 </main>
 
 <footer>
-    <div id="sm_icons">
+    <div id="copyRight">
         <a href="https://www.facebook.com/infoshareacademy/">
             <img src="images/icons/icon_facebook.png">
         </a>
@@ -111,9 +100,10 @@
     </div>
     <div class="clear"></div>
 
-    <p id="copyright">&copy 2016 info<b>Share</b>&ltacademy&#47&gt
+    <p>&copy 2016 info<b>Share</b>&ltacademy&#47&gt
         <span id="by">Site by Drwale</span>
     </p>
+
     <div class="clear"></div>
 </footer>
 
