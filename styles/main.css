@@ -1,6 +1,6 @@
 body {
-    max-width: 1300px;
-    min-width: 530px;
+    max-width: 75%;
+    min-width: 75%;
     margin: auto;
     background: url('../images/icons/tlo_v1.jpg') no-repeat fixed bottom;
 }
@@ -58,7 +58,7 @@ body {
 
 }
 #pozostaleFunkcjonalnosci1 {
-    width: 15%;
+    width: 14.75%;
     height: 170px;
     float:left;
     margin-right:20px;
@@ -66,7 +66,7 @@ body {
     box-shadow: 0 0 15px 5px darkgray;
 }
 #pozostaleFunkcjonalnosci2 {
-    width: 15%;
+    width: 14.75%;
     height: 170px;
     float:left;
     margin-right: 20px;
@@ -74,7 +74,7 @@ body {
     box-shadow: 0 0 15px 5px darkgray;
 }
 #pozostaleFunkcjonalnosci3 {
-    width: 15%;
+    width: 14.75%;
     height: 170px;
     float:right;
     margin-left:20px;
@@ -82,7 +82,7 @@ body {
     box-shadow: 0 0 15px 5px darkgray;
 }
 #pozostaleFunkcjonalnosci4 {
-    width: 15%;
+    width: 14.75%;
     height: 170px;
     float:right;
     margin-left:20px;
@@ -90,7 +90,7 @@ body {
     box-shadow: 0 0 15px 5px darkgray;
 }
 #pozostaleFunkcjonalnosci5 {
-    width: 15%;
+    width: 14.75%;
     height: 170px;
     float:right;
     margin-left:20px;
@@ -98,7 +98,7 @@ body {
     box-shadow: 0 0 15px 5px darkgray;
 }
 #pozostaleFunkcjonalnosci6 {
-    width: 15%;
+    width: 14.75%;
     height: 170px;
     float:left;
     margin-right: 20px;
