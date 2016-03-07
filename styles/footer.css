@@ -2,7 +2,7 @@ body {
     max-width: 1300px;
     min-width: 530px;
     margin: auto;
-    background: url('../Images/tlo_v1.jpg') no-repeat fixed bottom;
+    background: url('../images/icons/tlo_v1.jpg') no-repeat fixed bottom;
 }
 .formularz {
     background: rgba(255, 255, 255, 0.4);
