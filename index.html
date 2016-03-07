@@ -15,94 +15,77 @@
 
 <header>
 
-    <div class="zajawka">
+    <nav>
+        <ul >
+            <li><a class="przyciski" id="przycisk1" href="#produkt">Nasz produkt</a></li>
+            <li><a class="przyciski" id="przycisk2" href="#funkcjonalnosci">Funkcjonalności</a></li>
+            <li><a class="przyciski" id="przycisk3" href="#kontakt">Kontakt</a></li>
+            <li><a class="przyciski" id="przycisk4" href="#oNas">O nas</a></li>
+            <li class="clear"></li>
+        </ul>
+    </nav>
+    <div id="produkt" class="produkt">
 
         <p class="tytulNaZdjeciuGlownym">Zabytki Gdańska</p>
 
         <p class="podtytulNaZdjeciuGlownym">poznaj historię miasta</p>
 
     </div>
-    <nav>
-        <ul id="menu1">
-            <li><a class="przyciski" id="przycisk1" href="#produkt">Nasz produkt</a></li>
-            <li><a class="przyciski" id="przycisk2" href="#funk1">Funkcjonalności</a></li>
-            <li><a class="przyciski" id="przycisk3" href="#kontakt">Kontakt</a></li>
-            <li><a class="przyciski" id="przycisk4" href="#onas">O nas</a></li>
-            <li class="clear"></li>
-        </ul>
-    </nav>
 
 </header>
 
 <main>
-
-    <section id="funkcjonalnosci" class="funkcjonalnosci">
-
-        <div  class="funkcjonalnosc">
-            <p>Jakiś opis</p>
-            <img src="images/icons/funkcja1.png" alt="logo pierwszej funkcji">
-        </div>
-
-        <div  class="funkcjonalnosc">
-            <p>Jakiś opis</p>
-            <img src="images/icons/funkcja2.png" alt="logo pierwszej funkcji">
-        </div>
-        <div  class="funkcjonalnosc">
-            <p>Jakiś opis</p>
-            <img src="images/icons/funkcja3.png" alt="logo pierwszej funkcji">
-        </div>
-        <div  class="funkcjonalnosc">
-            <p>Jakiś opis</p>
-            <img src="images/icons/funkcja4.png" alt="logo pierwszej funkcji">
-        </div>
-        <div class="clear"></div>
-    </section>
-
-    <section class="inneFunkcjonalnosci">
-    </section>
-
-        <div class="oNas">
-        <img src="images/onas.jpg">
-        <p>krótkie zdanie o nas</p>
-
-        </div>
-        <!--<div class="clear"></div>-->
-        <div class="formularz">
-            <fieldset id="kontakt">
-                <form action="mailto:" method="post" enctype="text/plain">
-                    <label class="formularzEfekty">Adres e-Mail:<br/>
-                        <input type="email" name="email"/></label><br/>
-                    <label class="formularzEfekty">Telefon komórkowy<br/>
-                        <input type="tel" name="telefon" placeholder="xxx-xxx-xxx"
-                               pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"/></label><br/>
-                    <input type="submit" value="Prześlij dane"/>
-                </form>
-            </fieldset>
-        </div>
+    <section id="funkcjonalnosci" class="funkcjonalnosc"></section>
+    <section class="funkcjonalnosc"></section>
+    <section class="funkcjonalnosc"></section>
+    <section class="funkcjonalnosc"></section>
     <div class="clear"></div>
-
+    <section class="pozostaleFunkcjonalnosciLewe"></section>
+    <section class="pozostaleFunkcjonalnosciLewe"></section>
+    <section class="pozostaleFunkcjonalnosciLewe"></section>
+    <section class="pozostaleFunkcjonalnosciPrawe"></section>
+    <section class="pozostaleFunkcjonalnosciPrawe"></section>
+    <section class="pozostaleFunkcjonalnosciPrawe"></section>
 
 </main>
+<div id="oNas" class="oNas">
+    <img src="images/onas.jpg">
+    <p>krótkie zdanie o nas</p>
 
+</div>
+
+<div class="formularz">
+    <fieldset id="kontakt">
+        <form action="mailto:" method="post" enctype="text/plain">
+            <label class="formularzEfekty">Adres e-Mail:<br/>
+                <input type="email" name="email"/></label><br/>
+            <label class="formularzEfekty">Telefon komórkowy<br/>
+                <input type="tel" name="telefon" placeholder="xxx-xxx-xxx"
+                       pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"/></label><br/>
+            <input type="submit" value="Prześlij dane"/>
+        </form>
+    </fieldset>
+</div>
+<div class="clear"></div>
 <footer>
-    <div id="copyRight">
+    <div id="sm_icons">
         <a href="https://www.facebook.com/infoshareacademy/">
-            <img src="images/icons/icon_facebook.png">
+            <img src="images/icons/icon_facebook.png" alt="Ikona Facebook">
         </a>
 
         <!--link prowadzi do strony głównej serwisu - brak profilu Akademii-->
         <a href="https://plus.google.com">
-            <img src="images/icons/icon_google.png">
+            <img src="images/icons/icon_google.png" alt="Ikona Google+">
         </a>
 
         <!--link prowadzi do strony głównej serwisu - brak profilu Akademii-->
         <a href="https://twitter.com">
-            <img src="images/icons/icon_twitter.png">
+            <img src="images/icons/icon_twitter.png" alt="Ikona Twitter">
         </a>
     </div>
     <div class="clear"></div>
 
-    <p>&copy 2016 info<b>Share</b>&ltacademy&#47&gt
+    <p id="copyright">&copy 2016 info<b>Share</b>&ltacademy&gt
         <span id="by">Site by Drwale</span>
     </p>
 

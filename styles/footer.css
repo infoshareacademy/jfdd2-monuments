@@ -1,14 +1,21 @@
-#copyright img {
+.look {
+    text-shadow: 10px 10px 10px black;
+    font-size: 14px;
+    font-weight: bold
+}
+#sm_icons {
+    display: flex;
+    float: right;
+    }
+
+
+
+#sm_icons img{
     margin: 5px;
 }
 
 .clear {
     clear: both;
-}
-
-#copyRight {
-    display: flex;
-    float: right;
 }
 
 #copyright {
@@ -18,5 +25,38 @@
 }
 
 #by {
+    font-family: Verdana, Tahoma, Helvetica, sans-serif;
     float: right;
 }
+#socialMedia {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+
+
+
+
+
+/*#copyright img {*/
+    /*margin: 5px;*/
+/*}*/
+
+/*.clear {*/
+    /*clear: both;*/
+/*}*/
+
+/*#copyRight {*/
+    /*display: flex;*/
+    /*float: right;*/
+/*}*/
+
+/*#copyright {*/
+    /*font-family: Verdana, Tahoma, Helvetica, sans-serif;*/
+    /*font-size: 12px;*/
+    /*text-align: left;*/
+/*}*/
+
+/*#by {*/
+    /*float: right;*/
+/*}*/

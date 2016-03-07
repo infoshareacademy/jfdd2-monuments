@@ -1,39 +1,8 @@
 nav{
-    margin-top: -30px;
-}
-
-
-.zajawka {
-    height: 400px;
+    position: fixed;
     width: 1200px;
-    background-image: url('../images/zajawka_v2.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
+    z-index: 9999;
 }
-
-.tytulNaZdjeciuGlownym{
-    margin-right: 20px;
-    margin-top: 30px;
-    font-size:70px;
-    color:white;
-    font-family: helvetica, sans-serif ;
-    text-align: right;
-}
-
-.podtytulNaZdjeciuGlownym{
-    margin-right: 20px;
-    margin-top: 0;
-    font-size: 30px;
-    color: brown;
-    font-family: helvetica, sans-serif ;
-    text-align: right;
-}
-
-.menu {
-    padding: 10px;
-    list-style: none;
-}
-
 .przyciski {
     display: block;
     float: left;
@@ -43,9 +12,9 @@ nav{
     text-decoration: none;
     color: floralwhite;
     padding: 20px 0;
-    /*border-bottom: 4px solid transparent;*/
-    /*box-shadow: 0 0 10px 1px black inset;*/
-    /*border: 5px solid transparent;*/
+    position: relative;
+    top: -59px;
+
 }
 
 .przyciski:hover {
@@ -66,6 +35,34 @@ nav{
 #przycisk4 {
     background-color: indigo;
 }
+
+.produkt{
+height: 400px;
+width: 1200px;
+background-image: url('../images/zajawka_v2.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+margin-top: 59px;
+}
+
+.tytulNaZdjeciuGlownym{
+margin-right: 20px;
+margin-top: 0;
+font-size:70px;
+color:white;
+font-family: helvetica, sans-serif ;
+text-align: right;
+}
+
+.podtytulNaZdjeciuGlownym{
+margin-right: 20px;
+margin-top: 0;
+font-size: 30px;
+color: brown;
+font-family: helvetica, sans-serif ;
+text-align: right;
+}
+
 
 
 

@@ -4,35 +4,57 @@ body {
     margin: auto;
     background: url('../images/tlo_v1.jpg') no-repeat fixed bottom;
 }
-
-
 .funkcjonalnosc {
-    background: rgba(255, 255, 255, 0.4);
-    text-align: right;
-    font-size: 200%;
-    font-style: italic;
+    margin-bottom: 40px;
+    margin-left: 16px;
+    width: 48%;
+    height: 420px;
     float:left;
-    width: 570px;
-    height: 290px;
-    display: block;
-    margin: 24px 14px 0 14px;
-    border: solid 1px darkgrey;
+    background: rgba(255, 255, 255, 0.4);
     box-shadow: 0 0 15px 5px darkgray;
+    transition: transform 0.1s linear 0.1s;
+}
+
+.funkcjonalnosc:hover {
+    transform: scale(1.03);
+
+}
+
+
+.pozostaleFunkcjonalnosciLewe {
+    width: 14.75%;
+    height: 170px;
+    float:left;
+    margin-right:10px;
+    margin-left:10px;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 15px 5px darkgray;
+    transition: transform 0.1s linear;
+}
+
+.pozostaleFunkcjonalnosciPrawe {
+    width: 14.75%;
+    height: 170px;
+    float:right;
+    margin-left:10px;
+    margin-right:10px;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 15px 5px darkgray;
+    transition: transform 0.1s linear;
+}
+
+
+.pozostaleFunkcjonalnosciPrawe:hover{
+    transform: scale(1.1);
+
+ }
+.pozostaleFunkcjonalnosciLewe:hover{
+    transform: scale(1.1);
 }
 
 .funkcjonalnosc img{
     position: relative;
-    left: -400px;
-}
-
-.inneFunkcjonalnosci{
-    width: 1200px;
-    height: 100px;
-    background: rgba(255, 255, 255, 0.4);
-    border: solid 1px darkgrey;
-    box-shadow: 0 0 15px 5px darkgray;
-    margin-top: 30px;
-
+    left: 0;
 }
 
 .formularz {
@@ -78,7 +100,7 @@ body {
     top: 50px;
     background: rgba(255, 255, 255, 0.4);
     border: solid 1px darkgrey;
-    box-shadow: 0 0 40px 20px darkgray;
+    box-shadow: 0 0 40px 20px #838383;
 
     }
 .oNas p{
@@ -86,53 +108,3 @@ body {
     top: 100px;
     text-align: center;
 }
-/*.funk{*/
-/*float: left;*/
-/*margin-top: 0px;*/
-/*position: relative;*/
-/*right: -5px;*/
-/*display:inline;*/
-/*}*/
-
-/*.produkt{*/
-/*float: left;*/
-/*width: 100%;*/
-/*padding: 0;*/
-/*margin-top: 20px;*/
-/*list-style: none;*/
-/*background: rgba(255, 255, 255, 0.4);*/
-/*border: solid 1px darkgrey;*/
-/*box-shadow: 0 0 15px 5px darkgray;*/
-/*min-height: 400px;;*/
-/*}*/
-
-/*.inne-funk{*/
-/*float: left;*/
-/*width: 100%;*/
-/*padding: 0;*/
-/*list-style: none;*/
-/*background: rgba(255, 255, 255, 0.4);*/
-/*border: solid 1px darkgrey;*/
-/*box-shadow: 0 0 15px 5px darkgray;*/
-/*min-height: 100px;;*/
-/*margin-bottom: 30px;*/
-/*}*/
-
-/*.onas {*/
-/*float: left;*/
-/*width: 100%;*/
-/*padding: 0;*/
-/*margin-top: -5px;*/
-/*list-style: none;*/
-/*background: rgba(255, 255, 255, 0.4);*/
-/*border: solid 1px darkgrey;*/
-/*box-shadow: 0 0 15px 5px darkgray;*/
-/*min-height: 400px;;*/
-/*margin-bottom: 30px;*/
-/*}*/
-
-/*.look {*/
-/*text-shadow: 10px 10px 10px black;*/
-/*font-size: 14px;*/
-/*font-weight: bold*/
-/*}*/
