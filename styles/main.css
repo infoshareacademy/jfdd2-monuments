@@ -61,7 +61,8 @@ body {
     width: 14.75%;
     height: 170px;
     float:left;
-    margin-right:20px;
+    margin-right:10px;
+    margin-left:10px;
     background: rgba(255, 255, 255, 0.4);
     box-shadow: 0 0 15px 5px darkgray;
 }
@@ -69,7 +70,8 @@ body {
     width: 14.75%;
     height: 170px;
     float:left;
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
     background: rgba(255, 255, 255, 0.4);
     box-shadow: 0 0 15px 5px darkgray;
 }
@@ -77,7 +79,8 @@ body {
     width: 14.75%;
     height: 170px;
     float:right;
-    margin-left:20px;
+    margin-left:10px;
+    margin-right: 10px;
     background: rgba(255, 255, 255, 0.4);
     box-shadow: 0 0 15px 5px darkgray;
 }
@@ -85,7 +88,8 @@ body {
     width: 14.75%;
     height: 170px;
     float:right;
-    margin-left:20px;
+    margin-left:10px;
+    margin-right:10px;
     background: rgba(255, 255, 255, 0.4);
     box-shadow: 0 0 15px 5px darkgray;
 }
@@ -93,7 +97,8 @@ body {
     width: 14.75%;
     height: 170px;
     float:right;
-    margin-left:20px;
+    margin-left:10px;
+    margin-right:10px;
     background: rgba(255, 255, 255, 0.4);
     box-shadow: 0 0 15px 5px darkgray;
 }
@@ -101,7 +106,8 @@ body {
     width: 14.75%;
     height: 170px;
     float:left;
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
     background: rgba(255, 255, 255, 0.4);
     box-shadow: 0 0 15px 5px darkgray;
 }
