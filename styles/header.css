@@ -18,19 +18,13 @@
 }
 
 #funkcjonalnosc1:hover {
-    border:solid 5px black;
-    margin: -10px;
-    transition: border 0.5s;
+    transform: scale(1.05);
 }
 #funkcjonalnosc2:hover {
-    border:solid 10px black;
-    margin: -10px;
-    transition: border 0.5s;
+    transform: scale(1.05);
 }
 #funkcjonalnosc3:hover {
-    border:solid 10px black;
-    margin: -10px;
-    transition: border 0.5s;
+    transform: scale(1.05);
 }
 #funkcjonalnosc4:hover {
     transform: scale(1.05);
@@ -38,12 +32,10 @@
 }
 
 #pozostaleFunkcjonalnosci1:hover {
-     border: solid 10px black;
-     transition: border 0.5s;
+    transform: scale(1.1);
  }
 #pozostaleFunkcjonalnosci2:hover {
-    border:solid 10px black;
-    transition: border 0.5s;
+    transform: scale(1.1);
 }
 #pozostaleFunkcjonalnosci3:hover {
     transform: scale(1.1);
@@ -52,12 +44,10 @@
     transform: scale(1.1);
 }
 #pozostaleFunkcjonalnosci5:hover {
-    border:solid 10px black;
-    transition: border 0.5s;
+    transform: scale(1.1);
 }
 #pozostaleFunkcjonalnosci6:hover {
-    border:solid 10px black;
-    transition: border 0.5s;
+    transform: scale(1.1);
 }
 
 
