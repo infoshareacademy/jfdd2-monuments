@@ -19,7 +19,7 @@
 #menu li {
     display:inline;
     position: relative;
-    left:42%;
+    left:55%;
 }
 #powitanie {
     margin-bottom: 40px;
@@ -27,7 +27,7 @@
     height: 400px;
     background: rgba(255, 255, 255, 0.4);
     box-shadow: 0 0 15px 5px darkgray;
-    background: url("..//images/zajawka_v3.jpg");
+    background: url("../images/zajawka_v3.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
