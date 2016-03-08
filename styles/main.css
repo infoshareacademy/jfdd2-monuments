@@ -2,7 +2,7 @@
 body {
     max-width: 1200px;
     margin: auto;
-    background: url('../images/tlo_v1.jpg') no-repeat fixed bottom;
+    background: linear-gradient(to left, #517fa4, #243949);
     background-size: cover;
  }
 .funkcjonalnosc {
