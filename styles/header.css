@@ -1,9 +1,9 @@
 nav{
     position: fixed;
     width: 1200px;
-    z-index: 9999;
+    z-index: 9;
 }
-.przyciski {
+nav a {
     display: block;
     float: left;
     text-align: center;
@@ -17,22 +17,22 @@ nav{
 
 }
 
-.przyciski:hover {
-    /*padding: 25px 0;*/
-    /*transition: padding 0.1s linear, box-shadow 0.2s linear;*/
+nav a:hover {
+    background: background;
     box-shadow: 0 0 10px 1px black inset;
-    transition: box-shadow 0.1s linear;
+    transition: box-shadow 0.1s linear, background 0.1s linear;
+
 }
-#przycisk1 {
+.przycisk1 {
     background-color: navy;
 }
-#przycisk2 {
+.przycisk2 {
     background-color: red;
 }
-#przycisk3 {
+.przycisk3 {
     background-color: darkorange;
 }
-#przycisk4 {
+.przycisk4 {
     background-color: indigo;
 }
 

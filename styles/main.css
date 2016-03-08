@@ -1,18 +1,20 @@
 
 body {
-width: 1200px;
-margin: auto;
-background: url('../images/tlo_v1.jpg') no-repeat fixed bottom;
-}
+    max-width: 1200px;
+    margin: auto;
+    background: url('../images/tlo_v1.jpg') no-repeat fixed bottom;
+    background-size: cover;
+ }
 .funkcjonalnosc {
-margin-bottom: 40px;
-margin-left: 16px;
-width: 48%;
-height: 320px;
-float:left;
-background: rgba(255, 255, 255, 0.4);
-box-shadow: 0 0 15px 5px darkgray;
-transition: transform 0.1s linear;
+    margin-bottom: 40px;
+    margin-left: 16px;
+    width: 48%;
+    height: 320px;
+    float:left;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 15px 5px darkgray;
+    transition: transform 0.1s linear;
+    min-width: 500px;
 }
 
 .funkcjonalnosc img{
@@ -34,34 +36,23 @@ transform: scale(1.03);
 
 }
 
-.pozostaleFunkcjonalnosciLewe {
-width: 14.75%;
-height: 170px;
-float:left;
-margin: 0 11px;
-background: rgba(255, 255, 255, 0.4);
-box-shadow: 0 0 15px 5px darkgray;
-transition: transform 0.1s linear;
-}
-
-.pozostaleFunkcjonalnosciPrawe {
-width: 14.75%;
-height: 170px;
-float:right;
-margin: 0 11px;
-background: rgba(255, 255, 255, 0.4);
-box-shadow: 0 0 15px 5px darkgray;
-transition: transform 0.1s linear;
+.pozostaleFunkcjonalnosci {
+    width: 14.75%;
+    height: 170px;
+    float:left;
+    margin: 0 23px 0 0;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 15px 5px darkgray;
+    transition: transform 0.1s linear;
 }
 
 
-.pozostaleFunkcjonalnosciPrawe:hover{
+
+.pozostaleFunkcjonalnosci:hover{
 transform: scale(1.1);
 
 }
-.pozostaleFunkcjonalnosciLewe:hover{
-transform: scale(1.1);
-}
+
 
 .formularz {
     background: rgba(255, 255, 255, 0.4);
