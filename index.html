@@ -70,7 +70,7 @@
 
 <div class="formularz">
     <fieldset id="kontakt">
-        <form action="mailto:" method="post" enctype="text/plain">
+        <form action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" method="POST">
             <label class="formularzEfekty">Adres e-Mail:<br/>
                 <input type="email" name="email"/></label><br/>
             <label class="formularzEfekty">Telefon komórkowy<br/>
@@ -78,6 +78,7 @@
                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"/></label><br/>
             <label class="formularzEfekty">Dodatkowe uwagi</label><br/>
             <textarea rows="10" cols="50"></textarea><br/>
+            <input type="hidden" name="receiver" value="loirino1234@gmail.com">
             <input type="submit" value="Prześlij dane"/>
         </form>
     </fieldset>
