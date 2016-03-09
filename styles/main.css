@@ -64,17 +64,22 @@ transform: scale(1.1);
     float: right;
     display: inline-block;
     margin: 24px 14px 0 14px;
+    position:relative;
 
 }
 
 .formularz form{
     text-shadow: 10px 10px 10px black;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
-    top: 100px;
-    left:140px;
+    transform: scale(1);
+    position:absolute;
+    top:200px;
+    left:20px;
 }
-
+.formularz input {
+    font-size:20px;
+}
 
 .oNas{
     background: rgba(255, 255, 255, 0.4);
