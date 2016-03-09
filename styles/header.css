@@ -1,43 +1,50 @@
+.clear {
+    clear: both;
+}
+
 nav {
     position: fixed;
-    width: 1200px;
+    width: 800px;
     z-index: 9;
 }
 
 nav a {
-    display: block;
+    position: relative;
+    /*display: inline-block;*/
     float: left;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 20px;
     width: 25%;
     text-decoration: none;
-    color: floralwhite;
     padding: 20px 0;
-    position: relative;
     top: -59px;
 }
 
 nav a:hover {
-    background: background;
-    box-shadow: 0 0 10px 1px black inset;
+    background: rgba(139, 0, 0, 0.9);
     transition: box-shadow 0.1s linear, background 0.1s linear;
+    transform: scale(1.05);
+    /*box-shadow: 0 0 10px 1px black inset;*/
 }
 
-.przycisk1 {
-    background-color: navy;
+.przycisk {
+    background: rgba(0, 0, 0, 0.9);
 }
 
-.przycisk2 {
-    background-color: red;
-}
+/*.przycisk2 {*/
+    /*background-color: red;*/
+/*}*/
 
-.przycisk3 {
-    background-color: darkorange;
-}
+/*.przycisk3 {*/
+    /*background-color: darkorange;*/
+/*}*/
 
-.przycisk4 {
-    background-color: indigo;
-}
+/*.przycisk4 {*/
+    /*background-color: indigo;*/
+/*}*/
 
 #powitanie {
     height: 400px;
