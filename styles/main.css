@@ -1,3 +1,18 @@
+.funkcjonalnosc span {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: -1px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+}
+
+h4 {
+    font-size: 30px;
+    position: relative;
+    top: -290px;
+    left: 360px;
+}
 
 body {
     max-width: 1200px;
@@ -5,6 +20,7 @@ body {
     background: linear-gradient(to top, #f9f6ff, #a7b8aa);
     background-size: cover;
  }
+
 .funkcjonalnosc {
     margin-bottom: 40px;
     margin-left: 16px;
@@ -17,13 +33,11 @@ body {
     min-width: 500px;
 }
 
-.funkcjonalnosc img{
-    position: relative;
-    left: 30px;
-    top: 50px;
-}
+/*.funkcjonalnosc img{*/
+    /*position: relative;*/
+/*}*/
 
-.funkcjonalnosc p{
+.funkcjonalnosc p {
     position: relative;
     right: 40px;
     bottom: 150px;
@@ -31,9 +45,9 @@ body {
     font-size: 200%;
     font-style: italic;
 }
+
 .funkcjonalnosc:hover {
 transform: scale(1.03);
-
 }
 
 .pozostaleFunkcjonalnosci {
@@ -48,13 +62,10 @@ transform: scale(1.03);
     left:12px;
 }
 
-
-
-.pozostaleFunkcjonalnosci:hover{
+.pozostaleFunkcjonalnosci:hover {
 transform: scale(1.1);
 
 }
-
 
 .formularz {
     background: rgba(255, 255, 255, 0.4);
@@ -68,7 +79,7 @@ transform: scale(1.1);
 
 }
 
-.formularz form{
+.formularz form {
     text-shadow: 10px 10px 10px black;
     font-size: 15px;
     font-weight: bold;
@@ -81,7 +92,7 @@ transform: scale(1.1);
     font-size:20px;
 }
 
-.oNas{
+.oNas {
     background: rgba(255, 255, 255, 0.4);
     text-align: right;
     font-size: 200%;
@@ -95,7 +106,7 @@ transform: scale(1.1);
     display: inline-block;
 }
 
-.oNas img{
+.oNas img {
     width: 600px;
     height: 300px;
     position: relative;
@@ -104,9 +115,9 @@ transform: scale(1.1);
     background: rgba(255, 255, 255, 0.4);
     border: solid 1px darkgrey;
     box-shadow: 0 0 40px 20px #838383;
-
     }
-.oNas p{
+
+.oNas p {
     position: relative;
     top: 100px;
     text-align: center;
