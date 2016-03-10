@@ -1,3 +1,38 @@
+.oNas {
+    /*background: rgba(255, 255, 255, 0.4);*/
+    /*text-align: right;*/
+    /*font-size: 200%;*/
+    float:left;
+    width: 680px;
+    height: 500px;
+    margin: 24px 14px 14px 14px;
+    border: solid 1px darkgrey;
+    box-shadow: 0 0 15px 5px darkgray;
+    display: inline-block;
+}
+
+.oNas img {
+    width: 600px;
+    height: 300px;
+    position: relative;
+    /*left: -40px;*/
+    top: 50px;
+    /*background: rgba(255, 255, 255, 0.7);*/
+    /*border: solid 10px darkgrey;*/
+    /*box-shadow: 0 0 40px 20px #838383;*/
+}
+
+.oNas p {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    position: relative;
+    text-align: center;
+}
+
 .clear {
     clear: both;
 }
@@ -111,35 +146,4 @@ body {
 }
 .formularz input {
     font-size:20px;
-}
-
-.oNas {
-    background: rgba(255, 255, 255, 0.4);
-    text-align: right;
-    font-size: 200%;
-    font-style: italic;
-    float:left;
-    width: 680px;
-    height: 500px;
-    margin: 24px 14px 14px 14px;
-    border: solid 1px darkgrey;
-    box-shadow: 0 0 15px 5px darkgray;
-    display: inline-block;
-}
-
-.oNas img {
-    width: 600px;
-    height: 300px;
-    position: relative;
-    left: -40px;
-    top: 50px;
-    background: rgba(255, 255, 255, 0.4);
-    border: solid 1px darkgrey;
-    box-shadow: 0 0 40px 20px #838383;
-}
-
-.oNas p {
-    position: relative;
-    top: 100px;
-    text-align: center;
 }
