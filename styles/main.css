@@ -15,14 +15,17 @@
     font-size: 30px;
     position: relative;
     top: -290px;
-    right: -250px;
+    left: 220px;
+    /*right: -250px;*/
 }
 
 #trasa {
     font-size: 30px;
     position: relative;
     top: -290px;
-    right: -260px;
+    left: 210px;
+
+    /*right: -260px;*/
 }
 
 #mapa {
