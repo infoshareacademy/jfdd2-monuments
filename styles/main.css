@@ -1,3 +1,7 @@
+.clear {
+    clear: both;
+}
+
 .funkcjonalnosc span {
     color: white;
     font-family: Helvetica, sans-serif;
@@ -36,7 +40,8 @@
 body {
     max-width: 1200px;
     margin: auto;
-    background: linear-gradient(to top, #f9f6ff, #a7b8aa);
+    /*background: linear-gradient(to top, #f9f6ff, #a7b8aa);*/
+    background: rgb(244, 244, 244);
     background-size: cover;
  }
 
@@ -93,7 +98,7 @@ transform: scale(1.1);
     box-shadow: 0 0 15px 5px darkgray;
     float: right;
     display: inline-block;
-    margin: 24px 14px 0 14px;
+    margin: 24px 14px 14px 14px;
     position:relative;
 
 }
@@ -119,7 +124,7 @@ transform: scale(1.1);
     float:left;
     width: 680px;
     height: 500px;
-    margin: 24px 14px 0 14px;
+    margin: 24px 14px 14px 14px;
     border: solid 1px darkgrey;
     box-shadow: 0 0 15px 5px darkgray;
     display: inline-block;
