@@ -42,9 +42,14 @@
 body {
     max-width: 1200px;
     margin: auto;
-    background: rgb(244, 244, 244);
+    background: rgb(230, 230, 230);
     background-size: cover;
 }
+
+.tresc {
+    background: rgb(244, 244, 244)
+}
+
 
 .funkcjonalnosc {
     margin-bottom: 40px;
