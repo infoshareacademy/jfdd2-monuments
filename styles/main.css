@@ -120,30 +120,43 @@ body {
 
 .pozostaleFunkcjonalnosci:hover {
     transform: scale(1.1);
-
 }
 
 .formularz {
-    background: rgba(255, 255, 255, 0.4);
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.7);
     width: 450px;
-    height: 500px;
+    height: 430px;
     box-shadow: 0 0 15px 5px darkgray;
-    float: right;
     display: inline-block;
-    margin: 24px 14px 14px 14px;
     position:relative;
-
+    float: right;
+    padding: 5px;
+    margin: 24px 14px 14px 14px;
 }
 
 .formularz form {
-    text-shadow: 10px 10px 10px black;
     font-size: 15px;
-    font-weight: bold;
-    transform: scale(1);
-    position:absolute;
-    top:200px;
-    left:20px;
+    position: relative;
+    top: 40px;
+    left: 15px;
 }
+
 .formularz input {
-    font-size:20px;
+    font-size: 16px;
+}
+
+.formularz h4 {
+    font-size: 24px;
+    padding: 7px;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+.formularz p {
+    font-size: 16px;
+    padding: 2px;
+    text-align: center;
 }
