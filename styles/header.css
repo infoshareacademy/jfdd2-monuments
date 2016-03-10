@@ -4,7 +4,7 @@
 
 nav {
     position: fixed;
-    width: 800px;
+    width: 1200px;
     z-index: 9;
 }
 
@@ -16,11 +16,13 @@ nav a {
     font-family: Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
-    font-size: 20px;
-    width: 25%;
+    font-size: 25px;
+    width: 18%;
+    letter-spacing: +2px;
     text-decoration: none;
     padding: 20px 0;
-    top: -59px;
+    top: -105px;
+    height: 65px;
 }
 
 nav a:hover {
@@ -31,7 +33,20 @@ nav a:hover {
 }
 
 .przycisk {
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(23, 28, 56, 0.94);
+}
+
+.logo{
+
+    background: rgba(23, 28, 56, 0.94);
+    width: 28%;
+    }
+
+.logo img{
+    position: relative;
+    top: -15px;
+    left: -30px;
+
 }
 
 /*.przycisk2 {*/
@@ -50,7 +65,7 @@ nav a:hover {
     height: 400px;
     width: 100%;
     position: relative;
-    margin-top: 59px;
+    margin-top: 105px;
     margin-bottom: 30px;
 }
 
