@@ -10,32 +10,34 @@
     background: rgba(0, 0, 0, 0.7);
     padding: 5px;
 }
+
 #kompas {
     font-size: 30px;
     position: relative;
     top: -290px;
     right: -250px;
-    /*left: 360px;*/
-    /*text-align: right;*/
 }
+
 #trasa {
     font-size: 30px;
     position: relative;
     top: -290px;
     right: -260px;
-
-
-
-
 }
 
+#mapa {
+    font-size: 30px;
+    position: relative;
+    top: -290px;
+    left: 324px;
+}
 
-/*h4 {*!*/
-    /*font-size: 30px;*/
-    /*position: relative;*/
-    /*top: -290px;*/
-    /*left: 360px;*/
-/*}*/
+#bilety {
+    font-size: 30px;
+    position: relative;
+    top: -290px;
+    left: 455px;
+}
 
 body {
     max-width: 1200px;
@@ -43,7 +45,7 @@ body {
     /*background: linear-gradient(to top, #f9f6ff, #a7b8aa);*/
     background: rgb(244, 244, 244);
     background-size: cover;
- }
+}
 
 .funkcjonalnosc {
     margin-bottom: 40px;
@@ -57,9 +59,7 @@ body {
     min-width: 500px;
 }
 
-/*.funkcjonalnosc img{*/
-    /*position: relative;*/
-/*}*/
+
 
 .funkcjonalnosc p {
     position: relative;
@@ -71,7 +71,7 @@ body {
 }
 
 .funkcjonalnosc:hover {
-transform: scale(1.03);
+    transform: scale(1.03);
 }
 
 .pozostaleFunkcjonalnosci {
@@ -87,7 +87,7 @@ transform: scale(1.03);
 }
 
 .pozostaleFunkcjonalnosci:hover {
-transform: scale(1.1);
+    transform: scale(1.1);
 
 }
 
@@ -139,7 +139,7 @@ transform: scale(1.1);
     background: rgba(255, 255, 255, 0.4);
     border: solid 1px darkgrey;
     box-shadow: 0 0 40px 20px #838383;
-    }
+}
 
 .oNas p {
     position: relative;
