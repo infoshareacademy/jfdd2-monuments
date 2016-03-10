@@ -30,8 +30,8 @@ body {
 
 .funkcjonalnosc {
     margin-bottom: 40px;
-    margin-left: 16px;
-    width: 48%;
+    margin-left: 40px;
+    width: 540px;
     height: 320px;
     float:left;
     background: rgba(255, 255, 255, 0.4);
@@ -40,9 +40,7 @@ body {
     min-width: 500px;
 }
 
-/*.funkcjonalnosc img{*/
-    /*position: relative;*/
-/*}*/
+
 
 .funkcjonalnosc p {
     position: relative;
