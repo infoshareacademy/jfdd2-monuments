@@ -15,37 +15,33 @@
     font-size: 30px;
     position: relative;
     top: -290px;
-    left: 210px;
-    /*right: -250px;*/
-}
+    text-align: right;
+    }
 
 #trasa {
     font-size: 30px;
     position: relative;
     top: -290px;
-    left: 222px;
-
-    /*right: -260px;*/
+    text-align: right;
 }
 
 #mapa {
     font-size: 30px;
     position: relative;
     top: -290px;
-    left: 324px;
+    text-align: right;
 }
 
 #bilety {
     font-size: 30px;
     position: relative;
     top: -290px;
-    left: 455px;
+    text-align: right;
 }
 
 body {
     max-width: 1200px;
     margin: auto;
-    /*background: linear-gradient(to top, #f9f6ff, #a7b8aa);*/
     background: rgb(244, 244, 244);
     background-size: cover;
 }
@@ -61,8 +57,6 @@ body {
     transition: transform 0.1s linear;
     min-width: 500px;
 }
-
-
 
 .funkcjonalnosc p {
     position: relative;
