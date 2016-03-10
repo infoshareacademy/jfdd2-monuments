@@ -6,13 +6,32 @@
     background: rgba(0, 0, 0, 0.7);
     padding: 5px;
 }
-
-h4 {
+#kompas {
     font-size: 30px;
     position: relative;
     top: -290px;
-    left: 360px;
+    right: -250px;
+    /*left: 360px;*/
+    /*text-align: right;*/
 }
+#trasa {
+    font-size: 30px;
+    position: relative;
+    top: -290px;
+    right: -260px;
+
+
+
+
+}
+
+
+/*h4 {*!*/
+    /*font-size: 30px;*/
+    /*position: relative;*/
+    /*top: -290px;*/
+    /*left: 360px;*/
+/*}*/
 
 body {
     max-width: 1200px;
