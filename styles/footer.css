@@ -1,20 +1,24 @@
-.clear {
-    clear: both;
-}
-
 #sm_icons {
     display: flex;
     float: right;
     }
+footer {
+    background: rgba(23, 28, 56, 0.94);
+}
+footer p{
+    color: rgba(245, 245, 245, 0.94);
+}
 
 #sm_icons img{
     margin: 5px;
+
 }
 
 #copyright {
     font-family: Verdana, Tahoma, Helvetica, sans-serif;
     font-size: 12px;
     text-align: left;
+
 }
 
 #bold {
