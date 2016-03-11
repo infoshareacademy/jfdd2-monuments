@@ -23,3 +23,11 @@ $(function() {
     });
 });
 });
+
+function Person(name){
+    name = this.name;
+}
+
+Person.prototype.greet = function(otherName){
+    return "Hi " + otherName + ", my name is " + name;
+};

@@ -21,14 +21,13 @@ nav {
     text-decoration: none;
     padding: 20px 0;
     height: 65px;
-    background-color: rgba(23, 28, 56, 0.94);
+    background-color: rgb(23, 28, 56);
     transition: background 0.4s ease, height 0.4s ease, width 0.4s ease;
-
 
 }
 
 .przycisk:hover {
-    background: rgba(139, 0, 0, 0.9);
+    background: rgb(139, 0, 0);
 }
 
 .przyciskDol{
@@ -44,7 +43,7 @@ nav {
     text-decoration: none;
     padding: 20px 0;
     height: 15px;
-    background: rgba(23, 28, 56, 0.94);
+    background: rgb(23, 28, 56);
     transition: height 0.4s ease, width 0.4s ease;
 }
 
@@ -64,7 +63,7 @@ nav {
     padding: 20px 0;
     height: 65px;
     transition: width 0.4s ease , background 0.4s ease , height 0.4s ease ;
-    background: rgba(23, 28, 56, 0.94);
+    background: rgb(23, 28, 56);
 
 }
 
@@ -104,7 +103,7 @@ nav {
 }
 
 .logo:hover{
-background: rgba(139, 0, 0, 0.9);
+background: rgb(139, 0, 0);
 }
 
 
