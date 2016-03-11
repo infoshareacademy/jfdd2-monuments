@@ -1,7 +1,7 @@
 .oNas {
     float:left;
     width: 680px;
-    height: 430px;
+    height: 410px;
     margin: 24px 14px 14px 14px;
     border: solid 1px darkgrey;
     box-shadow: 0 0 15px 5px darkgray;
@@ -15,19 +15,20 @@
 .oNas p {
     color: white;
     font-family: Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 15px;
+    /*font-weight: bold;*/
+    line-height: 110%;
     background: rgba(0, 0, 0, 0.7);
     padding: 5px;
     position: relative;
     text-align: center;
-    top: -143px;
+    top: -128px;
 }
 
 .oNas h4 {
 font-size: 30px;
 position: relative;
-top: -400px;
+top: -380px;
 text-align: right;
 }
 
