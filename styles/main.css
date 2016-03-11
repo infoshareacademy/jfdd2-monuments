@@ -136,8 +136,8 @@ body {
 }
 
 .pozostaleFunkcjonalnosci:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px 5px darkgray;
+    transform: scale(1.01);
+    box-shadow: 0 0 15px 5px lightgray;
 }
 
 .formularz {
@@ -147,7 +147,7 @@ body {
     background: rgba(23, 28, 56, 0.94);
     width: 450px;
     height: 400px;
-    box-shadow: 0 0 15px 5px darkgray;
+    /*box-shadow: 0 0 15px 5px darkgray;*/
     display: inline-block;
     position:relative;
     float: right;
