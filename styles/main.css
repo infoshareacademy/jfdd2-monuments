@@ -1,26 +1,126 @@
+body {
+    width: 1200px;
+    margin: auto;
+    background: rgb(230, 230, 230);
+    background-size: cover;
+}
+
+
+.tresc {
+background: rgb(244, 244, 244)
+}
+
+.funkcjonalnosc span {
+color: white;
+font-family: Helvetica, sans-serif;
+font-weight: bold;
+letter-spacing: -1px;
+background: rgba(0, 0, 0, 0.7);
+padding: 5px;
+font-size: 30px;
+position: relative;
+top: -290px;
+text-align: right;
+float: right;
+}
+
+
+.funkcjonalnosc {
+margin-bottom: 40px;
+margin-left: 40px;
+width: 540px;
+height: 320px;
+float:left;
+background: rgba(255, 255, 255, 0.4);
+transition: transform 0.1s linear, box-shadow 0.1s linear;
+min-width: 500px;
+}
+
+
+
+.funkcjonalnosc p {
+color: transparent;
+transition: background 1s ease, color 0.6s ease;
+position: relative;
+bottom: 150px;
+text-align: right;
+font-size: 150%;
+font-family: Helvetica, sans-serif;
+letter-spacing: -1px;
+padding: 5px;
+display: inline-block;
+
+
+}
+.funkcjonalnosc:hover p {
+background: rgba(0, 0, 0, 0.7);
+color:white;
+}
+
+.funkcjonalnosc:hover {
+transform: scale(1.03);
+box-shadow: 0 0 15px 5px darkgray;
+}
+
+.pozostaleFunkcjonalnosci {
+width: 265px;
+height: 170px;
+float:left;
+margin:0px 20px 40px 0px;
+background: rgba(214, 214, 214, 0.4);
+transition: transform 0.1s linear, box-shadow 0.1s linear;
+position:relative;
+left:39px;
+
+}
+
+.pozostaleFunkcjonalnosci span {
+color: white;
+font-family: Helvetica, sans-serif;
+font-weight: bold;
+letter-spacing: -1px;
+background: rgba(0, 0, 0, 0.7);
+padding: 5px;
+font-size: 20px;
+position: relative;
+top: -140px;
+text-align: right;
+}
+
+
+.pozostaleFunkcjonalnosciOpis {
+font-size: 20px;
+position: relative;
+text-align: right;
+}
+.pozostaleFunkcjonalnosci:hover {
+transform: scale(1.05);
+box-shadow: 0 0 15px 5px lightgray;
+}
+
 .oNas {
-    float: left;
-    width: 680px;
-    height: 410px;
-    margin: 24px 14px 14px 14px;
-    display: inline-block;
-    transition: transform 0.1s linear, box-shadow 0.1s linear;
+float: left;
+width: 680px;
+height: 410px;
+margin: 0px 14px 14px 14px;
+display: inline-block;
+transition: transform 0.1s linear, box-shadow 0.1s linear;
 }
 .oNas img {
-    position: relative;
+position: relative;
 }
 
 .oNas p {
-    color: transparent;
-    font-family: Helvetica, sans-serif;
-    font-size: 25px;
-    /*font-weight: bold;*/
-    line-height: 110%;
-    padding: 5px;
-    position: relative;
-    text-align: center;
-    top: -240px;
-    transition: background 1s ease, color 0.6s ease;
+color: transparent;
+font-family: Helvetica, sans-serif;
+font-size: 25px;
+/*font-weight: bold;*/
+line-height: 110%;
+padding: 5px;
+position: relative;
+text-align: center;
+top: -240px;
+transition: background 1s ease, color 0.6s ease;
 
 
 
@@ -35,154 +135,26 @@ text-align: right;
 }
 
 .oNas span {
-    color: white;
-    font-family: Helvetica, sans-serif;
-    font-weight: bold;
-    letter-spacing: -1px;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 5px;
+color: white;
+font-family: Helvetica, sans-serif;
+font-weight: bold;
+letter-spacing: -1px;
+background: rgba(0, 0, 0, 0.7);
+padding: 5px;
 
 }
 .oNas:hover p {
-    background: rgba(0, 0, 0, 0.7);
-    color:white;
-    transition: background 1s ease, color 0.6s ease;
+background: rgba(0, 0, 0, 0.7);
+color:white;
+transition: background 1s ease, color 0.6s ease;
 }
 
 .oNas:hover{
-    transform: scale(1.03);
-    box-shadow: 0 0 15px 5px darkgray;
+transform: scale(1.03);
+box-shadow: 0 0 15px 5px darkgray;
 
 
 }
-
-.clear {
-    clear: both;
-}
-
-body {
-    width: 1200px;
-    margin: auto;
-    background: rgb(230, 230, 230);
-    background-size: cover;
-}
-.tresc {
-    background: rgb(244, 244, 244)
-}
-
-.funkcjonalnosc span {
-    color: white;
-    font-family: Helvetica, sans-serif;
-    font-weight: bold;
-    letter-spacing: -1px;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 5px;
-    font-size: 30px;
-    position: relative;
-    top: -290px;
-    text-align: right;
-    float: right;
-}
-
-
-.funkcjonalnosc {
-    margin-bottom: 40px;
-    margin-left: 40px;
-    width: 540px;
-    height: 320px;
-    float:left;
-    background: rgba(255, 255, 255, 0.4);
-    transition: transform 0.1s linear, box-shadow 0.1s linear;
-    min-width: 500px;
-    color: transparent;
-}
-
-
-
-.funkcjonalnosc p {
-    color: transparent;
-    transition: background 1s ease, color 0.6s ease;
-    position: relative;
-    bottom: 150px;
-    text-align: right;
-    font-size: 150%;
-    font-family: Helvetica, sans-serif;
-    letter-spacing: -1px;
-    padding: 5px;
-    display: inline-block;
-
-
-}
-.funkcjonalnosc:hover p {
-    background: rgba(0, 0, 0, 0.7);
-    color:white;
-}
-
-.funkcjonalnosc:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 15px 5px darkgray;
-}
-
-.pozostaleFunkcjonalnosci {
-    width: 265px;
-    height: 170px;
-    float:left;
-    margin:0px 20px 0 0px;
-    background: rgba(214, 214, 214, 0.4);
-    transition: transform 0.1s linear, box-shadow 0.1s linear;
-    position:relative;
-    left:39px;
-
-}
-
-.pozostaleFunkcjonalnosci span {
-    color: white;
-    font-family: Helvetica, sans-serif;
-    font-weight: bold;
-    letter-spacing: -1px;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 5px;
-}
-
-
-#rower {
-    font-size: 20px;
-    position: relative;
-    top: -140px;
-    text-align: right;
-
-}
-
-#parking {
-    font-size: 20px;
-    position: relative;
-    top: -140px;
-    text-align: right;
-
-}
-
-#noclegi {
-    font-size: 20px;
-    position: relative;
-    top: -140px;
-    text-align: right;
-
-}
-
-#telefon {
-    font-size: 20px;
-    position: relative;
-    top: -140px;
-    text-align: right;
-
-
-}
-
-.pozostaleFunkcjonalnosci:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px 5px lightgray;
-}
-
 .formularz {
     color: white;
     font-family: Helvetica, sans-serif;
@@ -195,7 +167,7 @@ body {
     position:relative;
     float: right;
     padding: 5px;
-    margin: 24px 14px 14px 14px;
+    margin: 0px 14px 14px 14px;
 }
 
 .formularz form {
