@@ -1,14 +1,11 @@
 .oNas {
-    float:left;
+    float: left;
     width: 680px;
     height: 410px;
     margin: 24px 14px 14px 14px;
-    border: solid 1px darkgrey;
-    box-shadow: 0 0 15px 5px darkgray;
     display: inline-block;
-    transition: transform 0.1s linear;
+    transition: transform 0.1s linear, box-shadow 0.1s linear;
 }
-
 .oNas img {
     position: relative;
 }
@@ -54,6 +51,9 @@ text-align: right;
 
 .oNas:hover{
     transform: scale(1.03);
+    box-shadow: 0 0 15px 5px darkgray;
+
+
 }
 
 .clear {
@@ -92,8 +92,7 @@ body {
     height: 320px;
     float:left;
     background: rgba(255, 255, 255, 0.4);
-    /*box-shadow: 0 0 15px 5px darkgray;*/
-    transition: transform 0.1s linear;
+    transition: transform 0.1s linear, box-shadow 0.1s linear;
     min-width: 500px;
     color: transparent;
 }
@@ -120,7 +119,8 @@ body {
 }
 
 .funkcjonalnosc:hover {
-transform: scale(1.03);
+    transform: scale(1.03);
+    box-shadow: 0 0 15px 5px darkgray;
 }
 
 .pozostaleFunkcjonalnosci {
@@ -129,21 +129,22 @@ transform: scale(1.03);
     float:left;
     margin:0px 20px 0 0px;
     background: rgba(214, 214, 214, 0.4);
-    /*box-shadow: 0 0 15px 5px darkgray;*/
-    transition: transform 0.1s linear;
+    transition: transform 0.1s linear, box-shadow 0.1s linear;
     position:relative;
     left:39px;
+
 }
 
 .pozostaleFunkcjonalnosci:hover {
     transform: scale(1.1);
+    box-shadow: 0 0 15px 5px darkgray;
 }
 
 .formularz {
     color: white;
     font-family: Helvetica, sans-serif;
     font-weight: bold;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(23, 28, 56, 0.94);
     width: 450px;
     height: 400px;
     box-shadow: 0 0 15px 5px darkgray;

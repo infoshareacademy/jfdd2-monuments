@@ -33,6 +33,7 @@ nav a:hover {
 
 .logo {
     background: rgba(23, 28, 56, 0.94);
+    height: 60px;
 }
 
 .logo img {
