@@ -134,6 +134,38 @@ body {
     left:39px;
 
 }
+#rower {
+    font-size: 20px;
+    position: relative;
+    top: -140px;
+    text-align: right;
+
+}
+
+#parking {
+    font-size: 20px;
+    position: relative;
+    top: -140px;
+    text-align: right;
+
+}
+
+#noclegi {
+    font-size: 20px;
+    position: relative;
+    top: -140px;
+    text-align: right;
+
+}
+
+#telefon {
+    font-size: 20px;
+    position: relative;
+    top: -140px;
+    text-align: right;
+
+
+}
 
 .pozostaleFunkcjonalnosci:hover {
     transform: scale(1.01);
