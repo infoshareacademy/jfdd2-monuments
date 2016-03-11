@@ -1,10 +1,7 @@
 .oNas {
-    /*background: rgba(255, 255, 255, 0.4);*/
-    /*text-align: right;*/
-    /*font-size: 200%;*/
     float:left;
     width: 680px;
-    height: 500px;
+    height: 410px;
     margin: 24px 14px 14px 14px;
     border: solid 1px darkgrey;
     box-shadow: 0 0 15px 5px darkgray;
@@ -12,25 +9,36 @@
 }
 
 .oNas img {
-    width: 600px;
-    height: 300px;
     position: relative;
-    /*left: -40px;*/
-    top: 50px;
-    /*background: rgba(255, 255, 255, 0.7);*/
-    /*border: solid 10px darkgrey;*/
-    /*box-shadow: 0 0 40px 20px #838383;*/
 }
 
 .oNas p {
     color: white;
     font-family: Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 15px;
+    /*font-weight: bold;*/
+    line-height: 110%;
     background: rgba(0, 0, 0, 0.7);
     padding: 5px;
     position: relative;
     text-align: center;
+    top: -128px;
+}
+
+.oNas h4 {
+font-size: 30px;
+position: relative;
+top: -380px;
+text-align: right;
+}
+
+.oNas span {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: -1px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px;
 }
 
 .clear {
