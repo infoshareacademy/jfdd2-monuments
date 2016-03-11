@@ -10,62 +10,40 @@ nav {
 
 nav a {
     position: relative;
-    /*display: inline-block;*/
     float: left;
     color: white;
     font-family: Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
-    font-size: 25px;
-    width: 18%;
-    letter-spacing: +2px;
+    font-size: 20px;
+    width: 20%;
     text-decoration: none;
-    padding: 20px 0;
-    top: -105px;
-    height: 65px;
+    top: -59px;
 }
 
 nav a:hover {
     background: rgba(139, 0, 0, 0.9);
     transition: box-shadow 0.1s linear, background 0.1s linear;
-    /*transform: scale(1.05);*/
-    /*box-shadow: 0 0 10px 1px black inset;*/
 }
 
 .przycisk {
     background: rgba(23, 28, 56, 0.94);
+    padding: 20px 0;
 }
 
-.logo{
-
+.logo {
     background: rgba(23, 28, 56, 0.94);
-    width: 28%;
-    }
-
-.logo img{
-    position: relative;
-    top: -15px;
-    left: -30px;
-
 }
 
-/*.przycisk2 {*/
-    /*background-color: red;*/
-/*}*/
-
-/*.przycisk3 {*/
-    /*background-color: darkorange;*/
-/*}*/
-
-/*.przycisk4 {*/
-    /*background-color: indigo;*/
-/*}*/
+.logo img {
+    position: relative;
+}
 
 #powitanie {
     height: 400px;
     width: 100%;
     position: relative;
-    margin-top: 105px;
+    margin-top: 59px;
     margin-bottom: 30px;
 }
 
