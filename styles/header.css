@@ -1,17 +1,16 @@
-.clear {
-    clear: both;
-}
+
 
 nav {
     position: fixed;
     width: 1200px;
     z-index: 9;
+    top: 0px;
 }
 
-nav a {
+.przycisk {
     position: relative;
     /*display: inline-block;*/
-    float: left;
+    float: right;
     color: white;
     font-family: Helvetica, sans-serif;
     font-weight: bold;
@@ -21,45 +20,93 @@ nav a {
     letter-spacing: +2px;
     text-decoration: none;
     padding: 20px 0;
-    top: -105px;
     height: 65px;
+    background-color: rgba(23, 28, 56, 0.94);
+    transition: background 0.4s ease, height 0.4s ease, width 0.4s ease;
+
+
 }
 
-nav a:hover {
+.przycisk:hover {
     background: rgba(139, 0, 0, 0.9);
-    transition: box-shadow 0.1s linear, background 0.1s linear;
-    /*transform: scale(1.05);*/
-    /*box-shadow: 0 0 10px 1px black inset;*/
 }
 
-.przycisk {
+.przyciskDol{
+    position: relative;
+    float: right;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    width: 25%;
+    letter-spacing: +2px;
+    text-decoration: none;
+    padding: 20px 0;
+    height: 15px;
     background: rgba(23, 28, 56, 0.94);
+    transition: height 0.4s ease, width 0.4s ease;
 }
 
 .logo{
 
-    background: rgba(23, 28, 56, 0.94);
-    width: 28%;
-    }
-
-.logo img{
     position: relative;
-    top: -15px;
-    left: -30px;
+    display: inline-block;
+    float: right;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    width: 28%;
+    letter-spacing: +2px;
+    text-decoration: none;
+    padding: 20px 0;
+    height: 65px;
+    transition: width 0.4s ease , background 0.4s ease , height 0.4s ease ;
+    background: rgba(23, 28, 56, 0.94);
 
 }
 
-/*.przycisk2 {*/
-    /*background-color: red;*/
-/*}*/
+.logoDol{
+    position: relative;
+    float: right;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    width: 0%;
+    letter-spacing: +2px;
+    text-decoration: none;
+    padding: 20px 0;
+    height: 15px;
+    transition: width 0.4s ease, height 0.4s ease, background 0.8s ease 1s;
+    }
 
-/*.przycisk3 {*/
-    /*background-color: darkorange;*/
-/*}*/
+.logoImg {
+    position: relative;
+    top: -15px;
+    /*display: inline-block;*/
+    transition:height 0.4s ease, width 0.4s ease ;
+    width: 250px;
+    height: 100px;
+}
 
-/*.przycisk4 {*/
-    /*background-color: indigo;*/
-/*}*/
+.logoImgDol {
+    position: relative;
+    top: -15px;
+    height: 30px;
+    width: 0px;
+    /*display: none;*/
+    transition: height 0.4s ease, width 0.4s ease;
+
+}
+
+.logo:hover{
+background: rgba(139, 0, 0, 0.9);
+}
+
 
 #powitanie {
     height: 400px;
