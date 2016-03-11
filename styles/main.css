@@ -128,7 +128,7 @@ body {
     font-weight: bold;
     background: rgba(0, 0, 0, 0.7);
     width: 450px;
-    height: 430px;
+    height: 410px;
     box-shadow: 0 0 15px 5px darkgray;
     display: inline-block;
     position:relative;
@@ -140,7 +140,7 @@ body {
 .formularz form {
     font-size: 15px;
     position: relative;
-    top: 40px;
+    top: 30px;
     left: 15px;
 }
 
