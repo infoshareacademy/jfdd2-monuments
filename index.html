@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="shortcut icon" href="images/icons/favicon.gif">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="styles/main.js"></script>
+
 
 </head>
 <body>
@@ -15,13 +18,12 @@
 
 <header>
 
-    <nav>
+    <nav id="nav">
         <ul >
-            <li><a class="logo"><img src="images/logoM.png"></a></li>
-            <li><a class="przycisk" href="#powitanie">Strona główna</a></li>
-            <li><a class="przycisk" href="#funkcjonalnosci">Mapa</a></li>
-            <li><a class="przycisk" href="#oNas">O nas</a></li>
-            <li><a class="przycisk" href="#kontakt">Kontakt</a></li>
+            <li><a id="powitanielink" class="logo" href="#"><img src="images/logoM.png"></a></li>
+            <li><a id="funkcjonalnoscilink"   class="przycisk" href="#">Funkcjonalnosci</a></li>
+            <li><a id="oNaslink" class="przycisk" href="#">O nas</a></li>
+            <li><a id="kontaktlink" class="przycisk" href="#">Kontakt</a></li>
             <li class="clear"></li>
         </ul>
     </nav>
