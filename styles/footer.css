@@ -1,28 +1,24 @@
-#sm_icons {
-    display: flex;
-    float: right;
-    }
 footer {
     background: rgba(23, 28, 56, 0.94);
 }
-footer p{
+
+footer p {
     color: rgba(245, 245, 245, 0.94);
 }
 
-#sm_icons img{
-    margin: 5px;
+#sm_icons {
+    text-align: center;
+}
 
+#sm_icons img {
+    margin: 10px 10px 0 10px;
 }
 
 #copyright {
     font-family: Verdana, Tahoma, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 18px;
+    padding: 6px;
     text-align: left;
-
-}
-
-#bold {
-    font-weight: bold;
 }
 
 #by {
