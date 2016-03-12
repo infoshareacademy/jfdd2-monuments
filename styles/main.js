@@ -22,9 +22,18 @@ $(document).ready(function () {
 //        }
 //    });
 //});
+    function goToByScroll(id){
 
+        id = id.replace("link", "");
+         $('html,body').animate({
+                scrollTop: ($("#"+id).offset().top)-80},
+            'slow');
+    }
 
+    $("#nav > ul > li > a").click(function(e) {
+         e.preventDefault();
+         goToByScroll($(this).attr("id"));
+    });
 
-
-});
+})  ;
 
