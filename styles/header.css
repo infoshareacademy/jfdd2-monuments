@@ -6,6 +6,7 @@ nav {
     position: fixed;
     width: 1200px;
     z-index: 9;
+    top: 0;
 }
 
 nav a {
@@ -18,7 +19,8 @@ nav a {
     font-size: 20px;
     width: 25%;
     text-decoration: none;
-    top: -59px;
+    background: rgba(23, 28, 56, 0.94);
+    padding: 20px 0;
 }
 
 nav a:hover {
@@ -26,13 +28,10 @@ nav a:hover {
     transition: box-shadow 0.1s linear, background 0.1s linear;
 }
 
-.przycisk {
-    background: rgba(23, 28, 56, 0.94);
-    padding: 20px 0;
-}
+
 
 .logo {
-    background: rgba(23, 28, 56, 0.94);
+    padding: 0;
     height: 60px;
 }
 
@@ -46,7 +45,7 @@ nav a:hover {
     height: 400px;
     width: 100%;
     position: relative;
-    margin-top: 59px;
+    margin-top: 60px;
     margin-bottom: 40px;
 }
 
