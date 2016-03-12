@@ -158,7 +158,10 @@ body {
 }
 
 .formularz input {
-    font-size: 16px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 0 10px 0;
+    margin-left:10px;
 }
 
 .formularz h4 {
@@ -169,8 +172,19 @@ body {
 }
 
 .formularz p {
-    font-size: 16px;
+    font-size: 21px;
     padding: 2px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    position:relative;
+    top:30px;
+}
+.formularz label {
+    font-size:16px;
+    margin-right:10px;
+}
+.formularz fieldset {
+    position:relative;
+    left: 85px;
+    top: 40px;
 }
