@@ -26,7 +26,7 @@ nav a {
 
 nav a:hover {
     background: rgba(139, 0, 0, 0.9);
-    transition: box-shadow 0.1s linear, background 0.1s linear;
+    transition: box-shadow 0.3s ease, background 0.3s ease;
 }
 
 
