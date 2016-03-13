@@ -57,38 +57,62 @@ body {
     box-shadow: 0 0 15px 5px darkgray;
 }
 
-.pozostaleFunkcjonalnosci {
-    width: 265px;
-    height: 170px;
-    float:left;
-    margin:0 20px 40px 0;
-    background: rgba(214, 214, 214, 0.4);
-    transition: transform 0.1s linear, box-shadow 0.1s linear;
-    position:relative;
-    left:39px;
+/*.pozostaleFunkcjonalnosci {*/
+    /*width: 265px;*/
+    /*height: 170px;*/
+    /*float:left;*/
+    /*margin:0 20px 40px 0;*/
+    /*background: rgba(214, 214, 214, 0.4);*/
+    /*transition: transform 0.1s linear, box-shadow 0.1s linear;*/
+    /*position:relative;*/
+    /*left:39px;
 }
 
 .pozostaleFunkcjonalnosci span {
-    color: white;
-    font-family: Helvetica, sans-serif;
-    font-weight: bold;
-    letter-spacing: -1px;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 5px;
-    font-size: 20px;
+    /*color: white;*/
+    /*font-family: Helvetica, sans-serif;*/
+    /*font-weight: bold;*/
+    /*letter-spacing: -1px;*/
+    /*background: rgba(0, 0, 0, 0.7);*/
+    /*padding: 5px;*/
+    /*font-size: 20px;*/
+    /*position: relative;*/
+    /*top: -140px;*/
+    /*text-align: right;*/
+/*}*/
+
+/*.pozostaleFunkcjonalnosciOpis {*/
+    /*font-size: 20px;*/
+    /*position: relative;*/
+    /*text-align: right;*/
+/*}*/
+/*.pozostaleFunkcjonalnosci:hover {*/
+    /*transform: scale(1.05);*/
+    /*box-shadow: 0 0 15px 5px lightgray;
+}*/
+
+.pozostaleFunkcjonalnosci {
+    width: 102px;
+    height: 102px;
+    float: left;
+    margin:0px 0px 40px 43px;
+    transition: transform 0.1s linear, box-shadow 0.1s linear;
     position: relative;
-    top: -140px;
-    text-align: right;
+    background: rgba(23, 28, 56, 0.94);
+
 }
 
-.pozostaleFunkcjonalnosciOpis {
-    font-size: 20px;
+.pozostaleFunkcjonalnosci img {
+    width: 64px;
+    height: 64px;
     position: relative;
-    text-align: right;
+    left: 25px;
+    top: 25px;
 }
 .pozostaleFunkcjonalnosci:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px 5px lightgray;
+    transform: scale(1.09);
+    box-shadow: 0 0 10px 3px #171c38;
+    background: rgba(23, 28, 56, 0.94)
 }
 
 .oNas {
