@@ -106,13 +106,13 @@ body {
     width: 64px;
     height: 64px;
     position: relative;
-    left: 25px;
-    top: 25px;
+    left: 18px;
+    top: 18px;
 }
 .pozostaleFunkcjonalnosci:hover {
     transform: scale(1.09);
     box-shadow: 0 0 10px 3px #171c38;
-    background: rgba(23, 28, 56, 0.94)
+    background: rgba(139, 0, 0, 0.9);
 }
 
 .oNas {
