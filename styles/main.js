@@ -37,3 +37,20 @@ $(document).ready(function () {
 
 })  ;
 
+$(function(){
+    $("#kontakt").submit(function(){
+
+        var valid=0;
+        $(this).find('input[type=email], input[type=tel]').each(function(){
+            if($(this).val() != "") valid+=1;
+        });
+
+        if(valid){
+            return true;
+        }
+        else {
+            alert("Przed wysłaniem wypełnij przynajmniej jedno z pól do kontaktu z nami. Dziękujemy!");
+            return false;
+        }
+    });
+});
