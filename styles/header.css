@@ -29,8 +29,6 @@ nav a:hover {
     transition: box-shadow 0.3s ease, background 0.3s ease;
 }
 
-
-
 .logo {
     padding: 0;
     height: 60px;
@@ -38,9 +36,7 @@ nav a:hover {
 
 .logo img {
     position: relative;
-
 }
-
 
 #powitanie {
     height: 400px;
