@@ -149,13 +149,13 @@ float: right;
 
 .formularz form {
     font-size: 15px;
-    /*position: relative;*/
+    position: relative;
     top: 15px;
-    left: 15px;
+    left: 0;
 }
 
 .formularz input {
-    font-size: 20px;
+    font-size: 19px;
     padding: 0 10px 0;
     margin-left:10px;
 }
@@ -183,6 +183,7 @@ float: right;
 
 .formularz fieldset {
     position:relative;
-    left: 85px;
+    left: 100px;
     top: 40px;
+    width: 1100px;
 }
