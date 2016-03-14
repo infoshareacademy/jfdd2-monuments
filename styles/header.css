@@ -36,6 +36,8 @@ nav a:hover {
 
 .logo img {
     position: relative;
+    height: 55px;
+    top: 5px;
 }
 
 #powitanie {
