@@ -1,16 +1,16 @@
 .clear {
     clear: both;
-}
+    }
 
 nav {
     position: fixed;
     width: 1200px;
     z-index: 9;
     top: 0;
-    height: 60px;
+    height: 100px;
 }
 
-nav a {
+.przycisk, .logo{
     position: relative;
     float: left;
     color: white;
@@ -20,31 +20,34 @@ nav a {
     font-size: 20px;
     width: 25%;
     text-decoration: none;
-    background: rgba(23, 28, 56, 0.94);
-    padding: 20px 0;
+    background-color: rgba(23, 28, 56, 0.94);
+    padding: 40px 0;
+    transition: background 0.3s ease;
 }
 
-nav a:hover {
+.przycisk:hover {
     background: rgba(139, 0, 0, 0.9);
-    transition: box-shadow 0.3s ease, background 0.3s ease;
-}
+    }
 
 .logo {
     padding: 0;
-    height: 60px;
+    height: 100px;
+    background-image: url("../images/logo.png")  ;
+    background-repeat: no-repeat;
+    background-size: auto 90px;
+    background-position: center bottom;
+    transition: background-color 0.3s ease;
 }
 
-.logo img {
-    position: relative;
-    height: 55px;
-    top: 5px;
-}
+.logo:hover {
+    background-color: rgba(139, 0, 0, 0.9);
+    }
 
 #powitanie {
     height: 400px;
     width: 100%;
     position: relative;
-    margin-top: 60px;
+    margin-top: 100px;
     margin-bottom: 40px;
 }
 
