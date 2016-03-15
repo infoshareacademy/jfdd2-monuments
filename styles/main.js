@@ -7,15 +7,6 @@ $(document).ready(function () {
     $(window).scroll(function () {
       var scroll = $(window).scrollTop();
 
-      if (scrollBottom > pozycjaPowitanie) {
-        $(".powitanie").addClass('powitanieWidoczny')
-      }
-      if (scrollBottom > pozycjaFunkcjonalnosci) {
-        $(".funkcjonalnosc").addClass('funkcjonalnoscWidoczny')
-      }
-      if (scrollBottom > pozycjaFormularz) {
-        $(".formularz").addClass('formularzWidoczny')
-      }
 
 
       if (scroll >= 200) {
@@ -35,30 +26,47 @@ $(document).ready(function () {
 
 
 
-  var scrollBottom = $(window).scrollTop() + $(window).height() + 100;
-  var pozycjaFunkcjonalnosci = document.getElementById('funkcjonalnosci').offsetTop;
-  var pozycjaPowitanie = document.getElementById('powitanie').offsetTop;
-  var pozycjaFormularz = document.getElementById('formularz').offsetTop + 100;
-
   $(function() {
+    var scrollBottom = $(window).scrollTop() + $(window).height() + 100;
+    var pozycjaFunkcjonalnosci = document.getElementById('funkcjonalnosci').offsetTop;
+    var pozycjaPowitanie = document.getElementById('powitanie').offsetTop;
+    var pozycjaFormularz = document.getElementById('formularz').offsetTop + 100;
 
-    if ($(window).height() > pozycjaPowitanie) {
-      $(".powitanie").addClass('powitanieWidoczny')
-    }
-    if ($(window).height() > pozycjaFunkcjonalnosci) {
-      $(".funkcjonalnosc").addClass('funkcjonalnoscWidoczny')
-    }
-    if ($(window).height() > pozycjaFormularz) {
-      $(".funkcjonalnosc").addClass('formularzWidoczny')
-    }
+    $(function () {
+
+      if ($(window).height() > pozycjaPowitanie) {
+        $(".powitanie").addClass('powitanieWidoczny')
+      }
+      if ($(window).height() > pozycjaFunkcjonalnosci) {
+        $(".funkcjonalnosc").addClass('funkcjonalnoscWidoczny')
+      }
+      if ($(window).height() > pozycjaFormularz) {
+        $(".funkcjonalnosc").addClass('formularzWidoczny')
+      }
+
+    });
+
+    $(window).scroll(function () {
+      var scrollBottom = $(window).scrollTop() + $(window).height() + 100;
+      var pozycjaFunkcjonalnosci = document.getElementById('funkcjonalnosci').offsetTop;
+      var pozycjaPowitanie = document.getElementById('powitanie').offsetTop;
+      var pozycjaFormularz = document.getElementById('formularz').offsetTop + 100;
+
+      if (scrollBottom > pozycjaFormularz){
+        $(".formularz").addClass('formularzWidoczny')
+      }
+      if (scrollBottom > pozycjaFunkcjonalnosci){
+        $(".funkcjonalnosc").addClass('formularzWidoczny')
+      }
+      if (scrollBottom > pozycjaPowitanie){
+        $(".powitanie").addClass('powitanieWidoczny')
+      }
+
+
+    });
 
   });
 
-   $(window).scroll(function () {
-
-
-
-  });
 
 
 
