@@ -7,6 +7,8 @@ nav {
     width: 1200px;
     z-index: 9;
     top: 0;
+    box-shadow: 0 4px 2px -1px black;
+
 }
 
 .przycisk, .logo{
@@ -22,6 +24,7 @@ nav {
     background-color: rgba(23, 28, 56, 0.94);
     padding: 40px 0;
     transition: background 0.3s, padding 0.3s ease;
+
 }
 
 .przycisk:hover, .przyciskDol:hover {
@@ -39,7 +42,7 @@ nav {
     width: 25%;
     text-decoration: none;
     background-color: rgba(23, 28, 56, 0.94);
-    padding: 20px 0;
+    padding: 10px 0;
     transition: background 0.3s, padding 0.3s ease;
 
 }
@@ -58,10 +61,10 @@ nav {
 
 .logoDol {
     padding: 0;
-    height: 60px;
+    height: 40px;
     background-image: url("../images/logo.png")  ;
     background-repeat: no-repeat;
-    background-size: auto 55px;
+    background-size: auto 35px;
     background-position: center bottom;
     transition: background-color 0.3s ease, height 0.3s ease, background-size 0.3s ease;
 }
