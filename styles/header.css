@@ -73,15 +73,21 @@ nav {
     background-color: rgba(139, 0, 0, 0.9);
     }
 
-#powitanie {
+.powitanie {
     height: 400px;
     width: 100%;
     position: relative;
     margin-top: 70px;
     margin-bottom: 40px;
-}
+    opacity: 0;
+    transition: opacity 1s linear;
+    }
 
-#powitanie span {
+.powitanieWidoczny {
+    opacity: 1;
+    }
+
+.powitanie span {
     color: white;
     font-family: Helvetica, sans-serif;
     font-weight: bold;
@@ -90,14 +96,14 @@ nav {
     padding: 10px;
 }
 
-h2 {
+.powitanie h2 {
     position: absolute;
     top: 30px;
     right: 0;
     font-size: 45px;
 }
 
-h3 {
+.powitanie h3 {
     position: absolute;
     top: 100px;
     right: 0;

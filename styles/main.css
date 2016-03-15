@@ -12,10 +12,15 @@ body {
     height: 320px;
     float:left;
     background: rgba(255, 255, 255, 0.4);
-    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, opacity 1s linear 0.3s;
     min-width: 500px;
     position: relative;
+    opacity: 0;
 }
+
+.funkcjonalnoscWidoczny {
+    opacity: 1;
+    }
 
 .funkcjonalnosc img {
     height: 100%;
@@ -130,7 +135,6 @@ body {
 .oNas:hover p {
     background: rgba(0, 0, 0, 0.7);
     color: white;
-    transition: background 1s ease, color 0.6s ease;
 }
 
 .oNas:hover {
@@ -145,7 +149,13 @@ body {
     background: rgba(23, 28, 56, 0.94);
     width: 1200px;
     height: 120px;
+    opacity: 0;
+    transition: opacity 1s ease 0.5s;
 }
+
+.formularzWidoczny {
+    opacity: 1;
+    }
 
 .formularz form {
     font-size: 15px;
