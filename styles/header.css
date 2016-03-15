@@ -22,7 +22,7 @@ nav {
     width: 25%;
     text-decoration: none;
     background-color: rgba(23, 28, 56, 0.94);
-    padding: 40px 0;
+    padding: 25px 0;
     transition: background 0.3s, padding 0.3s ease;
 
 }
@@ -51,10 +51,10 @@ nav {
 
 .logo {
     padding: 0;
-    height: 100px;
+    height: 70px;
     background-image: url("../images/logo.png")  ;
     background-repeat: no-repeat;
-    background-size: auto 90px;
+    background-size: auto 65px;
     background-position: center bottom;
     transition: background-color 0.3s ease, height 0.3s ease, background-size 0.3s ease;
 }
@@ -77,7 +77,7 @@ nav {
     height: 400px;
     width: 100%;
     position: relative;
-    margin-top: 100px;
+    margin-top: 70px;
     margin-bottom: 40px;
 }
 
