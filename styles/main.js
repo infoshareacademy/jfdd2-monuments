@@ -11,13 +11,11 @@ $(document).ready(function () {
       if (scroll >= 200) {
         header.removeClass('przycisk').addClass("przyciskDol");
         logo.removeClass('logo').addClass("logoDol");
-        logoImg.removeClass('logoImg').addClass("logoImgDol");
 
 
       } else {
         header.removeClass("przyciskDol").addClass('przycisk');
         logo.removeClass('logoDol').addClass("logo");
-        logoImg.removeClass('logoImgDol').addClass("logoImg");
       }
     });
   });
@@ -26,7 +24,7 @@ $(document).ready(function () {
 
     id = id.replace("link", "");
     $('html,body').animate({
-        scrollTop: ($("#" + id).offset().top) - 80
+        scrollTop: ($("#" + id).offset().top) - 100
       },
       'slow');
   }
