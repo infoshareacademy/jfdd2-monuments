@@ -63,18 +63,16 @@ $(document).ready(function () {
   });
 
 
-  function goToByScroll(id) {
+  function goToByScroll(href) {
 
-    id = id.replace("link", "");
     $('html,body').animate({
-        scrollTop: ($("#" + id).offset().top) - 100
-      },
-      'slow');
-  }
+        scrollTop: ($(href).offset().top) - 100
+      },'slow'
+    )}
 
-  $("#nav > ul > li > a").click(function (e) {
+  $(".menu a").click(function (e) {
     e.preventDefault();
-    goToByScroll($(this).attr("id"));
+    goToByScroll($(this).attr('href'));
   });
 
 
@@ -95,6 +93,43 @@ $(document).ready(function () {
       }
     });
   });
+
+
+
+  function setCookieValue(){
+    document.cookie = 'ciasteczka=zgoda';
+  }
+
+  function checkCookie(cookieNew) {
+
+    var cookie = document.cookie.split(';').map(function (item) {
+      var parts = item.split('=');
+      var cookie = {
+        name: parts[0],
+        value: parts[1]
+      };
+      return cookie;
+    }).find(function (item) {
+      if (item.value === 'jan') {
+        $('#ciastka').css('display', 'none');
+      }
+    });
+  }
+
+  $(document).ready(function() {
+    $('#ciastka').click(function() {
+      setCookieValue()
+      $(this).hide();
+    });
+    checkCookie(document.cookie);
+
+  });
+
+
+
+
+
+
 });
 
 
