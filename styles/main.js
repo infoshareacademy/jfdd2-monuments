@@ -41,7 +41,7 @@ $(document).ready(function () {
         $(".funkcjonalnosc").addClass('funkcjonalnoscWidoczny')
       }
       if ($(window).height() > pozycjaFormularz) {
-        $(".funkcjonalnosc").addClass('formularzWidoczny')
+        $(".formularz").addClass('formularzWidoczny')
       }
 
     });
