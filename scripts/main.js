@@ -33,7 +33,7 @@ $(document).ready(function () {
         }else {
           przycisk1.removeClass('przyciskX').addClass('przycisk');
         }
-        if(scroll >= 850 && scroll <1000) {
+        if(scroll >= 850 && scroll <1200) {
           przycisk2.removeClass('przyciskDol').addClass('przyciskX')
         }else {
           przycisk2.removeClass('przyciskX').addClass('przycisk')
