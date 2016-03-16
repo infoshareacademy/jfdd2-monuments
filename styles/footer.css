@@ -44,3 +44,16 @@ footer span {
     float: right;
     padding: 6px;
 }
+
+#ciasteczka {
+    background-color: #ffdb69;
+    width: 1200px;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    font-size: 150%;
+    font-family: Helvetica, sans-serif;
+    letter-spacing: -1px;
+    padding: 20px 0;
+    cursor: pointer;
+}

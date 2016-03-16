@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+//########## ZMIANA WIELKOSCI MENU ########################################
+
   $(function () {
 
     var przyciski = $(".przycisk");
@@ -21,6 +23,9 @@ $(document).ready(function () {
 
     });
   });
+
+  //########## WYPLYWANIE ELEMENTOW STRONY ########################################
+
   $(function () {
     var scrollBottom = $(window).scrollTop() + $(window).height() + 100;
     var pozycjaFunkcjonalnosci = document.getElementById('funkcjonalnosci').offsetTop;
@@ -62,6 +67,7 @@ $(document).ready(function () {
 
   });
 
+//########## ANIOMOWANE PRZEJSCIA MENU ########################################
 
   function goToByScroll(href) {
 
@@ -75,6 +81,7 @@ $(document).ready(function () {
     goToByScroll($(this).attr('href'));
   });
 
+//########## WALIDACJA FORMULARZA ########################################
 
   $(function () {
     $("#kontakt").submit(function () {
@@ -94,43 +101,52 @@ $(document).ready(function () {
     });
   });
 
+//########## CIASTECZKA ########################################
 
 
-  function setCookieValue(){
-    document.cookie = 'ciasteczka=zgoda';
+
+  function setCookieValue(name, value){
+    document.cookie = name + '=' + value ;
   }
 
-  function checkCookie(cookieNew) {
+  checkCookie(document.cookie);
 
-    var cookie = document.cookie.split(';').map(function (item) {
-      var parts = item.split('=');
-      var cookie = {
-        name: parts[0],
-        value: parts[1]
-      };
-      return cookie;
-    }).find(function (item) {
-      if (item.value === 'jan') {
-        $('#ciastka').css('display', 'none');
-      }
-    });
-  }
-
-  $(document).ready(function() {
-    $('#ciastka').click(function() {
-      setCookieValue()
-      $(this).hide();
-    });
-    checkCookie(document.cookie);
+  $('#ciasteczka').click(function(){
+    setCookieValue('politykaCiasteczek', 'zgoda');
+    $('#ciasteczka').hide();
 
   });
 
 
-
-
-
+  function checkCookie(){
+    if (document.cookie != "") {
+      var cookies = document.cookie.split(';');
+      for ( i=0; i<cookies.length; i++ ) {
+        var name = cookies[i].split('=')[0];
+        var value = cookies[i].split('=')[1];
+        if (name === 'politykaCiasteczek'){
+          if (value === 'zgoda'){
+            $('#ciasteczka').hide()
+          }}}}}
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
