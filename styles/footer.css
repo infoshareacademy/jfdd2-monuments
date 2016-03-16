@@ -9,10 +9,27 @@ footer span {
 
 .sm_icons {
     text-align: center;
-    background-image: url("../images/icons/SocialMedia.png");
-    background-position: center center;
-    background-repeat: no-repeat;
+    position: relative;
+}
+
+.facebook, .googlePlus, .twitter {
+    width: 50px;
     height: 50px;
+    display: inline-block;
+    background-image: url("../images/icons/socialMedia.png");
+    background-repeat: no-repeat;
+
+}
+
+.facebook {
+      background-position: left;
+}
+
+.googlePlus {
+    background-position: center;
+}
+.twitter  {
+    background-position: right;
 }
 
 .copyright {
