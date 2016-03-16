@@ -1,6 +1,6 @@
 .clear {
     clear: both;
-    }
+}
 
 .menu {
     position: fixed;
@@ -8,11 +8,9 @@
     z-index: 9;
     top: 0;
     box-shadow: 0 3px 2px -1px black;
-
-
 }
 
-.przycisk, .logo{
+.przycisk, .logo {
     position: relative;
     float: left;
     color: white;
@@ -26,14 +24,13 @@
     padding: 25px 0;
     transition: background 0.3s, padding 0.3s ease;
     height: 20px;
-
 }
 
 .przycisk:hover, .przyciskDol:hover {
     background: rgba(139, 0, 0, 0.9);
-    }
+}
 
-.przyciskDol, .logoDol{
+.przyciskDol, .logoDol {
     position: relative;
     float: left;
     color: white;
@@ -47,13 +44,12 @@
     padding: 10px 0;
     transition: background 0.3s, padding 0.3s ease;
     height: 20px;
-
 }
 
 .logo {
     padding: 0;
     height: 70px;
-    background-image: url("../images/logo.png")  ;
+    background-image: url("../images/logo.png");
     background-repeat: no-repeat;
     background-size: auto 65px;
     background-position: center bottom;
@@ -63,7 +59,7 @@
 .logoDol {
     padding: 0;
     height: 40px;
-    background-image: url("../images/logo.png")  ;
+    background-image: url("../images/logo.png");
     background-repeat: no-repeat;
     background-size: auto 35px;
     background-position: center bottom;
@@ -72,7 +68,7 @@
 
 .logo:hover, .logoDol:hover {
     background-color: rgba(139, 0, 0, 0.9);
-    }
+}
 
 .powitanie {
     height: 400px;
@@ -83,13 +79,13 @@
     opacity: 0;
     transition: opacity 1s linear;
     background-image: url("../images/zdjeciePowitalne.jpg");
-    }
+}
 
 .powitanieWidoczny {
     opacity: 1;
-    }
+}
 
-.powitanie h2, .powitanie h3{
+.powitanie h2, .powitanie h3 {
     position: absolute;
     top: 30px;
     right: 0;

@@ -8,7 +8,6 @@ $(document).ready(function () {
       var scroll = $(window).scrollTop();
 
 
-
       if (scroll >= 200) {
         przyciski.removeClass('przycisk').addClass("przyciskDol");
         logo.removeClass('logo').addClass("logoDol");
@@ -22,7 +21,7 @@ $(document).ready(function () {
 
     });
   });
-  $(function() {
+  $(function () {
     var scrollBottom = $(window).scrollTop() + $(window).height() + 100;
     var pozycjaFunkcjonalnosci = document.getElementById('funkcjonalnosci').offsetTop;
     var pozycjaPowitanie = document.getElementById('powitanie').offsetTop;
@@ -48,13 +47,13 @@ $(document).ready(function () {
       var pozycjaPowitanie = document.getElementById('powitanie').offsetTop;
       var pozycjaFormularz = document.getElementById('formularz').offsetTop + 100;
 
-      if (scrollBottom > pozycjaFormularz){
+      if (scrollBottom > pozycjaFormularz) {
         $(".formularz").addClass('formularzWidoczny')
       }
-      if (scrollBottom > pozycjaFunkcjonalnosci){
+      if (scrollBottom > pozycjaFunkcjonalnosci) {
         $(".funkcjonalnosci").addClass('funkcjonalnosciWidoczny')
       }
-      if (scrollBottom > pozycjaPowitanie){
+      if (scrollBottom > pozycjaPowitanie) {
         $(".powitanie").addClass('powitanieWidoczny')
       }
 
@@ -64,18 +63,13 @@ $(document).ready(function () {
   });
 
 
-
-
-
-
-
   function goToByScroll(id) {
 
     id = id.replace("link", "");
     $('html,body').animate({
-          scrollTop: ($("#" + id).offset().top) - 100
-        },
-        'slow');
+        scrollTop: ($("#" + id).offset().top) - 100
+      },
+      'slow');
   }
 
   $("#nav > ul > li > a").click(function (e) {

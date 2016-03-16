@@ -10,7 +10,7 @@ body {
     margin-left: 40px;
     width: 580px;
     height: 320px;
-    float:left;
+    float: left;
     background: rgba(255, 255, 255, 0.4);
     transition: transform 0.1s ease, box-shadow 0.1s ease, opacity 1s linear 0.3s;
     min-width: 500px;
@@ -21,7 +21,7 @@ body {
 
 .funkcjonalnosciWidoczny {
     opacity: 1;
-    }
+}
 
 .funkcjonalnoscNr1, .funkcjonalnoscNr3 {
     margin-left: 0;
@@ -57,12 +57,15 @@ body {
 .funkcjonalnoscNr1 {
     background-image: url("../images/funkcjonalnoscKompas.jpg");
 }
+
 .funkcjonalnoscNr2 {
-    background-image: url("../images/FunkcjonalnoscTrasa.jpg");
+    background-image: url("../images/funkcjonalnoscTrasa.jpg");
 }
+
 .funkcjonalnoscNr3 {
     background-image: url("../images/funkcjonalnoscMapa.jpg");
 }
+
 .funkcjonalnoscNr4 {
     background-image: url("../images/funkcjonalnoscBilety.png");
 }
@@ -90,29 +93,36 @@ body {
     background-repeat: no-repeat;
 }
 
-.pozostałeFunkcjonalnosciNr1 {
+.pozostaleFunkcjonalnosciNr1 {
     margin-left: 0;
     background-image: url("../images/icons/pozostaleFunkcjonalnosciWypozyczalnie.png");
 }
-.pozostałeFunkcjonalnosciNr2 {
+
+.pozostaleFunkcjonalnosciNr2 {
     background-image: url("../images/icons/pozostaleFunkcjonalnosciParkingi.png");
 }
-.pozostałeFunkcjonalnosciNr3 {
+
+.pozostaleFunkcjonalnosciNr3 {
     background-image: url("../images/icons/pozostaleFunkcjonalnosciTorba.png");
 }
-.pozostałeFunkcjonalnosciNr4 {
+
+.pozostaleFunkcjonalnosciNr4 {
     background-image: url("../images/icons/pozostaleFunkcjonalnosciAutobusy.png");
 }
-.pozostałeFunkcjonalnosciNr5 {
+
+.pozostaleFunkcjonalnosciNr5 {
     background-image: url("../images/icons/pozostaleFunkcjonalnosciNoclegi.png");
 }
-.pozostałeFunkcjonalnosciNr6 {
+
+.pozostaleFunkcjonalnosciNr6 {
     background-image: url("../images/icons/pozostaleFunkcjonalnosciRestauracje.png");
 }
-.pozostałeFunkcjonalnosciNr7 {
+
+.pozostaleFunkcjonalnosciNr7 {
     background-image: url("../images/icons/pozostaleFunkcjonalnosciTeatr.png");
 }
-.pozostałeFunkcjonalnosciNr8 {
+
+.pozostaleFunkcjonalnosciNr8 {
     background-image: url("../images/icons/pozostaleFunkcjonalnosciTelefony.png");
 }
 
@@ -180,11 +190,10 @@ body {
 
 .formularzWidoczny {
     opacity: 1;
-    }
+}
 
 .formularz form {
     font-size: 15px;
-    /*position: relative;*/
     top: 15px;
     left: 15px;
 }
