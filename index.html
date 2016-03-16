@@ -9,14 +9,14 @@
   <link rel="stylesheet" href="styles/main.css">
   <link rel="shortcut icon" href="images/icons/favicon.gif">
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="styles/main.js"></script>
+
 </head>
 
 <body>
 
 <header>
 
-  <nav id="nav">
+  <nav id="nav" class="menu">
     <ul>
       <li><a id="powitanielink" class="logo" href="#"></a></li>
       <li><a id="funkcjonalnoscilink" class="przycisk" href="#">Funkcjonalności</a></li>
@@ -25,80 +25,50 @@
       <li class="clear"></li>
     </ul>
   </nav>
+
   <section id="powitanie" class="powitanie">
-    <img src="images/zdjeciePowitalne.jpg" alt="Długie Pobrzeże w Gdańsku">
-
-    <h2><span>Zabytki Gdańska</span></h2>
-    <br>
-
-    <h3><span>Dokąd dziś pójdziemy?</span></h3>
+    <h2>Zabytki Gdańska</h2>
+    <h3>Dokąd dziś pójdziemy?</h3>
   </section>
 
 </header>
 
 <main>
 
-  <section class="funkcjonalnosc" id="funkcjonalnosci">
-    <img src="images/kompas.jpg" alt="Twoje miejsce na mapie">
-    <h4 id="kompas"><span>Twoje miejsce na mapie</span></h4>
-
+  <section class="funkcjonalnosci funkcjonalnoscNr1" id="funkcjonalnosci">
+    <h4>Twoje miejsce na mapie</h4>
     <p> Sprawdź jakie zabytki znajdują się w twojej najbliższej okolicy. </p>
   </section>
 
-  <section class="funkcjonalnosc">
-    <img src="images/trasa.jpg" alt="Twoja Trasa">
-    <h4 id="trasa"><span>Twoja trasa zwiedzania</span></h4>
-
+  <section class="funkcjonalnosci funkcjonalnoscNr2">
+    <h4>Twoja trasa zwiedzania</h4>
     <p>Z naszą pomocą możesz znaleźć optymalną trasę zwiedzania. </p>
   </section>
 
-  <section class="funkcjonalnosc" id="funkcjonalnosci3">
-    <img src="images/funkcjonalnoscMapa.jpg" alt="Mapa Gdańska">
-    <h4 id="mapa"><span>Mapa zabytków</span></h4>
-
+  <section class="funkcjonalnosci funkcjonalnoscNr3">
+    <h4>Mapa zabytków</h4>
     <p>Oferujemy Ci interaktywną mapę ze wszystkimi dostępnymi zabytkami.</p>
-
-    <p></p>
   </section>
 
-  <section class="funkcjonalnosc">
-    <img src="images/funkcjonalnoscBilety.png" alt="Bilety">
-    <h4 id="bilety"><span>Bilety</span></h4>
-
+  <section class="funkcjonalnosci funkcjonalnoscNr4">
+    <h4>Bilety</h4>
     <p>W ciągu kilku minut wygodnie kupisz potrzebne wejściówki.</p>
   </section>
+
   <section class="clear"></section>
 
-  <section class="pozostaleFunkcjonalnosci" id="pozostałeFunkcjonalnosciNr1">
-    <img src="images/icons/wypozyczalnie.png">
-  </section>
-  <section class="pozostaleFunkcjonalnosci">
-    <img src="images/icons/parkingi1.png">
-  </section>
-  <section class="pozostaleFunkcjonalnosci">
-    <img src="images/icons/torba.png">
-  </section>
-  <section class="pozostaleFunkcjonalnosci">
-    <img src="images/icons/autobusy.png">
-  </section>
-  <section class="pozostaleFunkcjonalnosci">
-    <img src="images/icons/noclegi.png">
-  </section>
-  <section class="pozostaleFunkcjonalnosci">
-    <img src="images/icons/restauracje.png">
-  </section>
-  <section class="pozostaleFunkcjonalnosci">
-    <img src="images/icons/teatr.png">
-  </section>
-  <section class="pozostaleFunkcjonalnosci">
-    <img src="images/icons/telefony.png">
-  </section>
+  <section class="pozostaleFunkcjonalnosci pozostałeFunkcjonalnosciNr1"></section>
+  <section class="pozostaleFunkcjonalnosci pozostałeFunkcjonalnosciNr2"></section>
+  <section class="pozostaleFunkcjonalnosci pozostałeFunkcjonalnosciNr3"></section>
+  <section class="pozostaleFunkcjonalnosci pozostałeFunkcjonalnosciNr4"></section>
+  <section class="pozostaleFunkcjonalnosci pozostałeFunkcjonalnosciNr5"></section>
+  <section class="pozostaleFunkcjonalnosci pozostałeFunkcjonalnosciNr6"></section>
+  <section class="pozostaleFunkcjonalnosci pozostałeFunkcjonalnosciNr7"></section>
+  <section class="pozostaleFunkcjonalnosci pozostałeFunkcjonalnosciNr8"></section>
   <section class="clear"></section>
 
   <div class="oNas" id="oNas">
-    <img src="images/oNas.jpg" alt="Drwale">
-    <h4><span>O nas</span></h4>
-
+    <h4>O nas</h4>
     <p>Cześć! <br> To my kryjemy się za projektem “Zabytki Gdańska”. Michał, Michał, Kuba i Paweł - czterech chłopaków,
       <br> którzy chcą zostać web developerami. Znajdziesz nas w Olivia Business Centre. Zapraszamy do kontaktu.
     </p>
@@ -126,29 +96,20 @@
 
 <footer>
 
-  <div id="sm_icons">
-    <a href="https://www.facebook.com/infoshareacademy/"
-       target="_blank"><img src="images/icons/iconFacebook.png"
-                            alt="Ikona Facebook"></a>
-
+  <div class="sm_icons">
+    <a href="https://www.facebook.com/infoshareacademy/" target="_blank"></a>
     <!--link prowadzi do strony konferencji infoShare - brak profilu Akademii-->
-    <a href="https://plus.google.com/+infoshare/posts"
-       target="_blank"><img src="images/icons/iconGooglePlus.png"
-                            alt="Ikona Google+"></a>
-
+    <a href="https://plus.google.com/+infoshare/posts" target="_blank"></a>
     <!--link prowadzi do strony konferencji infoShare - brak profilu Akademii-->
-    <a href="https://twitter.com/infosharepl"
-       target="_blank"><img src="images/icons/iconTwitter.png"
-                            alt="Ikona Twitter"></a>
+    <a href="https://twitter.com/infosharepl" target="_blank"></a>
   </div>
   <div class="clear"></div>
 
-  <p id="copyright">&copy 2016 info<b>Share</b>&ltacademy&#47&gt<span id="by">Site by <b>Drwale Team</b></span>
-  </p>
-
-  <div class="clear"></div>
+    <p class="copyright">&copy 2016 info<span>Share</span>&ltacademy&#47&gt<p>
+    <p class="by">Site by <span>Drwale Team</span></p>
+    <p class="clear"></p>
 
 </footer>
-
+<script src="scripts/main.js"></script>
 </body>
 </html>

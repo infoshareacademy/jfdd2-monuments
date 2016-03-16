@@ -1,27 +1,29 @@
 footer {
     background: rgba(23, 28, 56, 0.94);
-}
-
-footer p {
     color: rgba(245, 245, 245, 0.94);
 }
 
-#sm_icons {
+footer span {
+    font-weight: bold;
+}
+
+.sm_icons {
     text-align: center;
+    background-image: url("../images/icons/SocialMedia.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 50px;
 }
 
-#sm_icons img {
-    margin: 10px 10px 0 10px;
-}
-
-#copyright {
+.copyright {
     font-family: Verdana, Tahoma, Helvetica, sans-serif;
     font-size: 18px;
     padding: 6px;
-    text-align: left;
+    float: left;
 }
 
-#by {
+.by {
     font-family: Verdana, Tahoma, Helvetica, sans-serif;
     float: right;
+    padding: 6px;
 }

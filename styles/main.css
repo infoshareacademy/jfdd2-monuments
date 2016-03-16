@@ -5,7 +5,7 @@ body {
     background-size: cover;
 }
 
-.funkcjonalnosc {
+.funkcjonalnosci {
     margin-bottom: 40px;
     margin-left: 40px;
     width: 580px;
@@ -16,22 +16,18 @@ body {
     min-width: 500px;
     position: relative;
     opacity: 0;
+    background-size: 100% 100%;
 }
 
-.funkcjonalnoscWidoczny {
+.funkcjonalnosciWidoczny {
     opacity: 1;
     }
 
-.funkcjonalnosc img {
-    height: 100%;
-    width: 100%;
-}
-
-#funkcjonalnosci, #funkcjonalnosci3 {
+.funkcjonalnoscNr1, .funkcjonalnoscNr3 {
     margin-left: 0;
 }
 
-.funkcjonalnosc span {
+.funkcjonalnosci h4 {
     color: white;
     font-family: Helvetica, sans-serif;
     font-weight: bold;
@@ -39,13 +35,13 @@ body {
     background: rgba(0, 0, 0, 0.7);
     padding: 5px;
     font-size: 30px;
-    position: relative;
-    top: -290px;
+    position: absolute;
+    top: 40px;
     text-align: right;
-    float: right;
+    right: 0;
 }
 
-.funkcjonalnosc p {
+.funkcjonalnosci p {
     color: transparent;
     transition: background 1s ease, color 0.6s ease;
     position: absolute;
@@ -58,12 +54,25 @@ body {
     display: inline-block;
 }
 
-.funkcjonalnosc:hover p {
+.funkcjonalnoscNr1 {
+    background-image: url("../images/funkcjonalnoscKompas.jpg");
+}
+.funkcjonalnoscNr2 {
+    background-image: url("../images/FunkcjonalnoscTrasa.jpg");
+}
+.funkcjonalnoscNr3 {
+    background-image: url("../images/funkcjonalnoscMapa.jpg");
+}
+.funkcjonalnoscNr4 {
+    background-image: url("../images/funkcjonalnoscBilety.png");
+}
+
+.funkcjonalnosci:hover p {
     background: rgba(0, 0, 0, 0.7);
     color: white;
 }
 
-.funkcjonalnosc:hover {
+.funkcjonalnosci:hover {
     transform: scale(1.03);
     box-shadow: 0 0 15px 5px darkgray;
 }
@@ -75,25 +84,42 @@ body {
     margin: 0 0 40px 40px;
     transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.4s ease;
     position: relative;
-    background: rgba(23, 28, 56, 0.94);
+    background-color: rgba(23, 28, 56, 0.94);
+    background-size: 64px 64px;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
-#pozostałeFunkcjonalnosciNr1 {
+.pozostałeFunkcjonalnosciNr1 {
     margin-left: 0;
+    background-image: url("../images/icons/pozostaleFunkcjonalnosciWypozyczalnie.png");
 }
-
-.pozostaleFunkcjonalnosci img {
-    width: 64px;
-    height: 64px;
-    position: relative;
-    left: 25px;
-    top: 27px;
+.pozostałeFunkcjonalnosciNr2 {
+    background-image: url("../images/icons/pozostaleFunkcjonalnosciParkingi.png");
+}
+.pozostałeFunkcjonalnosciNr3 {
+    background-image: url("../images/icons/pozostaleFunkcjonalnosciTorba.png");
+}
+.pozostałeFunkcjonalnosciNr4 {
+    background-image: url("../images/icons/pozostaleFunkcjonalnosciAutobusy.png");
+}
+.pozostałeFunkcjonalnosciNr5 {
+    background-image: url("../images/icons/pozostaleFunkcjonalnosciNoclegi.png");
+}
+.pozostałeFunkcjonalnosciNr6 {
+    background-image: url("../images/icons/pozostaleFunkcjonalnosciRestauracje.png");
+}
+.pozostałeFunkcjonalnosciNr7 {
+    background-image: url("../images/icons/pozostaleFunkcjonalnosciTeatr.png");
+}
+.pozostałeFunkcjonalnosciNr8 {
+    background-image: url("../images/icons/pozostaleFunkcjonalnosciTelefony.png");
 }
 
 .pozostaleFunkcjonalnosci:hover {
     transform: scale(1.09);
     box-shadow: 0 0 10px 3px #171c38;
-    background: rgba(139, 0, 0, 0.9);
+    background-color: rgba(139, 0, 0, 0.9);
 }
 
 .oNas {
@@ -102,6 +128,7 @@ body {
     margin-bottom: 40px;
     transition: transform 0.1s linear, box-shadow 0.1s linear;
     position: relative;
+    background-image: url("../images/oNas.jpg");
 }
 
 .oNas p {
@@ -118,12 +145,10 @@ body {
 
 .oNas h4 {
     font-size: 30px;
-    position: relative;
-    top: -368px;
+    position: absolute;
+    top: 40px;
+    right: 0;
     text-align: right;
-}
-
-.oNas span {
     color: white;
     font-family: Helvetica, sans-serif;
     font-weight: bold;

@@ -22,10 +22,6 @@ $(document).ready(function () {
 
     });
   });
-
-
-
-
   $(function() {
     var scrollBottom = $(window).scrollTop() + $(window).height() + 100;
     var pozycjaFunkcjonalnosci = document.getElementById('funkcjonalnosci').offsetTop;
@@ -38,7 +34,7 @@ $(document).ready(function () {
         $(".powitanie").addClass('powitanieWidoczny')
       }
       if ($(window).height() > pozycjaFunkcjonalnosci) {
-        $(".funkcjonalnosc").addClass('funkcjonalnoscWidoczny')
+        $(".funkcjonalnosci").addClass('funkcjonalnosciWidoczny')
       }
       if ($(window).height() > pozycjaFormularz) {
         $(".formularz").addClass('formularzWidoczny')
@@ -56,7 +52,7 @@ $(document).ready(function () {
         $(".formularz").addClass('formularzWidoczny')
       }
       if (scrollBottom > pozycjaFunkcjonalnosci){
-        $(".funkcjonalnosc").addClass('formularzWidoczny')
+        $(".funkcjonalnosci").addClass('funkcjonalnosciWidoczny')
       }
       if (scrollBottom > pozycjaPowitanie){
         $(".powitanie").addClass('powitanieWidoczny')
