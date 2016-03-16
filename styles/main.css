@@ -63,6 +63,23 @@ body {
     box-shadow: 0 0 15px 5px darkgray;
 }
 
+.pozostaleFunkcjonalnosciWarstwa1 {
+    width: 600px;
+    height: 600px;
+    display: inline-block;
+    position: relative;
+    float: left;
+}
+
+.pozostaleFunkcjonalnosciWarstwa2 {
+    width: 550px;
+    height: 600px;
+    display: inline-block;
+    position: relative;
+    float: right;
+    margin-top: -600px;
+}
+
 .pozostaleFunkcjonalnosci {
     width: 115px;
     height: 115px;
@@ -73,9 +90,9 @@ body {
     background: rgba(23, 28, 56, 0.94);
 }
 
-#pozostałeFunkcjonalnosciNr1 {
-    margin-left: 0;
-}
+/*#pozostałeFunkcjonalnosciNr1 {*/
+    /*margin-left: 0;*/
+/*}*/
 
 .pozostaleFunkcjonalnosci img {
     width: 64px;
@@ -90,6 +107,9 @@ body {
     box-shadow: 0 0 10px 3px #171c38;
     background: rgba(139, 0, 0, 0.9);
 }
+
+
+
 
 .oNas {
     width: 1200px;
