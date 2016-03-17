@@ -1,0 +1,32 @@
+table {
+    margin: 0 auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    background-color: lightblue;
+
+}
+.ludek {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    background-color: black;
+}
+.ludek1 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    background-color: red;
+
+}
+
+.ludek2 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    background-color: green;
+
+}
