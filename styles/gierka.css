@@ -35,3 +35,14 @@ table {
     height:30px;
     background-color:black;
 }
+.droga {
+    width:10px;
+    height:10px;
+    background-color:brown;
+}
+
+.player {
+    width:30px;
+    height:30px;
+    background-color:red;
+}
