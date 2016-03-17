@@ -103,8 +103,6 @@ $(document).ready(function () {
 
 //########## CIASTECZKA ########################################
 
-
-
   function setCookieValue(name, value){
     document.cookie = name + '=' + value ;
   }
@@ -116,7 +114,6 @@ $(document).ready(function () {
     $('#ciasteczka').hide();
 
   });
-
 
   function checkCookie(){
     if (document.cookie != "") {
@@ -130,23 +127,3 @@ $(document).ready(function () {
           }}}}}
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
