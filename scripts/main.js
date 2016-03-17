@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+//########## ZMIANA WIELKOSCI MENU ########################################
+
   $(function () {
 
     var przyciski = $(".przycisk");
@@ -21,6 +23,9 @@ $(document).ready(function () {
 
     });
   });
+
+  //########## WYPLYWANIE ELEMENTOW STRONY ########################################
+
   $(function () {
     var scrollBottom = $(window).scrollTop() + $(window).height() + 100;
     var pozycjaFunkcjonalnosci = document.getElementById('funkcjonalnosci').offsetTop;
@@ -62,21 +67,21 @@ $(document).ready(function () {
 
   });
 
+//########## ANIOMOWANE PRZEJSCIA MENU ########################################
 
-  function goToByScroll(id) {
+  function goToByScroll(href) {
 
-    id = id.replace("link", "");
     $('html,body').animate({
-        scrollTop: ($("#" + id).offset().top) - 100
-      },
-      'slow');
-  }
+        scrollTop: ($(href).offset().top) - 100
+      },'slow'
+    )}
 
-  $("#nav > ul > li > a").click(function (e) {
+  $(".menu a").click(function (e) {
     e.preventDefault();
-    goToByScroll($(this).attr("id"));
+    goToByScroll($(this).attr('href'));
   });
 
+//########## WALIDACJA FORMULARZA ########################################
 
   $(function () {
     $("#kontakt").submit(function () {
@@ -95,7 +100,30 @@ $(document).ready(function () {
       }
     });
   });
+
+//########## CIASTECZKA ########################################
+
+  function setCookieValue(name, value){
+    document.cookie = name + '=' + value ;
+  }
+
+  checkCookie(document.cookie);
+
+  $('#ciasteczka').click(function(){
+    setCookieValue('politykaCiasteczek', 'zgoda');
+    $('#ciasteczka').hide();
+
+  });
+
+  function checkCookie(){
+    if (document.cookie != "") {
+      var cookies = document.cookie.split(';');
+      for ( i=0; i<cookies.length; i++ ) {
+        var name = cookies[i].split('=')[0];
+        var value = cookies[i].split('=')[1];
+        if (name === 'politykaCiasteczek'){
+          if (value === 'zgoda'){
+            $('#ciasteczka').hide()
+          }}}}}
+
 });
-
-
-
