@@ -33,20 +33,24 @@ for (var y = 0; y < 20; y++) {
     var newPosition;
     //console.log(event.which);
     if (event.which == 100)  {
-      $('.player').removeClass('player').addClass('droga').next().addClass('player').removeClass('zabytek');
+      newPosition = $('.player').next();
     }
     if (event.which == 97) {
-      $('.player').removeClass('player').addClass('droga').prev().removeClass('droga').addClass('player').removeClass('zabytek');
+      newPosition = $('.player').prev();
     }
     if (event.which == 115) {
       var playerIndex = $('.player').index() +1 ;
-      $('.player').removeClass('player').addClass('droga').parent().next().find(':nth-child(' + playerIndex + ')').addClass('player').removeClass('zabytek');
+      newPosition = $('.player').parent().next().find(':nth-child(' + playerIndex + ')');
     }
     if (event.which == 119) {
       var playerIndex = $('.player').index() +1 ;
-      $('.player').removeClass('player').addClass('droga').parent().prev().find(':nth-child(' + playerIndex + ')').addClass('player').removeClass('zabytek');
+      newPosition = $('.player').parent().prev().find(':nth-child(' + playerIndex + ')');
     }
 
+        if(!newPosition.hasClass('droga')) {
+          actualPosition.removeClass('player').addClass('droga');
+          newPosition.addClass('player').removeClass('droga');
+        }
 
     //Funkcja liczaca złapane zabytki
 
