@@ -31,11 +31,29 @@ for (var y = 0; y < 20; y++) {
   $(document).keypress(function(event){
     console.log(event.which);
     if (event.which == 100) {
-      $('.player').next().addClass('player').prev().removeClass('player').addClass('droga');
+      $('.player').removeClass('player').addClass('droga').next().addClass('player');
     }
     if (event.which == 97) {
-      $('.player').prev().removeClass('droga').addClass('player').next().removeClass('player').addClass('droga');
+      $('.player').removeClass('player').addClass('droga').prev().removeClass('droga').addClass('player');
     }
+    if (event.which == 115) {
+      var playerIndex = $('.player').index() +1 ;
+      $('.player').removeClass('player').addClass('droga').parent().next().find(':nth-child(' + playerIndex + ')').addClass('player');
+    }
+    if (event.which == 119) {
+      var playerIndex = $('.player').index() +1 ;
+      $('.player').removeClass('player').addClass('droga').parent().prev().find(':nth-child(' + playerIndex + ')').addClass('player');
+    }
+
+
+    //var playerIndex = $('.player').index();
+    //console.log(playerIndex)
+    var playerParentIndex = $('.player').parent().index();
+    console.log(($('.player').parent()))
+
+
+
+
   });
 });
 
