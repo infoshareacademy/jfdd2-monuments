@@ -126,4 +126,18 @@ $(document).ready(function () {
             $('#ciasteczka').hide()
           }}}}}
 
+  $(window).scroll(function (){
+    var scroll = $(window).scrollTop() + $(window).height();
+    var pozycjaoNas = $('.oNas').offset().top;
+    var przesuniecie = 400 + (scroll - pozycjaoNas) * 0.3;
+    if (przesuniecie > 0) {
+      $('.oNas').css('background-position', 'center ' + przesuniecie + 'px')
+
+    }
+  });
+
+
+
+
+
 });

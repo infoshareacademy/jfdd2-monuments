@@ -138,7 +138,8 @@ body {
     margin-bottom: 40px;
     transition: transform 0.1s linear, box-shadow 0.1s linear;
     position: relative;
-    background-image: url("../images/oNas.jpg");
+    background-image: url("../images/oNasV2.jpg");
+    background-size: 100%;
 }
 
 .oNas p {
