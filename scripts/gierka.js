@@ -14,32 +14,57 @@ for (var y = 0; y < 20; y++) {
 
 
  function losowanie() {
+   var types = [
+     {
+       name: 'monument',
+       quantity: 20
+     },
+     {
+       name: 'food',
+       quantity: 5
+     }
+   ];
 
 
-   for(var i=0;i<20;i++) {
-     var $cells = $('td:not(.zabytek)',$table);
-     var howMany = $cells.length-1;
-     var randomFloat = Math.random() * howMany;
-     var randomInt = Math.round(randomFloat) % howMany+1;
-     $cells.eq(randomInt).addClass('zabytek');
+   types.forEach(function (type) {
+     drawSomething(type.quantity, type.name);
+   });
+
+   function drawSomething(howManyItems, what) {
+     for(var i=0;i<howManyItems;i++) {
+       var $cells = $('td',$table).not(types.map(function (type) {
+         return '.' + type.name;
+       }).join(', '));
+       var howMany = $cells.length-1;
+       var randomFloat = Math.random() * howMany;
+       var randomInt = Math.round(randomFloat) % howMany+1;
+       $cells.eq(randomInt).addClass(what);
+     }
    }
-   for(var i = 160; i <= 200; i++) {
-     var $cells = $('td:not(.zabytek)',$table);
-     var howMany = $cells.length-1;
-     var randomFloat = Math.random() * howMany;
-     var randomInt = Math.round(randomFloat) % howMany+1;
-     $cells.eq(randomInt).addClass('building');
-   }
+
+   //drawSomething(20, 'monument');
+   //drawSomething(5, 'food');
+   //for(var i=0;i<20;i++) {
+   //  var $cells = $('td:not(.zabytek)',$table);
+   //  var howMany = $cells.length-1;
+   //  var randomFloat = Math.random() * howMany;
+   //  var randomInt = Math.round(randomFloat) % howMany+1;
+   //  $cells.eq(randomInt).addClass('zabytek');
+   //}
+   //for(var i=0;i<5;i++) {
+   //  var $cells = $('td:not(.food, .zabytek)', $table);
+   //  var howMany = $cells.length - 1;
+   //  var randomFloat = Math.random() * howMany;
+   //  var randomInt = Math.round(randomFloat) % howMany + 1;
+   //  $cells.eq(randomInt).addClass('food');
+   //}
  }
   $('td').eq(0).addClass('player');
   losowanie();
 
 
-
-
-
   $(document).keypress(function(event){
-    var actualPosition =  $('.player');
+    var actualPosition =  $('.player')
     var newPosition;
     //console.log(event.which);
     if (event.which == 100)  {
@@ -57,19 +82,25 @@ for (var y = 0; y < 20; y++) {
       newPosition = $('.player').parent().prev().find(':nth-child(' + playerIndex + ')');
     }
 
-        if(!newPosition.hasClass('droga', 'building')) {
-          actualPosition.removeClass('player').addClass('droga');
-          newPosition.addClass('player').removeClass('droga');
+        if(!newPosition.hasClass('route')) {
+          actualPosition.removeClass('player').addClass('route');
+          newPosition.addClass('player').removeClass('route').removeClass('monument').removeClass('food');
         }
+    if (!newPosition.hasClass('cell')) {
+      alert ('');
+    }
 
 
     //Funkcja liczaca złapane zabytki
+    var foods = $('.food');
+    console.log('Ilosc jedzenia' + foods.length);
+    var iloscZabytkow = $('.monument').length;
+    console.log('Ilosc zabytkow'+ iloscZabytkow);
+    var points = 20-iloscZabytkow;
+    console.log(points);
 
+    var pokonanaDroga =  $('.route').length-(5-foods.length)*5;
 
-    var points = 20-($('.zabytek')).length;
-       console.log(points);
-
-    var pokonanaDroga =  $('.droga').length;
 
         if (pokonanaDroga > 20) {
           alert('Koniec zdobyles' +' ' + points + ' '+ 'punkty');
@@ -78,17 +109,15 @@ for (var y = 0; y < 20; y++) {
     //Nie powtarzająca się droga
 
 
-
+function pokazWynik (){
+  $('p').innerHTML='Ilosc zabytkow' + iloscZabytkow;
+}
 
 
     //var playerIndex = $('.player').index();
     //console.log(playerIndex)
     //var playerParentIndex = $('.player').parent().index();
     //console.log(($('.player').parent()))
-
-
-
-
   });
 });
 
