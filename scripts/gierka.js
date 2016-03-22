@@ -93,8 +93,9 @@ for (var y = 0; y < 20; y++) {
 
     //Funkcja liczaca złapane zabytki
     var foods = $('.food');
-    console.log(foods.length);
+    console.log('Ilosc jedzenia' + foods.length);
     var iloscZabytkow = $('.monument').length;
+    console.log('Ilosc zabytkow'+ iloscZabytkow);
     var points = 20-iloscZabytkow;
     console.log(points);
 
@@ -108,7 +109,9 @@ for (var y = 0; y < 20; y++) {
     //Nie powtarzająca się droga
 
 
-
+function pokazWynik (){
+  $('p').innerHTML='Ilosc zabytkow' + iloscZabytkow;
+}
 
 
     //var playerIndex = $('.player').index();
