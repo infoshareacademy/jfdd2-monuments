@@ -1,7 +1,5 @@
 $(document).ready(function () {
 
-//########## ZMIANA WIELKOSCI MENU ########################################
-
   $(function () {
 
     var przyciski = $(".przycisk");
@@ -22,9 +20,33 @@ $(document).ready(function () {
 
 
     });
-  });
+    $(function (){
+      var przycisk1 = $('.przycisk1');
+      var przycisk2 = $('.przycisk2');
+      var przycisk3 = $('.przycisk3');
+      var logo = $('.logo');
+      $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
 
-  //########## WYPLYWANIE ELEMENTOW STRONY ########################################
+        if (scroll >=350 && scroll <=800) {
+          przycisk1.removeClass('przyciskDol').addClass('przyciskX');
+        }else {
+          przycisk1.removeClass('przyciskX').addClass('przycisk');
+        }
+        if(scroll >= 850 && scroll <1280) {
+          przycisk2.removeClass('przyciskDol').addClass('przyciskX')
+        }else {
+          przycisk2.removeClass('przyciskX').addClass('przycisk')
+        }
+        if(scroll>1250) {
+          przycisk3.removeClass('przyciskDol').addClass('przyciskX')
+        }else {
+          przycisk3.removeClass('przyciskX').addClass('przycisk')
+        }
+      });
+
+    });
+  });
 
   $(function () {
     var scrollBottom = $(window).scrollTop() + $(window).height() + 100;
@@ -67,7 +89,6 @@ $(document).ready(function () {
 
   });
 
-//########## ANIOMOWANE PRZEJSCIA MENU ########################################
 
   function goToByScroll(href) {
 
@@ -81,7 +102,6 @@ $(document).ready(function () {
     goToByScroll($(this).attr('href'));
   });
 
-//########## WALIDACJA FORMULARZA ########################################
 
   $(function () {
     $("#kontakt").submit(function () {
@@ -101,7 +121,7 @@ $(document).ready(function () {
     });
   });
 
-//########## CIASTECZKA ########################################
+
 
   function setCookieValue(name, value){
     document.cookie = name + '=' + value ;
