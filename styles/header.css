@@ -92,12 +92,15 @@
     margin-top: 70px;
     margin-bottom: 40px;
     opacity: 0;
-    transition: opacity 1s linear;
+    transition: opacity 1s ease, transform 1s ease;
     background-image: url("../images/zdjeciePowitalne.jpg");
+    transform: scale(0.9);
 }
 
 .powitanieWidoczny {
     opacity: 1;
+    transform: scale(1);
+
 }
 
 .powitanie h2, .powitanie h3 {
