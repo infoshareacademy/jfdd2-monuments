@@ -37,7 +37,8 @@ table {
     width:10px;
     height:10px;
     background-color:brown;
-    background-size:10px 10px;
+    background-size:30px 30px;
+    background-image: url("../scripts/route.png");
 }
 
 .player {
