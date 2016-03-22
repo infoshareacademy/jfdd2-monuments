@@ -23,9 +23,19 @@ for (var y = 0; y < 20; y++) {
      var randomInt = Math.round(randomFloat) % howMany+1;
      $cells.eq(randomInt).addClass('zabytek');
    }
+   for(var i = 160; i <= 200; i++) {
+     var $cells = $('td:not(.zabytek)',$table);
+     var howMany = $cells.length-1;
+     var randomFloat = Math.random() * howMany;
+     var randomInt = Math.round(randomFloat) % howMany+1;
+     $cells.eq(randomInt).addClass('building');
+   }
  }
   $('td').eq(0).addClass('player');
   losowanie();
+
+
+
 
 
   $(document).keypress(function(event){
@@ -47,10 +57,11 @@ for (var y = 0; y < 20; y++) {
       newPosition = $('.player').parent().prev().find(':nth-child(' + playerIndex + ')');
     }
 
-        if(!newPosition.hasClass('droga')) {
+        if(!newPosition.hasClass('droga', 'building')) {
           actualPosition.removeClass('player').addClass('droga');
           newPosition.addClass('player').removeClass('droga');
         }
+
 
     //Funkcja liczaca złapane zabytki
 

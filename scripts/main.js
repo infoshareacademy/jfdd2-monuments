@@ -90,18 +90,16 @@ $(document).ready(function () {
   });
 
 
-  function goToByScroll(id) {
+  function goToByScroll(href) {
 
-    id = id.replace("link", "");
     $('html,body').animate({
-        scrollTop: ($("#" + id).offset().top) - 100
-      },
-      'slow');
-  }
+        scrollTop: ($(href).offset().top) - 100
+      },'slow'
+    )}
 
-  $("#nav > ul > li > a").click(function (e) {
+  $(".menu a").click(function (e) {
     e.preventDefault();
-    goToByScroll($(this).attr("id"));
+    goToByScroll($(this).attr('href'));
   });
 
 
@@ -122,7 +120,30 @@ $(document).ready(function () {
       }
     });
   });
+
+
+
+  function setCookieValue(name, value){
+    document.cookie = name + '=' + value ;
+  }
+
+  checkCookie(document.cookie);
+
+  $('#ciasteczka').click(function(){
+    setCookieValue('politykaCiasteczek', 'zgoda');
+    $('#ciasteczka').hide();
+
+  });
+
+  function checkCookie(){
+    if (document.cookie != "") {
+      var cookies = document.cookie.split(';');
+      for ( i=0; i<cookies.length; i++ ) {
+        var name = cookies[i].split('=')[0];
+        var value = cookies[i].split('=')[1];
+        if (name === 'politykaCiasteczek'){
+          if (value === 'zgoda'){
+            $('#ciasteczka').hide()
+          }}}}}
+
 });
-
-
-
