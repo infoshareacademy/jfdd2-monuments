@@ -12,17 +12,21 @@ body {
     height: 320px;
     float: left;
     background: rgba(255, 255, 255, 0.4);
-    transition: right 1s ease, transform 0.1s ease, box-shadow 0.1s ease, opacity 1s linear 0.3s;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
     min-width: 500px;
     position: relative;
-    opacity: 0;
     background-size: 100%;
-    right: -100px;
+}
+.sekcjaFunkcjonalnosci {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 1s linear, transform 1s ease;
+
 }
 
-.funkcjonalnosciWidoczny {
+.sekcjaFunkcjonalnosciWidoczny {
     opacity: 1;
-    right: 0;
+    transform: scale(1);
 }
 
 .funkcjonalnoscNr1, .funkcjonalnoscNr3 {
@@ -188,14 +192,14 @@ body {
     width: 1200px;
     height: 120px;
     opacity: 0;
-    transition: opacity 1s ease 0.3s , bottom 1s ease;
+    transition: opacity 1s ease, transform 1s ease;
     position: relative;
-    bottom: -100px;
+    transform: scale(0.9);
 }
 
 .formularzWidoczny {
     opacity: 1;
-    bottom: 0;
+    transform: scale(1);
 }
 
 .formularz form {
