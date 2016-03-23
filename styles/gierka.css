@@ -5,7 +5,8 @@ table {
 .cell {
     width: 30px;
     height: 30px;
-    background-color: lightblue;
+    background-size:30px 30px;
+    background-image: url("../scripts/grass.jpg");
 
 }
 .ludek {
@@ -26,12 +27,16 @@ table {
     width: 30px;
     height: 30px;
     background-color: green;
+    background-size:30px 30px;
+    background-image: url("../scripts/food.png");
 
 }
 .monument {
     width:30px;
     height:30px;
-    background-color:black;
+    background-color: green;
+    background-size:30px 30px;
+    background-image: url("../scripts/monument.png");
 }
 .route {
     width:10px;
