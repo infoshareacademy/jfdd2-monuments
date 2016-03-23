@@ -63,3 +63,12 @@ p {
     height:30px;
     background-color:mediumvioletred;
 }
+
+.hooligan {
+    width:30px;
+    height: 30px;
+    background-image: url('../scripts/hooligan.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
