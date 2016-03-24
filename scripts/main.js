@@ -8,7 +8,7 @@ $(document).ready(function () {
       var scroll = $(window).scrollTop();
 
 
-      if (scroll >= 200) {
+      if (scroll >= 50) {
         przyciski.removeClass('przycisk').addClass("przyciskDol");
         logo.removeClass('logo').addClass("logoDol");
 
@@ -26,26 +26,27 @@ $(document).ready(function () {
       var przycisk3 = $('.przycisk3');
       var logo = $('.logo');
       $(window).scroll(function(){
-        var scroll = $(window).scrollTop() + $(window).height() - 300 ;
-        var pozycjaFunkcjonalnosci = $('.sekcjaFunkcjonalnosci').offset().top;
-        var bottomFunkcjonalnosci = pozycjaFunkcjonalnosci + $('.sekcjaFunkcjonalnosci').height();
-        var pozycjaONas = $('.oNas').offset().top;
-        var bottomONas = pozycjaONas + $('.oNas').height() -200;
-        var pozycjaKontakt = $('.formularz').offset().top -200;
+        var scroll = $(window).scrollTop();
+        var scrollHeight = $(window).scrollTop() + $(window).height();
+        var pozycjaFunkcjonalnosci = $('.sekcjaFunkcjonalnosci').offset().top -300;
+        var bottomFunkcjonalnosci = + pozycjaFunkcjonalnosci + $('.sekcjaFunkcjonalnosci').height() + 500;
+        var pozycjaONas = $('.oNas').offset().top + 100;
+        var bottomONas = pozycjaONas + $('.oNas').height() ;
+        var pozycjaKontakt = $('.formularz').offset().top + 100;
 
 
 
-        if (scroll >=pozycjaFunkcjonalnosci && scroll <=bottomFunkcjonalnosci) {
+        if (scroll >=pozycjaFunkcjonalnosci && scrollHeight <=bottomFunkcjonalnosci) {
           przycisk1.removeClass('przyciskDol').addClass('przyciskX');
         }else {
           przycisk1.removeClass('przyciskX').addClass('przycisk');
         }
-        if(scroll >= pozycjaONas && scroll <bottomONas) {
+        if(scrollHeight >= pozycjaONas && scrollHeight <bottomONas) {
           przycisk2.removeClass('przyciskDol').addClass('przyciskX')
         }else {
           przycisk2.removeClass('przyciskX').addClass('przycisk')
         }
-        if(scroll>pozycjaKontakt) {
+        if(scrollHeight>pozycjaKontakt) {
           przycisk3.removeClass('przyciskDol').addClass('przyciskX')
         }else {
           przycisk3.removeClass('przyciskX').addClass('przycisk')
