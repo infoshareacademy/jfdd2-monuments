@@ -1,5 +1,18 @@
 $(document).ready(function () {
 
+  $(function switchLanguage() {
+    $("#language").click(function(){
+      $(".english").toggle();
+    });
+  });
+
+  //$(function switchLanguage() {
+  // $("#language").click(function () {
+  //   $(".english").hide();
+  //   $(".polish").show();
+  // });
+  //});
+
   $(function () {
 
     var przyciski = $(".przycisk");
