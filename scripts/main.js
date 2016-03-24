@@ -30,7 +30,7 @@ $(document).ready(function () {
         var pozycjaFunkcjonalnosci = $('.sekcjaFunkcjonalnosci').offset().top;
         var bottomFunkcjonalnosci = pozycjaFunkcjonalnosci + $('.sekcjaFunkcjonalnosci').height();
         var pozycjaONas = $('.oNas').offset().top;
-        var bottomONas = pozycjaONas + $('.oNas').height() + 300;
+        var bottomONas = pozycjaONas + $('.oNas').height() -200;
         var pozycjaKontakt = $('.formularz').offset().top -200;
 
 
