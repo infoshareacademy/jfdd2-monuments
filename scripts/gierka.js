@@ -5,7 +5,7 @@ $('#app').append($table);
 for (var y = 0; y < 20; y++) {
   var $tr = $('<tr>');
   $table.append($tr);
-  for (var x = 0; x <20; x++) {
+  for (var x = 0; x <30; x++) {
     var $td = $('<td>');
     $td.addClass('cell');
     $tr.append($td);
@@ -109,7 +109,7 @@ for (var y = 0; y < 20; y++) {
     $("#iloscRuchu").html (20-pokonanaDroga);
 
         if (pokonanaDroga > 20) {
-            location.reload()
+              alert('ssss');
           }
     //Nie powtarzająca się droga
 
