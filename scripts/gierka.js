@@ -155,7 +155,7 @@ var hooligan = setInterval(function(){
     //if (! newPosition.hasClass('cell') )
     //  debugger;
 
-  } while ( !newPosition.hasClass('cell');
+  } while ( !newPosition.hasClass('cell'));
   actualPosition.removeClass('hooligan');
   newPosition.addClass('hooligan').removeClass('food');
 
