@@ -109,8 +109,8 @@ for (var y = 0; y < 20; y++) {
     $("#iloscRuchu").html (20-pokonanaDroga);
 
         if (pokonanaDroga > 20) {
-          alert('aslsl');
-        }
+            location.reload()
+          }
     //Nie powtarzająca się droga
 
 
