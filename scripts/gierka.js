@@ -146,18 +146,20 @@ function moveHooligan(){
   }
   return newPosition;
 }
-var prevPosition = $();
+var prevPositions;
 var hooligan = setInterval(function(){
 
   var actualPosition =  $('.hooligan');
-  var newPosition; // = moveHooligan();
+  var newPosition;
 
   do {
     newPosition = moveHooligan();
-    //if (! newPosition.hasClass('cell') )
-    //  debugger;
 
-  } while ( !newPosition.hasClass('cell'));
+  } while ( !newPosition.hasClass('cell') || newPosition.hasClass('prevPosition'));
+  if (prevPositions != undefined){
+    prevPositions.removeClass('prevPosition');
+  }
+   prevPositions =  actualPosition.addClass('prevPosition');
   actualPosition.removeClass('hooligan');
   newPosition.addClass('hooligan').removeClass('food');
 
