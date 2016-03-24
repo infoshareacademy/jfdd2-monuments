@@ -26,19 +26,26 @@ $(document).ready(function () {
       var przycisk3 = $('.przycisk3');
       var logo = $('.logo');
       $(window).scroll(function(){
-        var scroll = $(window).scrollTop();
+        var scroll = $(window).scrollTop() + $(window).height() - 300 ;
+        var pozycjaFunkcjonalnosci = $('.sekcjaFunkcjonalnosci').offset().top;
+        var bottomFunkcjonalnosci = pozycjaFunkcjonalnosci + $('.sekcjaFunkcjonalnosci').height();
+        var pozycjaONas = $('.oNas').offset().top;
+        var bottomONas = pozycjaONas + $('.oNas').height() + 300;
+        var pozycjaKontakt = $('.formularz').offset().top -200;
 
-        if (scroll >=350 && scroll <=800) {
+
+
+        if (scroll >=pozycjaFunkcjonalnosci && scroll <=bottomFunkcjonalnosci) {
           przycisk1.removeClass('przyciskDol').addClass('przyciskX');
         }else {
           przycisk1.removeClass('przyciskX').addClass('przycisk');
         }
-        if(scroll >= 850 && scroll <1280) {
+        if(scroll >= pozycjaONas && scroll <bottomONas) {
           przycisk2.removeClass('przyciskDol').addClass('przyciskX')
         }else {
           przycisk2.removeClass('przyciskX').addClass('przycisk')
         }
-        if(scroll>1250) {
+        if(scroll>pozycjaKontakt) {
           przycisk3.removeClass('przyciskDol').addClass('przyciskX')
         }else {
           przycisk3.removeClass('przyciskX').addClass('przycisk')
