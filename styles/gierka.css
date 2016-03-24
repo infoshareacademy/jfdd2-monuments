@@ -1,5 +1,9 @@
+body {
+    background-color: black;
+}
 table {
     margin: 0 auto;
+    text-align: center;
 }
 
 .cell {
@@ -72,3 +76,22 @@ p {
     background-repeat: no-repeat;
 
 }
+
+.iloscZabytkow {
+    text-align:center;
+    position: relative;
+    bottom: 500px;
+    font-size: 30px;
+    left: 150px;
+    margin-bottom: 50px;
+    color: white;
+}
+.iloscRuchow {
+    text-align:center;
+    position: relative;
+    bottom: 500px;
+    font-size: 30px;
+    left: 100px;
+    color: white;
+}
+

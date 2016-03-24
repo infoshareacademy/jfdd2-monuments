@@ -106,17 +106,19 @@ for (var y = 0; y < 20; y++) {
     console.log(points);
     var pokonanaDroga =  $('.route').length-(5-foods.length)*5;
     $("#wynik").html  (points);
+    $("#iloscRuchu").html (20-pokonanaDroga);
 
         if (pokonanaDroga > 20) {
-          alert('Koniec zdobyles' +' ' + points + ' '+ 'punkty');
+          alert('aslsl');
         }
-
     //Nie powtarzająca się droga
 
 
-function pokazWynik (){
-  $('p').innerHTML='Ilosc zabytkow' + iloscZabytkow;
-}
+//function pokazWynik (){
+//  $('.iloscZabytkow').innerHTML='Ilosc zabytkow' + iloscZabytkow;
+//}
+
+
 
 
     //var playerIndex = $('.player').index();
