@@ -66,34 +66,36 @@ for (var y = 0; y < 15; y++) {
  }
   $('td').eq(0).addClass('player');
   losowanie();
+  var endGame = 0;
 
 
-  $(document).keypress(function(event){
-    var actualPosition =  $('.player')
+
+  $(document).keypress(function (event) {
+    var actualPosition = $('.player')
     var newPosition;
     //console.log(event.which);
-    if (event.which == 100)  {
+    if (event.which == 100) {
       newPosition = $('.player').next();
     }
     if (event.which == 97) {
       newPosition = $('.player').prev();
     }
     if (event.which == 115) {
-      var playerIndex = $('.player').index() +1 ;
+      var playerIndex = $('.player').index() + 1;
       newPosition = $('.player').parent().next().find(':nth-child(' + playerIndex + ')');
     }
     if (event.which == 119) {
-      var playerIndex = $('.player').index() +1 ;
+      var playerIndex = $('.player').index() + 1;
       newPosition = $('.player').parent().prev().find(':nth-child(' + playerIndex + ')');
     }
 
-        if(!newPosition.hasClass('route')) {
-          actualPosition.removeClass('player').addClass('route');
-          newPosition.addClass('player').removeClass('route').removeClass('monument').removeClass('food');
+    if (!newPosition.hasClass('route') && endGame===0) {
+      actualPosition.removeClass('player').addClass('route');
+      newPosition.addClass('player').removeClass('route').removeClass('monument').removeClass('food');
 
-        }
+    }
     if (!newPosition.hasClass('cell')) {
-      alert ('');
+      gameOver();
     }
 
 
@@ -101,24 +103,23 @@ for (var y = 0; y < 15; y++) {
     var foods = $('.food');
     console.log('Ilosc jedzenia' + foods.length);
     var iloscZabytkow = $('.monument').length;
-    console.log('Ilosc zabytkow'+ iloscZabytkow);
-    var points = 20-iloscZabytkow;
+    console.log('Ilosc zabytkow' + iloscZabytkow);
+    var points = 20 - iloscZabytkow;
     console.log(points);
-    var pokonanaDroga =  $('.route').length-(5-foods.length)*5;
-    $("#wynik").html  (points);
-    $("#iloscRuchu").html (20-pokonanaDroga);
+    var pokonanaDroga = $('.route').length - (5 - foods.length) * 5;
+    $(".wynik").html  (points);
+    $("#iloscRuchu").html (41 - pokonanaDroga);
 
-        if (pokonanaDroga > 20) {
-              alert('ssss');
-          }
+    if (pokonanaDroga > 40) {
+      gameOver();
+      endGame = 1;
+    }
     //Nie powtarzająca się droga
 
 
 //function pokazWynik (){
 //  $('.iloscZabytkow').innerHTML='Ilosc zabytkow' + iloscZabytkow;
 //}
-
-
 
 
     //var playerIndex = $('.player').index();
@@ -146,23 +147,32 @@ function moveHooligan(){
   }
   return newPosition;
 }
-var prevPosition = $();
+var prevPositions;
 var hooligan = setInterval(function(){
 
   var actualPosition =  $('.hooligan');
-  var newPosition; // = moveHooligan();
+  var newPosition;
 
   do {
     newPosition = moveHooligan();
-    //if (! newPosition.hasClass('cell') )
-    //  debugger;
 
-  } while ( !newPosition.hasClass('cell'));
+  } while ( !newPosition.hasClass('cell') || newPosition.hasClass('prevPosition'));
+  if (prevPositions != undefined){
+    prevPositions.removeClass('prevPosition');
+  }
+  prevPositions =  actualPosition.addClass('prevPosition');
   actualPosition.removeClass('hooligan');
+  if (newPosition.hasClass('player')){
+    gameOver();
+  }
   newPosition.addClass('hooligan').removeClass('food');
 
 
 },200);
+
+function gameOver (){
+  $('.gameOver').css('display', 'block');
+}
 
 
 
