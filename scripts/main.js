@@ -1,5 +1,24 @@
 $(document).ready(function () {
 
+  // check language from localStorage
+
+  var lang = localStorage.getItem('language');
+  if (lang === undefined) {
+    lang = 'pl';
+  }
+  loadLang();
+
+  function loadLang () {
+    lang = localStorage.getItem('language');
+    $('.polish').toggle(lang === 'pl');
+    $('.english').toggle(lang === 'en');
+  }
+
+  $('#language').click(function(){
+    localStorage.setItem('language', lang === 'pl' ? 'en' : 'pl');
+    loadLang();
+  });
+
   $(function () {
 
     var przyciski = $(".przycisk");
@@ -88,7 +107,7 @@ $(document).ready(function () {
       },'slow'
     )}
 
-  $(".menu a").click(function (e) {
+  $(".menu a:not(.lang-toggle)").click(function (e) {
     e.preventDefault();
     goToByScroll($(this).attr('href'));
   });
@@ -146,9 +165,5 @@ $(document).ready(function () {
 
     }
   });
-
-
-
-
 
 });

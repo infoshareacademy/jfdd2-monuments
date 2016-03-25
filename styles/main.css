@@ -5,6 +5,10 @@ body {
     background-size: cover;
 }
 
+.english {
+    display: none;
+}
+
 .funkcjonalnosci {
     margin-bottom: 40px;
     margin-left: 40px;
