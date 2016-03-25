@@ -3,8 +3,8 @@ $(document).ready(function () {
   // check language from localStorage
 
   var lang = localStorage.getItem('language');
-  if (lang === undefined) {
-    lang = 'pl';
+  if (lang === null) {
+    localStorage.setItem('language', 'pl');
   }
   loadLang();
 
