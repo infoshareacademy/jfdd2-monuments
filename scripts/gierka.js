@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   var $table = $('<table>');
 $('#app').append($table);
-for (var y = 0; y < 20; y++) {
+for (var y = 0; y < 15; y++) {
   var $tr = $('<tr>');
   $table.append($tr);
   for (var x = 0; x <30; x++) {
