@@ -1,3 +1,4 @@
+var endGame = 0;
 $(document).ready(function(){
 
   var $table = $('<table>');
@@ -46,27 +47,11 @@ for (var y = 0; y < 15; y++) {
        $cells.eq(randomInt).addClass(what);
      }
    }
+   }
 
-   //drawSomething(20, 'monument');
-   //drawSomething(5, 'food');
-   //for(var i=0;i<20;i++) {
-   //  var $cells = $('td:not(.zabytek)',$table);
-   //  var howMany = $cells.length-1;
-   //  var randomFloat = Math.random() * howMany;
-   //  var randomInt = Math.round(randomFloat) % howMany+1;
-   //  $cells.eq(randomInt).addClass('zabytek');
-   //}
-   //for(var i=0;i<5;i++) {
-   //  var $cells = $('td:not(.food, .zabytek)', $table);
-   //  var howMany = $cells.length - 1;
-   //  var randomFloat = Math.random() * howMany;
-   //  var randomInt = Math.round(randomFloat) % howMany + 1;
-   //  $cells.eq(randomInt).addClass('food');
-   //}
- }
   $('td').eq(0).addClass('player');
   losowanie();
-  var endGame = 0;
+
 
 
 
@@ -96,6 +81,7 @@ for (var y = 0; y < 15; y++) {
     }
     if (!newPosition.hasClass('cell')) {
       gameOver();
+      endGame = 1
     }
 
 
@@ -128,6 +114,7 @@ for (var y = 0; y < 15; y++) {
     //console.log(($('.player').parent()))
   });
 });
+
 function moveHooligan(){
   var newPosition;
   var direction = Math.random();
@@ -164,6 +151,7 @@ var hooligan = setInterval(function(){
   actualPosition.removeClass('hooligan');
   if (newPosition.hasClass('player')){
     gameOver();
+    endGame = 1;
   }
   newPosition.addClass('hooligan').removeClass('food');
 
@@ -173,11 +161,3 @@ var hooligan = setInterval(function(){
 function gameOver (){
   $('.gameOver').css('display', 'block');
 }
-
-
-
-
-
-
-
-
