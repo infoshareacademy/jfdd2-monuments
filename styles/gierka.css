@@ -10,6 +10,7 @@ table {
     padding: 20px;
     background-color: rgba(23, 28, 56, 0.94);
     text-align: center;
+    width: 1200px;
 }
 
 .cell {
@@ -179,6 +180,23 @@ table {
     text-align: center;
 }
 
+.gameOver {
+    background: indianred;
+    position: absolute;
+    width: 60%;
+    height: 40%;
+    top: 30%;
+    left: 20%;
+    border: 10px solid black;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    display: none;
+}
+.gameOver2 {
+    font-size: 100px;
+}
 .clear {
     clear: both;
 }
