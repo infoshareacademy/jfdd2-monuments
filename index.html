@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="styles/main.css">
   <link rel="shortcut icon" href="images/icons/favicon.gif">
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
 </head>
 
 <body>
@@ -22,7 +23,7 @@
       <li><a  class="przycisk przycisk1" href="#funkcjonalnosci"><span class="polish">Funkcjonalności</span><span class="english">Functionalities</span></a></li>
       <li><a  class="przycisk przycisk2" href="#oNas"><span class="polish">O nas</span><span class="english">About</span></a></li>
       <li><a  class="przycisk przycisk3" href="#kontakt"><span class="polish">Kontakt</span><span class="english">Contact</span></a></li>
-      <li><a class="przycisk przycisk4" href="#language"<span class="polish">English</span><span class="english">Polski</span></a></li>
+      <li><a class="przycisk przycisk4 lang-toggle" id="language"><span class="polish">English</span><span class="english">Polski</span></a></li>
       <li class="clear"></li>
     </ul>
   </nav>
@@ -30,7 +31,6 @@
     <h2><span class="polish">Zabytki Gdańska</span><span class="english">Gdansk Heritage</span></h2>
     <h3><span class="polish">Dokąd dziś pójdziemy?</span><span class="english">Where do we go today?</span></h3>
   </section>
-
 </header>
 
 <main>
@@ -47,7 +47,7 @@
 
   <section class="funkcjonalnosci funkcjonalnoscNr3">
     <h4><span class="polish">Mapa zabytków</span><span class="english">Map of landmarks</span></h4>
-    <p><span class="polish">Oferujemy Ci interaktywną mapę ze wszystkimi dostępnymi zabytkami.</span><span class="english">Whether you are visiting Gdansk for the first time or coming back for a special occasion, you will discover a city full of unforgettable landmarks and exciting things to do.</span></p>
+    <p><span class="polish">Oferujemy Ci interaktywną mapę ze wszystkimi dostępnymi zabytkami.</span><span class="english">Discover a city full of unforgettable landmarks and exciting things to do.</span></p>
   </section>
 
   <section class="funkcjonalnosci funkcjonalnoscNr4">
@@ -60,7 +60,7 @@
   <section class="pozostaleFunkcjonalnosci pozostaleFunkcjonalnosciNr2"><p><span class="polish">Parkingi</span><span class="english">Parkings</span></p></section>
   <section class="pozostaleFunkcjonalnosci pozostaleFunkcjonalnosciNr3"><p><span class="polish">Bagaże</span><span class="english">Luggage</span></p></section>
   <section class="pozostaleFunkcjonalnosci pozostaleFunkcjonalnosciNr4"><p><span class="polish">Transport</span><span class="english">Transport</span></p></section>
-  <section class="pozostaleFunkcjonalnosci pozostaleFunkcjonalnosciNr5"><p><span class="polish">Noclegi</span><span class="english">Accommodation</span></p></section>
+  <section class="pozostaleFunkcjonalnosci pozostaleFunkcjonalnosciNr5"><p><span class="polish">Noclegi</span><span class="english">Hotels</span></p></section>
   <section class="pozostaleFunkcjonalnosci pozostaleFunkcjonalnosciNr6"><p><span class="polish">Restauracje</span><span class="english">Restaurants</span></p></section>
   <section class="pozostaleFunkcjonalnosci pozostaleFunkcjonalnosciNr7"><p><span class="polish">Kultura</span><span class="english">Culture</span></p></section>
   <section class="pozostaleFunkcjonalnosci pozostaleFunkcjonalnosciNr8"><p><span class="polish">Telefony</span><span class="english">Phones</span></p></section>
@@ -75,7 +75,7 @@
 
   <div class="formularz" id="formularz">
     <p><span class="polish">Jeśli jesteś zainteresowany naszą ofertą zostaw nam numer telefonu lub adres e-mail - skontaktujemy się z
-      Tobą</span><span class="english">If you are interested in our product, please leave your e-mail address or phone number - we will contact you shortly</span></p>
+      Tobą.</span><span class="english">If you are interested in our product, please leave your e-mail address or phone number - we will contact you shortly.</span></p>
 
     <fieldset id="kontakt">
       <form action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" method="POST">
@@ -85,7 +85,8 @@
           <input type="tel" name="telefon" placeholder="np. 602101220"
                  pattern="[0-9]{3}[0-9]{3}[0-9]{3}"/></label>
         <input type="hidden" name="receiver" value="loirino1234@gmail.com">
-        <input type="submit" value="Prześlij dane"/>
+        <span class="polish"><input type="submit" value="Prześlij dane"/></span>
+        <span class="english"><input type="submit" value="Send"/></span>
       </form>
     </fieldset>
   </div>
@@ -119,5 +120,6 @@
 <div id="ciasteczka">
   <p><span class="polish">Jeżeli wyrażasz zgodę na politykę ciesteczek (ang. cookies), kliknij w ten komunikat.</span><span class="english">This site uses cookies and by using the site you are consenting to this.</span></p>
 </div>
+
 </body>
 </html>
