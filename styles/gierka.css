@@ -63,6 +63,7 @@ table {
     background-size:30px 30px;
     background-image: url("../scripts/monument.png");
 }
+
 .route {
     width:10px;
     height:10px;
@@ -200,7 +201,7 @@ table {
      background-color: rgba(23, 28, 56, 0.94);
      padding: 50px;
      position: relative;
-     top:70px;
+     top:90px;
  }
 #menuGame {
     position: relative;
