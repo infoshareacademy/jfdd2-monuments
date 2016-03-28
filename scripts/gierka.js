@@ -1,4 +1,5 @@
 var endGame = 0;
+var scenario = "";
 $(document).ready(function(){
 
   var $table = $('<table>');
@@ -58,18 +59,18 @@ for (var y = 0; y < 15; y++) {
   $(document).keypress(function (event) {
     var actualPosition = $('.player')
     var newPosition;
-    //console.log(event.which);
-    if (event.which == 100) {
+    console.log(event.which);
+    if (event.which == 100 || event.which == 68) {
       newPosition = $('.player').next();
     }
-    if (event.which == 97) {
+    if (event.which == 97 || event.which == 65) {
       newPosition = $('.player').prev();
     }
-    if (event.which == 115) {
+    if (event.which == 115 || event.which == 83) {
       var playerIndex = $('.player').index() + 1;
       newPosition = $('.player').parent().next().find(':nth-child(' + playerIndex + ')');
     }
-    if (event.which == 119) {
+    if (event.which == 119 || event.which == 87) {
       var playerIndex = $('.player').index() + 1;
       newPosition = $('.player').parent().prev().find(':nth-child(' + playerIndex + ')');
     }
@@ -80,8 +81,10 @@ for (var y = 0; y < 15; y++) {
 
     }
     if (!newPosition.hasClass('cell')) {
-      gameOver();
+      scenario = 'Wpadłeś do Motławy!';
+      gameOver(scenario);
       endGame = 1
+
     }
 
 
@@ -97,7 +100,8 @@ for (var y = 0; y < 15; y++) {
     $("#iloscRuchu").html (41 - pokonanaDroga);
 
     if (pokonanaDroga > 40) {
-      gameOver();
+      scenario = 'Zmęczenie nie pozwala Ci na dalsze zwiedznaie. ';
+      gameOver(scenario);
       endGame = 1;
     }
     //Nie powtarzająca się droga
@@ -150,7 +154,8 @@ var hooligan = setInterval(function(){
   prevPositions =  actualPosition.addClass('prevPosition');
   actualPosition.removeClass('hooligan');
   if (newPosition.hasClass('player')){
-    gameOver();
+    scenario = 'Mialeś nieprzyjemne spotaknie z chuliganem. <br> Zwiedzasz szpital na zaspie!';
+    gameOver(scenario);
     endGame = 1;
   }
   newPosition.addClass('hooligan').removeClass('food');
@@ -158,6 +163,9 @@ var hooligan = setInterval(function(){
 
 },200);
 
-function gameOver (){
+function gameOver (scenario){
   $('.gameOver').css('display', 'block');
+  $('.reasonOfEnd').html (scenario + '<br><br>')
+
+
 }

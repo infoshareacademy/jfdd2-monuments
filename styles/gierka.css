@@ -193,10 +193,21 @@ table {
     font-size: 50px;
     font-weight: bold;
     display: none;
+    color: red;
 }
+.title {
+    font-size: 80px;
+}
+
 .gameOver2 {
     font-size: 100px;
+    color: black;
 }
+
+.reasonOfEnd {
+    color: black ;
+}
+
 .clear {
     clear: both;
 }
