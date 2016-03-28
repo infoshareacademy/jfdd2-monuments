@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Gra: Kolko i krzyzyk</title>
+  <title>Zabytki Gra</title>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <script type="text/javascript" src="scripts/gierka.js"></script>
   <link rel="stylesheet" href="styles/gierka.css">
@@ -10,6 +10,13 @@
 </head>
 <body>
 <div id="app"></div>
+<div id="legenda">
+  <p class="legenda2"><img src="scripts/monument.png">+ 1 punkt do wyniku</p>
+  <p class="legenda1"><img src="scripts/food.png"> + 5 punktow ruchu</p>
+  <p class="legenda3"><img src="scripts/hooligan.png">   Huligan - nie daj sie zlapac</p>
+  <p class="legenda4">Powodzenia!!</p>
+</div>
+<div class="clear"></div>
 <div id="menuGame">
 <div class="scoreBoard2">
 <p class="iloscZabytkow" >Odwiedzone zabytki: <span class="wynik"></span></p>
@@ -25,6 +32,8 @@
 <div class="gameOver">
   <p>Game Over</p>
   <p> Twoj wynik:<br> <span class="wynik gameOver2" ></span></p>
+  <p><a class="backToMain" href="index.html">Powrot do strony glownej</a></p>
+  <p><a class="playAgainButton" href="gierka.html">Zagraj ponownie!</a></p>
 </div>
 
 
