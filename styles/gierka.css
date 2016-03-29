@@ -65,8 +65,8 @@ table {
 }
 
 .route {
-    width:10px;
-    height:10px;
+    width:30px;
+    height:30px;
     background-color:brown;
     background-size:30px 30px;
     background-image: url("../scripts/route.png");
@@ -162,6 +162,9 @@ table {
 .playAgainButton2:hover {
     background-color: rgba(139, 0, 0, 0.9);
 }
+.backToMain2:hover {
+    background-color: rgba(139, 0, 0, 0.9);
+}
 /*.scoreBoard2 {*/
     /*border: 2px solid white;*/
     /*border-radius: 50px;*/
@@ -199,9 +202,10 @@ table {
      color: white;
      border-radius: 50px;
      background-color: rgba(23, 28, 56, 0.94);
-     padding: 50px;
+     padding: 20px;
      position: relative;
-     top:90px;
+     top:50px;
+     font-size: 40px;
  }
 #menuGame {
     position: relative;
@@ -228,6 +232,7 @@ table {
 
 .reasonOfEnd {
     color: black ;
+    font-size: 30px;
 }
 
 .gameOverBackground {
@@ -249,6 +254,7 @@ table {
     margin-bottom: 30px;
     text-align: left;
 }
+
 .legenda4 {
     font-size: 45px;
     color: white;
@@ -261,3 +267,13 @@ table {
     clear: both;
 }
 
+.backToMain2 {
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+    background-color: rgba(23, 28, 56, 0.94);
+    padding: 20px;
+    position: relative;
+    top:90px;
+    font-size: 40px;
+}

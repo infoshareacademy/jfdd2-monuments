@@ -100,7 +100,7 @@ for (var y = 0; y < 15; y++) {
     $("#iloscRuchu").html (41 - pokonanaDroga);
 
     if (pokonanaDroga > 40) {
-      scenario = 'Zmęczenie nie pozwala Ci na dalsze zwiedznaie. ';
+      scenario = 'Zmęczenie nie pozwala Ci na dalsze zwiedzanie. ';
       gameOver(scenario);
       endGame = 1;
     }
@@ -154,7 +154,7 @@ var hooligan = setInterval(function(){
   prevPositions =  actualPosition.addClass('prevPosition');
   actualPosition.removeClass('hooligan');
   if (newPosition.hasClass('player')){
-    scenario = 'Mialeś nieprzyjemne spotaknie z chuliganem. <br> Zwiedzasz szpital na zaspie!';
+    scenario = 'Mialeś nieprzyjemne spotkanie z chuliganem!';
     gameOver(scenario);
     endGame = 1;
   }
@@ -165,7 +165,8 @@ var hooligan = setInterval(function(){
 
 function gameOver (scenario){
   $('.gameOver').css('display', 'block');
-  $('.reasonOfEnd').html (scenario + '<br><br>')
+  $('.reasonOfEnd').html (scenario + '<br>' +
+      '')
 
 
 }
