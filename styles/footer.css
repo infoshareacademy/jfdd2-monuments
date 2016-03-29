@@ -18,18 +18,17 @@ footer span {
     display: inline-block;
     background-image: url("../images/icons/socialMedia.png");
     background-repeat: no-repeat;
-    height: 50px;
-
 }
 
 .facebook {
-      background-position: left;
+    background-position: left;
 }
 
 .googlePlus {
     background-position: center;
 }
-.twitter  {
+
+.twitter {
     background-position: right;
 }
 

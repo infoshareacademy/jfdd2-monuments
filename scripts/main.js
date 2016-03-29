@@ -8,13 +8,13 @@ $(document).ready(function () {
   }
   loadLang();
 
-  function loadLang () {
+  function loadLang() {
     lang = localStorage.getItem('language');
     $('.polish').toggle(lang === 'pl');
     $('.english').toggle(lang === 'en');
   }
 
-  $('#language').click(function(){
+  $('#language').click(function () {
     localStorage.setItem('language', lang === 'pl' ? 'en' : 'pl');
     loadLang();
   });
@@ -41,35 +41,34 @@ $(document).ready(function () {
 
 
     });
-    $(function (){
+    $(function () {
       var przycisk1 = $('.przycisk1');
       var przycisk2 = $('.przycisk2');
       var przycisk3 = $('.przycisk3');
       var logo = $('.logo');
-      $(window).scroll(function(){
+      $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         var scrollHeight = $(window).scrollTop() + $(window).height();
-        var pozycjaFunkcjonalnosci = $('.sekcjaFunkcjonalnosci').offset().top -300;
-        var bottomFunkcjonalnosci = + pozycjaFunkcjonalnosci + $('.sekcjaFunkcjonalnosci').height() + 500;
+        var pozycjaFunkcjonalnosci = $('.sekcjaFunkcjonalnosci').offset().top - 300;
+        var bottomFunkcjonalnosci = +pozycjaFunkcjonalnosci + $('.sekcjaFunkcjonalnosci').height() + 500;
         var pozycjaONas = $('.oNas').offset().top + 100;
-        var bottomONas = pozycjaONas + $('.oNas').height() ;
+        var bottomONas = pozycjaONas + $('.oNas').height();
         var pozycjaKontakt = $('.formularz').offset().top + 100;
 
 
-
-        if (scroll >=pozycjaFunkcjonalnosci && scrollHeight <=bottomFunkcjonalnosci) {
+        if (scroll >= pozycjaFunkcjonalnosci && scrollHeight <= bottomFunkcjonalnosci) {
           przycisk1.removeClass('przyciskDol').addClass('przyciskX');
-        }else {
+        } else {
           przycisk1.removeClass('przyciskX').addClass('przycisk');
         }
-        if(scrollHeight >= pozycjaONas && scrollHeight <bottomONas) {
+        if (scrollHeight >= pozycjaONas && scrollHeight < bottomONas) {
           przycisk2.removeClass('przyciskDol').addClass('przyciskX')
-        }else {
+        } else {
           przycisk2.removeClass('przyciskX').addClass('przycisk')
         }
-        if(scrollHeight>pozycjaKontakt) {
+        if (scrollHeight > pozycjaKontakt) {
           przycisk3.removeClass('przyciskDol').addClass('przyciskX')
-        }else {
+        } else {
           przycisk3.removeClass('przyciskX').addClass('przycisk')
         }
       });
@@ -106,8 +105,9 @@ $(document).ready(function () {
 
     $('html,body').animate({
         scrollTop: ($(href).offset().top) - 100
-      },'slow'
-    )}
+      }, 'slow'
+    )
+  }
 
   $(".menu a:not(.langToggle)").click(function (e) {
     e.preventDefault();
@@ -134,31 +134,34 @@ $(document).ready(function () {
   });
 
 
-
-  function setCookieValue(name, value){
-    document.cookie = name + '=' + value ;
+  function setCookieValue(name, value) {
+    document.cookie = name + '=' + value;
   }
 
   checkCookie(document.cookie);
 
-  $('#ciasteczka').click(function(){
+  $('#ciasteczka').click(function () {
     setCookieValue('politykaCiasteczek', 'zgoda');
     $('#ciasteczka').hide();
 
   });
 
-  function checkCookie(){
+  function checkCookie() {
     if (document.cookie != "") {
       var cookies = document.cookie.split(';');
-      for ( i=0; i<cookies.length; i++ ) {
+      for (i = 0; i < cookies.length; i++) {
         var name = cookies[i].split('=')[0];
         var value = cookies[i].split('=')[1];
-        if (name === 'politykaCiasteczek'){
-          if (value === 'zgoda'){
+        if (name === 'politykaCiasteczek') {
+          if (value === 'zgoda') {
             $('#ciasteczka').hide()
-          }}}}}
+          }
+        }
+      }
+    }
+  }
 
-  $(window).scroll(function (){
+  $(window).scroll(function () {
     var scroll = $(window).scrollTop() + $(window).height();
     var pozycjaoNas = $('.oNas').offset().top;
     var przesuniecie = 400 + (scroll - pozycjaoNas) * 0.3;
