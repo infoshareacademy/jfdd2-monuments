@@ -97,8 +97,8 @@
 }
 
 .langToggle:hover {
-    padding-top: 25px;
-    height: 45px;
+    height: 70px;
+    transition: none;
 }
 
 .langToggleDol {
@@ -112,8 +112,8 @@
 }
 
 .langToggleDol:hover {
-    padding-top: 10px;
-    height: 30px;
+    height: 40px;
+    transition: none;
 }
 
 .lang {
@@ -122,10 +122,14 @@
 
 .langToggle:hover .lang {
     font-size: 20px;
+    position: relative;
+    top: 25px;
 }
 
 .langToggleDol:hover .lang {
     font-size: 20px;
+    position: relative;
+    top: 10px;
 }
 
 .powitanie {
