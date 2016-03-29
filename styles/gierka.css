@@ -10,8 +10,22 @@ table {
     padding: 20px;
     background-color: rgba(23, 28, 56, 0.94);
     text-align: center;
-    width: 1200px;
+    width: 900px;
+    float:left;
 }
+#legenda {
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 20px;
+    background-color: rgba(23, 28, 56, 0.94);
+    text-align: center;
+    width:250px;
+    float:left;
+    text-align: left;
+    margin-left: 40px;
+    height: 455px;
+}
+
 
 .cell {
     width: 30px;
@@ -49,6 +63,7 @@ table {
     background-size:30px 30px;
     background-image: url("../scripts/monument.png");
 }
+
 .route {
     width:10px;
     height:10px;
@@ -124,6 +139,7 @@ table {
     margin-left: 10px;
 
 }
+
 /*.backToIndex {*/
     /*text-decoration: none;*/
     /*color: white;*/
@@ -141,6 +157,9 @@ table {
     background-color: rgba(139, 0, 0, 0.9);
 }
 .playAgainButton:hover {
+     background-color: rgba(139, 0, 0, 0.9);
+ }
+.playAgainButton2:hover {
     background-color: rgba(139, 0, 0, 0.9);
 }
 /*.scoreBoard2 {*/
@@ -175,37 +194,67 @@ table {
     width: 15%;
     margin-left: 10px;
 }
+.playAgainButton2 {
+     text-decoration: none;
+     color: white;
+     border-radius: 50px;
+     background-color: rgba(23, 28, 56, 0.94);
+     padding: 50px;
+     position: relative;
+     top:90px;
+ }
 #menuGame {
     position: relative;
     text-align: center;
 }
 
 .gameOver {
-    background: indianred;
+    background: linear-gradient(to bottom right, red, yellow);
     position: absolute;
     width: 60%;
-    height: 40%;
-    top: 30%;
+    height: 60%;
+    top: 20%;
     left: 20%;
     border: 10px solid black;
     border-radius: 50px;
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
     display: none;
-    color: red;
 }
-.title {
-    font-size: 80px;
-}
-
 .gameOver2 {
-    font-size: 100px;
-    color: black;
+    font-size: 50px;
 }
 
 .reasonOfEnd {
     color: black ;
+}
+
+.gameOverBackground {
+    display:none;
+}
+.legenda1 {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 30px;
+}
+.legenda2 {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 30px;
+}
+.legenda3 {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.legenda4 {
+    font-size: 45px;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 70px;
 }
 
 .clear {
