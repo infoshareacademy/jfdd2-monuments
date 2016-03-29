@@ -93,12 +93,11 @@
     background-repeat: no-repeat;
     background-size: auto 65px;
     background-position: center bottom;
-    transition: background-color 0.3s ease, height 0.3s ease, background-size 0.3s ease;
+    transition: background-color 0.3s ease, height 0.3s ease;
 }
 
 .langToggle:hover {
-    padding-top: 25px;
-    height: 45px;
+    height: 70px;
 }
 
 .langToggleDol {
@@ -108,12 +107,11 @@
     background-repeat: no-repeat;
     background-size: auto 35px;
     background-position: center bottom;
-    transition: background-color 0.3s ease, height 0.3s ease, background-size 0.3s ease;
+    transition: background-color 0.3s ease, height 0.3s ease;
 }
 
 .langToggleDol:hover {
-    padding-top: 10px;
-    height: 30px;
+    height: 40px;
 }
 
 .lang {
@@ -122,10 +120,14 @@
 
 .langToggle:hover .lang {
     font-size: 20px;
+    position: relative;
+    top: 25px;
 }
 
 .langToggleDol:hover .lang {
     font-size: 20px;
+    position: relative;
+    top: 10px;
 }
 
 .powitanie {
