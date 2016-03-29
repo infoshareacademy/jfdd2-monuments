@@ -18,6 +18,7 @@ footer span {
     display: inline-block;
     background-image: url("../images/icons/socialMedia.png");
     background-repeat: no-repeat;
+    height: 50px;
 
 }
 
@@ -56,4 +57,14 @@ footer span {
     letter-spacing: -1px;
     padding: 20px 0;
     cursor: pointer;
+}
+
+.easterEgg {
+    background-image: url("../images/icons/game.png");
+    width: 47px;
+    height: 47px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin-left: 8px;
+    background-size: cover;
 }
