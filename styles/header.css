@@ -96,6 +96,11 @@
     transition: background-color 0.3s ease, height 0.3s ease, background-size 0.3s ease;
 }
 
+.langToggle:hover {
+    padding-top: 25px;
+    height: 45px;
+}
+
 .langToggleDol {
     padding: 0;
     height: 40px;
@@ -106,12 +111,21 @@
     transition: background-color 0.3s ease, height 0.3s ease, background-size 0.3s ease;
 }
 
-.lang {
-    visibility: hidden;
+.langToggleDol:hover {
+    padding-top: 10px;
+    height: 30px;
 }
 
-.lang:hover {
-    visibility: visible;
+.lang {
+    font-size: 0;
+}
+
+.langToggle:hover .lang {
+    font-size: 20px;
+}
+
+.langToggleDol:hover .lang {
+    font-size: 20px;
 }
 
 .powitanie {
