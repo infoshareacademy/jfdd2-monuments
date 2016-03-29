@@ -9,6 +9,7 @@
     top: 0;
     box-shadow: 0 3px 2px -1px black;
 }
+
 .przyciskX {
     position: relative;
     float: left;
@@ -85,6 +86,50 @@
     background-color: rgba(139, 0, 0, 0.9);
 }
 
+.langToggle {
+    padding: 0;
+    height: 70px;
+    background-image: url("../images/icons/langToggle.png");
+    background-repeat: no-repeat;
+    background-size: auto 65px;
+    background-position: center bottom;
+    transition: background-color 0.3s ease, height 0.3s ease;
+}
+
+.langToggle:hover {
+    height: 70px;
+}
+
+.langToggleDol {
+    padding: 0;
+    height: 40px;
+    background-image: url("../images/icons/langToggle.png");
+    background-repeat: no-repeat;
+    background-size: auto 35px;
+    background-position: center bottom;
+    transition: background-color 0.3s ease, height 0.3s ease;
+}
+
+.langToggleDol:hover {
+    height: 40px;
+}
+
+.lang {
+    font-size: 0;
+}
+
+.langToggle:hover .lang {
+    font-size: 20px;
+    position: relative;
+    top: 25px;
+}
+
+.langToggleDol:hover .lang {
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+}
+
 .powitanie {
     height: 400px;
     width: 100%;
@@ -100,7 +145,6 @@
 .powitanieWidoczny {
     opacity: 1;
     transform: scale(1);
-
 }
 
 .powitanie h2, .powitanie h3 {
@@ -119,5 +163,4 @@
 .powitanie h3 {
     top: 95px;
     font-size: 30px;
-
 }

@@ -23,6 +23,7 @@ $(document).ready(function () {
 
     var przyciski = $(".przycisk");
     var logo = $(".logo");
+    var langToggle = $('.langToggle')
     $(window).scroll(function () {
       var scroll = $(window).scrollTop();
 
@@ -30,11 +31,12 @@ $(document).ready(function () {
       if (scroll >= 50) {
         przyciski.removeClass('przycisk').addClass("przyciskDol");
         logo.removeClass('logo').addClass("logoDol");
-
-
-      } else {
+        langToggle.removeClass('langToggle').addClass('langToggleDol')
+      }
+      else {
         przyciski.removeClass("przyciskDol").addClass('przycisk');
         logo.removeClass('logoDol').addClass("logo");
+        langToggle.removeClass('langToggleDol').addClass('langToggle')
       }
 
 
@@ -107,7 +109,7 @@ $(document).ready(function () {
       },'slow'
     )}
 
-  $(".menu a:not(.lang-toggle)").click(function (e) {
+  $(".menu a:not(.langToggle)").click(function (e) {
     e.preventDefault();
     goToByScroll($(this).attr('href'));
   });
