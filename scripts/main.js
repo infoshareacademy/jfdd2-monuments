@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+  $('.przycisk4').click(function () {
+    window.location('http://monuments.jfdd2.infoshareaca.nazwa.pl/app/');
+  });
+
   var lang = localStorage.getItem('language');
   if (lang === null) {
     localStorage.setItem('language', 'pl');
@@ -44,7 +48,6 @@ $(document).ready(function () {
       var przycisk1 = $('.przycisk1');
       var przycisk2 = $('.przycisk2');
       var przycisk3 = $('.przycisk3');
-      var przycisk4 = $('.przycisk4');
       var logo = $('.logo');
       $(window).scroll(function () {
         var scroll = $(window).scrollTop();
