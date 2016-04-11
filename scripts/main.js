@@ -99,7 +99,7 @@ $(document).ready(function () {
 
   function goToByScroll(href) {
     $('html,body').animate({
-        scrollTop: ($(href).offset().top) - 100
+        scrollTop: (href.offset().top) - 100
       }, 'slow'
     )
   }
