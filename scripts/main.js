@@ -1,7 +1,5 @@
 $(document).ready(function () {
 
-  // check language from localStorage
-
   var lang = localStorage.getItem('language');
   if (lang === null) {
     localStorage.setItem('language', 'pl');
@@ -22,29 +20,31 @@ $(document).ready(function () {
   $(function () {
 
     var przyciski = $(".przycisk");
+    var przycisk4 = $(".przycisk4");
     var logo = $(".logo");
     var langToggle = $('.langToggle')
     $(window).scroll(function () {
       var scroll = $(window).scrollTop();
 
-
       if (scroll >= 50) {
         przyciski.removeClass('przycisk').addClass("przyciskDol");
+        przycisk4.removeClass('przycisk4').addClass("przycisk4Dol");
         logo.removeClass('logo').addClass("logoDol");
         langToggle.removeClass('langToggle').addClass('langToggleDol')
       }
       else {
         przyciski.removeClass("przyciskDol").addClass('przycisk');
+        przycisk4.removeClass("przycisk4Dol").addClass('przycisk4');
         logo.removeClass('logoDol').addClass("logo");
         langToggle.removeClass('langToggleDol').addClass('langToggle')
       }
-
 
     });
     $(function () {
       var przycisk1 = $('.przycisk1');
       var przycisk2 = $('.przycisk2');
       var przycisk3 = $('.przycisk3');
+      var przycisk4 = $('.przycisk4');
       var logo = $('.logo');
       $(window).scroll(function () {
         var scroll = $(window).scrollTop();
@@ -54,7 +54,6 @@ $(document).ready(function () {
         var pozycjaONas = $('.oNas').offset().top + 100;
         var bottomONas = pozycjaONas + $('.oNas').height();
         var pozycjaKontakt = $('.formularz').offset().top + 100;
-
 
         if (scroll >= pozycjaFunkcjonalnosci && scrollHeight <= bottomFunkcjonalnosci) {
           przycisk1.removeClass('przyciskDol').addClass('przyciskX');
@@ -72,12 +71,10 @@ $(document).ready(function () {
           przycisk3.removeClass('przyciskX').addClass('przycisk')
         }
       });
-
     });
   });
 
   $(function () {
-
 
     $(window).on('load scroll', function () {
       var scrollBottom = $(window).scrollTop() + $(window).height() + 100;
@@ -94,15 +91,10 @@ $(document).ready(function () {
       if (scrollBottom > pozycjaPowitanie) {
         $(".powitanie").addClass('powitanieWidoczny')
       }
-
-
     });
-
   });
 
-
   function goToByScroll(href) {
-
     $('html,body').animate({
         scrollTop: ($(href).offset().top) - 100
       }, 'slow'
@@ -114,15 +106,12 @@ $(document).ready(function () {
     goToByScroll($(this).attr('href'));
   });
 
-
   $(function () {
     $("#kontakt").submit(function () {
-
       var valid = 0;
       $(this).find('input[type=email], input[type=tel]').each(function () {
         if ($(this).val() != "") valid += 1;
       });
-
       if (valid) {
         return true;
       }
@@ -133,17 +122,14 @@ $(document).ready(function () {
     });
   });
 
-
   function setCookieValue(name, value) {
     document.cookie = name + '=' + value;
   }
 
   checkCookie(document.cookie);
-
   $('#ciasteczka').click(function () {
     setCookieValue('politykaCiasteczek', 'zgoda');
     $('#ciasteczka').hide();
-
   });
 
   function checkCookie() {
@@ -167,8 +153,6 @@ $(document).ready(function () {
     var przesuniecie = 400 + (scroll - pozycjaoNas) * 0.3;
     if (przesuniecie > 0) {
       $('.oNas').css('background-position', 'center ' + przesuniecie + 'px')
-
     }
   });
-
 });

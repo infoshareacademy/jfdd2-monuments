@@ -42,6 +42,42 @@
     height: 20px;
 }
 
+.przycisk4 {
+    position: relative;
+    float: left;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    width: 16.6666666667%;
+    text-decoration: none;
+    background-color: rgba(23, 28, 56, 0.94);
+    padding: 25px 0;
+    transition: background 0.3s, padding 0.3s ease;
+    height: 20px;
+}
+
+.przycisk4:hover, .przycisk4Dol:hover {
+    background: rgba(139, 0, 0, 0.9);
+}
+
+.przycisk4Dol {
+    position: relative;
+    float: left;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    width: 16.6666666667%;
+    text-decoration: none;
+    background-color: rgba(23, 28, 56, 0.94);
+    padding: 10px 0;
+    transition: background 0.3s, padding 0.3s ease;
+    height: 20px;
+}
+
 .przycisk:hover, .przyciskDol:hover {
     background: rgba(139, 0, 0, 0.9);
 }
